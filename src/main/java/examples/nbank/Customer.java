@@ -98,6 +98,38 @@ public class Customer {
     }
 */
 ///
+@Override
+    public int hashCode() {
+        return _name.hashCode();
+    }
+
+    public boolean loadCustomer() throws ConnectionException {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        try {
+            Class.forName("org.gjt.mm.mysql.Driver");
+            connection = DriverManager.getConnection("bank", "bank", "system");
+        } catch (ClassNotFoundException e) {
+            System.err.println("No suitable driver...");
+            throw new ConnectionException("Connection Failed");
+        } catch (SQLException e) {
+            System.err.println("Cannot connect to database: " + e.getMessage());
+            throw new ConnectionException("Connection Failed");
+        }
+        try {
+            statement = connection.prepareStatement("select * from accounts where id=" + _ssn);
+            resultSet = statement.executeQuery();
+            _name = resultSet.getString(0);
+            _ssn = resultSet.getString(2);
+            resultSet.close();
+            statement.close();
+        } catch (SQLException exception) {
+            System.err.println("Error loading data from database: " + exception.getMessage());
+            return false;
+        }
+        return true;
+    }
     public static void main(String[] args) {
         Customer c1 = new Customer("Mary Smith", "111-11-1111");
 		

@@ -63,7 +63,7 @@ public class Customer {
         }
         return false;
     }
-
+/*
     @Override
     public int hashCode() {
         return _name.hashCode();
@@ -96,7 +96,7 @@ public class Customer {
         }
         return true;
     }
-
+*/
 ///
     public static void main(String[] args) {
         Customer c1 = new Customer("Mary Smith", "111-11-1111");
@@ -104,9 +104,9 @@ public class Customer {
         Customer c2 = new Customer("Bob Smith", "222-22-2222");
 		
         if (c1.equals(c2)) {
-            System.out.println("These customers are the same.");
+           // System.out.println("These customers are the same.");
         } else {
-            System.out.println("Unique customers.");
+            //System.out.println("Unique customers.");
         }
     }
 }

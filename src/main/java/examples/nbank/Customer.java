@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+//
 /**
  * Represents a bank customer.
  * 
@@ -48,6 +49,8 @@ public class Customer {
         return _name;
     }
 
+
+//
     @Override
     public boolean equals(Object o) {
         if (o instanceof Customer) {
@@ -94,9 +97,12 @@ public class Customer {
         return true;
     }
 
+///
     public static void main(String[] args) {
         Customer c1 = new Customer("Mary Smith", "111-11-1111");
+		
         Customer c2 = new Customer("Bob Smith", "222-22-2222");
+		
         if (c1.equals(c2)) {
             System.out.println("These customers are the same.");
         } else {

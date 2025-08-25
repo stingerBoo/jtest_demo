@@ -1,0 +1,44 @@
+# This is a basic workflow to help you get started with the Run Jtest action.
+name: Jtest with Gradle
+
+on:
+  # Trigger the workflow on push or pull request events but only for the main branch.
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab.
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+jobs:
+  build:
+    name: Analyze project with Jtest
+    
+    permissions:
+      # required for all workflows
+      security-events: write
+      
+    # Specifies the type of runner that the job will run on.
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    steps:
+    
+    # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    # Generates the jtest.data.json input file.
+    - name: Create input for Jtest
+      shell: cmd
+      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://Recommended Rules_1daymodify" "-Djtest.skip=true"
+
+    # Runs code analysis with Jtest.
+    - name: Run Jtest
+      id: jtest
+      uses: parasoft/run-jtest-action@2.0.2
+      with:
+        #Uses the jtest.data.json generated with the Gradle command in the previous step
+        input: build/jtest/jtest.data.json

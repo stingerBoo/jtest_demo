@@ -1,0 +1,3963 @@
+[ {
+  "id" : 1996735368,
+  "name" : "examples/eval/SimpleTest",
+  "src" : "SimpleTest.java",
+  "crc" : 4110726874,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 16,
+    "lns" : "16",
+    "annotations" : [ ]
+  }, {
+    "name" : "testMap",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "27,28,31,33",
+    "annotations" : [ {
+      "attributes" : [ {
+        "name" : "timeout",
+        "value" : "5000"
+      } ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMap2",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "44,45,48,50",
+    "annotations" : [ {
+      "attributes" : [ {
+        "name" : "timeout",
+        "value" : "5000"
+      } ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMap3",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "61,62,65,67",
+    "annotations" : [ {
+      "attributes" : [ {
+        "name" : "timeout",
+        "value" : "5000"
+      } ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1063849171,
+  "name" : "examples/junit/MoneyBagParameterizedTest",
+  "src" : "MoneyBagParameterizedTest.java",
+  "crc" : 510474716,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(II)V",
+    "attr" : [ ],
+    "cln" : 22,
+    "lns" : "22,24,25,26",
+    "annotations" : [ ]
+  }, {
+    "name" : "testMultiply",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "38,39,41,42,45,48,49",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "data",
+    "desc" : "()Ljava/lang/Iterable;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71",
+    "annotations" : [ {
+      "attributes" : [ {
+        "name" : "name",
+        "value" : "Run {index}: factor={0}"
+      } ],
+      "description" : "Lorg/junit/runners/Parameterized$Parameters;"
+    } ]
+  } ],
+  "annotations" : [ {
+    "attributes" : [ {
+      "name" : "value",
+      "value" : "Lorg/junit/runners/Parameterized;"
+    } ],
+    "description" : "Lorg/junit/runner/RunWith;"
+  } ]
+}, {
+  "id" : 2031377321,
+  "name" : "examples/junit/MoneyTest",
+  "src" : "MoneyTest.java",
+  "crc" : 213234732,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 20,
+    "lns" : "20",
+    "annotations" : [ ]
+  }, {
+    "name" : "setUp",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37,38,39,40,42,43,44",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Before;"
+    } ]
+  }, {
+    "name" : "testBagMultiply",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "57,58,59,60,61",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "createMoneyBag",
+    "desc" : "(ILjava/lang/String;ILjava/lang/String;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "70,71,72,73",
+    "annotations" : [ ]
+  }, {
+    "name" : "testBagNegate",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "80,81,82",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testBagSimpleAdd",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "88,89,90",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testBagSubtract",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "96,97,98",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testBagSumAdd",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "104,105,106",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testIsZero",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "111,112,113",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMixedSimpleAdd",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "119,120,121",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testBagNotEquals",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "126,127,128",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMoneyBagEquals",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "133,135,136,137,138,139,140,141",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMoneyBagHash",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "146,147,148",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMoneyEquals",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "153,154,155,156,157,158,159",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "zeroMoniesAreEqualRegardlessOfCurrency",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "164,165,166,167,168",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testMoneyHash",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "173,174,175,176",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testSimplify",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "181,182,183",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testNormalize2",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "189,190,191",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testNormalize3",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "197,198,199,200",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testNormalize4",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "205,206,207,208",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testPrint",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "213,214",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testSimpleAdd",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "220,221,222",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testSimpleBagAdd",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "228,229,230",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testSimpleMultiply",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "236,237,238",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testSimpleNegate",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "244,245,246",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testSimpleSubtract",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "252,253,254",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "getTestedClass",
+    "desc" : "()Ljava/lang/Class;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "258",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -99918051,
+  "name" : "examples/junit/NaiveStringBuilderParameterizedTest",
+  "src" : "NaiveStringBuilderParameterizedTest.java",
+  "crc" : 1771413674,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 17,
+    "lns" : "17",
+    "annotations" : [ ]
+  }, {
+    "name" : "testAppend",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "31,33,35,36,37",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    }, {
+      "attributes" : [ {
+        "name" : "method",
+        "value" : "testAppend_Parameters"
+      } ],
+      "description" : "Ljunitparams/Parameters;"
+    } ]
+  }, {
+    "name" : "testAppend_Parameters",
+    "desc" : "()[[Ljava/lang/Object;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "45,46,47,48,49,50",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ {
+    "attributes" : [ {
+      "name" : "value",
+      "value" : "Ljunitparams/JUnitParamsRunner;"
+    } ],
+    "description" : "Lorg/junit/runner/RunWith;"
+  } ]
+}, {
+  "id" : 1183146560,
+  "name" : "examples/mock/FileExampleTest$IsFileNameCorrect",
+  "src" : "FileExampleTest.java",
+  "crc" : 138972264,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/mock/FileExampleTest;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 45,
+    "lns" : "44,45,46,47",
+    "annotations" : [ ]
+  }, {
+    "name" : "matches",
+    "desc" : "(Ljava/io/File;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "50",
+    "annotations" : [ ]
+  }, {
+    "name" : "matches",
+    "desc" : "(Ljava/lang/Object;)Z",
+    "attr" : [ "SYNTHETIC", "BRIDGE" ],
+    "cln" : -1,
+    "lns" : "1",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -11520490,
+  "name" : "examples/mock/FileExampleTest",
+  "src" : "FileExampleTest.java",
+  "crc" : 664909113,
+  "encMet" : null,
+  "inClass" : [ "examples/mock/FileExampleTest$IsFileNameCorrect" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 24,
+    "lns" : "24",
+    "annotations" : [ ]
+  }, {
+    "name" : "testAnalyze",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29,31,32,33,34,36,37,38",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testIsOversize",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "58,59,61,62,63,64,65",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "lambda$0",
+    "desc" : "()V",
+    "attr" : [ "SYNTHETIC" ],
+    "cln" : -1,
+    "lns" : "61",
+    "annotations" : [ ]
+  }, {
+    "name" : "lambda$1",
+    "desc" : "()V",
+    "attr" : [ "SYNTHETIC" ],
+    "cln" : -1,
+    "lns" : "62",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 769105948,
+  "name" : "examples/mock/InterpreterTest",
+  "src" : "InterpreterTest.java",
+  "crc" : 3392962825,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 24,
+    "lns" : "24",
+    "annotations" : [ ]
+  }, {
+    "name" : "testAdd34",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29,30,35,37,38,39,40,42,43",
+    "annotations" : [ {
+      "attributes" : [ {
+        "name" : "timeout",
+        "value" : "10000"
+      } ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "lambda$0",
+    "desc" : "(Ljava/io/DataInputStream;Lorg/mockito/MockedConstruction$Context;)V",
+    "attr" : [ "SYNTHETIC" ],
+    "cln" : -1,
+    "lns" : "31,32,33",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -516176267,
+  "name" : "examples/servlets/ExampleServletTest",
+  "src" : "ExampleServletTest.java",
+  "crc" : 4174120538,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 15,
+    "lns" : "15",
+    "annotations" : [ ]
+  }, {
+    "name" : "testTryThis1",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "28,30,31,33,35,36",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testTryThis2",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "50,51,52,54,55,57,59,60",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testTryThis3",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "73,75,76,77,78,79,81,82,83,84",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  }, {
+    "name" : "testTryThis4",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "97,98,99,100,101,102,104,106,107,108,109",
+    "annotations" : [ {
+      "attributes" : [ ],
+      "description" : "Lorg/junit/Test;"
+    } ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1649912147,
+  "name" : "examples/eval/Simple",
+  "src" : "Simple.java",
+  "crc" : 701280951,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 13,
+    "lns" : "13",
+    "annotations" : [ ]
+  }, {
+    "name" : "map",
+    "desc" : "(I)I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "22,24,27,29,31",
+    "annotations" : [ ]
+  }, {
+    "name" : "startsWith",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "63,64,65,66",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -405415710,
+  "name" : "examples/flowanalysis/AlwaysCloseGSS",
+  "src" : "AlwaysCloseGSS.java",
+  "crc" : 1900242056,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6",
+    "annotations" : [ ]
+  }, {
+    "name" : "process",
+    "desc" : "([B)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "10,11,13,14,16",
+    "annotations" : [ ]
+  }, {
+    "name" : "processClose",
+    "desc" : "([B)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "19,21,22,23,25,26,29,30,33",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1357966635,
+  "name" : "examples/flowanalysis/AlwaysCloseImages",
+  "src" : "AlwaysCloseImages.java",
+  "crc" : 2059569431,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 9,
+    "lns" : "9",
+    "annotations" : [ ]
+  }, {
+    "name" : "readImage",
+    "desc" : "(Ljavax/imageio/spi/ImageReaderSpi;)Ljava/awt/Image;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "12,14,15,16,17,19",
+    "annotations" : [ ]
+  }, {
+    "name" : "readImageClose",
+    "desc" : "(Ljavax/imageio/spi/ImageReaderSpi;)Ljava/awt/Image;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "23,24,26,27,28,29,31,33",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -141857775,
+  "name" : "examples/flowanalysis/AlwaysCloseLogging",
+  "src" : "AlwaysCloseLogging.java",
+  "crc" : 1480071798,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7",
+    "annotations" : [ ]
+  }, {
+    "name" : "log",
+    "desc" : "(Ljava/util/logging/Level;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "10,11,12,13",
+    "annotations" : [ ]
+  }, {
+    "name" : "logClose",
+    "desc" : "(Ljava/util/logging/Level;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "16,18,19,20,21,22,24",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 2121381129,
+  "name" : "examples/flowanalysis/AlwaysCloseNIOChannels",
+  "src" : "AlwaysCloseNIOChannels.java",
+  "crc" : 3463461038,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 9,
+    "lns" : "9",
+    "annotations" : [ ]
+  }, {
+    "name" : "process",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "13,14,15,16,18,19,21",
+    "annotations" : [ ]
+  }, {
+    "name" : "processClose",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "24,26,27,28,29,31,32,35,36,39",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1306327362,
+  "name" : "examples/flowanalysis/AlwaysCloseRAFs",
+  "src" : "AlwaysCloseRAFs.java",
+  "crc" : 1961572174,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 5,
+    "lns" : "5",
+    "annotations" : [ ]
+  }, {
+    "name" : "read",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "8,10,11,12,13,14,15,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "readClose",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22,24,25,26,27,28,29,32,33,36",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1333628174,
+  "name" : "examples/flowanalysis/AlwaysCloseSockets",
+  "src" : "AlwaysCloseSockets.java",
+  "crc" : 1035290544,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 8,
+    "lns" : "8",
+    "annotations" : [ ]
+  }, {
+    "name" : "connectClient",
+    "desc" : "(Ljava/net/ServerSocket;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "12,14,15,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "connectClientClose",
+    "desc" : "(Ljava/net/ServerSocket;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20,22,24,25,28,29,32",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 924092578,
+  "name" : "examples/flowanalysis/AlwaysCloseXMLEncDec",
+  "src" : "AlwaysCloseXMLEncDec.java",
+  "crc" : 1311352152,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11",
+    "annotations" : [ ]
+  }, {
+    "name" : "store",
+    "desc" : "(Ljava/io/OutputStream;[Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,19,20,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "read",
+    "desc" : "(Ljava/io/InputStream;)[Ljava/lang/Object;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "25,27,28,29,30,31,33,36,37,39",
+    "annotations" : [ ]
+  }, {
+    "name" : "storeClose",
+    "desc" : "(Ljava/io/OutputStream;[Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "43,45,46,47,49,50,52,54",
+    "annotations" : [ ]
+  }, {
+    "name" : "readClose",
+    "desc" : "(Ljava/io/InputStream;)[Ljava/lang/Object;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "57,58,60,61,62,63,64,66,68,69,71,73",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1500161497,
+  "name" : "examples/flowanalysis/DereferenceBeforeNullCheck",
+  "src" : "DereferenceBeforeNullCheck.java",
+  "crc" : 4237396000,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 15,
+    "lns" : "15",
+    "annotations" : [ ]
+  }, {
+    "name" : "getFileSystemReaderForResource",
+    "desc" : "(Ljava/lang/String;)Ljava/io/BufferedReader;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "readFirstLine",
+    "desc" : "(Ljava/lang/String;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20,21,23,24,25,29,31,32,35,38,40",
+    "annotations" : [ ]
+  }, {
+    "name" : "closeReader",
+    "desc" : "(Ljava/io/Reader;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "44,47,50,51,54",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 997336061,
+  "name" : "examples/flowanalysis/DivisionByZero$Consumer",
+  "src" : "DivisionByZero.java",
+  "crc" : 4252185267,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/flowanalysis/DivisionByZero;)V",
+    "attr" : [ ],
+    "cln" : 47,
+    "lns" : "47,49,51",
+    "annotations" : [ ]
+  }, {
+    "name" : "setOverallSum",
+    "desc" : "(F)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "54,55",
+    "annotations" : [ ]
+  }, {
+    "name" : "getOverallSum",
+    "desc" : "()F",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "58",
+    "annotations" : [ ]
+  }, {
+    "name" : "setPersonalDiscountCoefficient",
+    "desc" : "(F)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "62,63",
+    "annotations" : [ ]
+  }, {
+    "name" : "getPersonalDiscountCoefficient",
+    "desc" : "()F",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "66",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 823577555,
+  "name" : "examples/flowanalysis/DivisionByZero",
+  "src" : "DivisionByZero.java",
+  "crc" : 3117480230,
+  "encMet" : null,
+  "inClass" : [ "examples/flowanalysis/DivisionByZero$Consumer" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6",
+    "annotations" : [ ]
+  }, {
+    "name" : "calculateDiscountedSum",
+    "desc" : "(IFLexamples/flowanalysis/DivisionByZero$Consumer;)F",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,18,19,21,22,23,24,25,26,28,29",
+    "annotations" : [ ]
+  }, {
+    "name" : "calculateCommonDiscountedSum",
+    "desc" : "(F)F",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "33,34,35,37,38,40",
+    "annotations" : [ ]
+  }, {
+    "name" : "getSpecialOfferDiscountCoefficient",
+    "desc" : "()F",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "44",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 664580040,
+  "name" : "examples/flowanalysis/FilesInjection",
+  "src" : "FilesInjection.java",
+  "crc" : 3590913614,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 8,
+    "lns" : "8",
+    "annotations" : [ ]
+  }, {
+    "name" : "fileNameContentsInjection",
+    "desc" : "(Ljavax/servlet/http/HttpServletRequest;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,18",
+    "annotations" : [ ]
+  }, {
+    "name" : "store",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,23,24,25,26,27,29",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1778416583,
+  "name" : "examples/flowanalysis/IncorrectIteratorUsage",
+  "src" : "IncorrectIteratorUsage.java",
+  "crc" : 675893583,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6",
+    "annotations" : [ ]
+  }, {
+    "name" : "removeAllElementsIncorrect",
+    "desc" : "(Ljava/util/HashSet;Ljava/lang/Class;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,18,19,21,23",
+    "annotations" : [ ]
+  }, {
+    "name" : "removeAllElementsCorrect",
+    "desc" : "(Ljava/util/HashSet;Ljava/lang/Class;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "32,33,34,35,36,38,40",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1086295100,
+  "name" : "examples/flowanalysis/InefficientCollectionRemoval",
+  "src" : "InefficientCollectionRemoval.java",
+  "crc" : 757472911,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6",
+    "annotations" : [ ]
+  }, {
+    "name" : "inefficientRemoval",
+    "desc" : "(Ljava/util/Collection;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15,16,17,19",
+    "annotations" : [ ]
+  }, {
+    "name" : "effectiveRemoval",
+    "desc" : "(Ljava/util/Collection;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "27,28,29,31",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -72490645,
+  "name" : "examples/flowanalysis/InefficientMapRemoval",
+  "src" : "InefficientMapRemoval.java",
+  "crc" : 1198053523,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7",
+    "annotations" : [ ]
+  }, {
+    "name" : "inefficientRemoval",
+    "desc" : "(Ljava/util/Map;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,18,20",
+    "annotations" : [ ]
+  }, {
+    "name" : "inefficientRemovalEntry",
+    "desc" : "(Ljava/util/Map;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "28,29,30,31,32,34",
+    "annotations" : [ ]
+  }, {
+    "name" : "effectiveRemoval",
+    "desc" : "(Ljava/util/Map;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "42,43,44,46",
+    "annotations" : [ ]
+  }, {
+    "name" : "effectiveRemovalKeySet",
+    "desc" : "(Ljava/util/Map;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "54,55,56,58",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -433257266,
+  "name" : "examples/flowanalysis/InefficientMapUsage",
+  "src" : "InefficientMapUsage.java",
+  "crc" : 173763170,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7",
+    "annotations" : [ ]
+  }, {
+    "name" : "inefficientIteration",
+    "desc" : "(Ljava/util/Map;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,18,21",
+    "annotations" : [ ]
+  }, {
+    "name" : "effectiveIteration",
+    "desc" : "(Ljava/util/Map;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29,30,31,32,33,36",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1568551366,
+  "name" : "examples/flowanalysis/np/DatabaseObject",
+  "src" : "DatabaseObject.java",
+  "crc" : 1797574281,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11,13",
+    "annotations" : [ ]
+  }, {
+    "name" : "getObjectFromDatabase",
+    "desc" : "(Ljava/sql/Connection;Ljava/lang/String;Ljava/lang/String;)Lexamples/flowanalysis/np/DatabaseObject;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "16,17,18,19,21,22,23,24,26,29,30,32,33",
+    "annotations" : [ ]
+  }, {
+    "name" : "getClassName",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37",
+    "annotations" : [ ]
+  }, {
+    "name" : "getOID",
+    "desc" : "()Ljava/lang/Object;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "41",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/sql/ResultSet;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "45,46,49,50,52",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/sql/Statement;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "55,56,59,60,62",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -454771277,
+  "name" : "examples/flowanalysis/np/ExtendedNullPointer",
+  "src" : "ExtendedNullPointer.java",
+  "crc" : 2217689524,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 14,
+    "lns" : "14,16,18",
+    "annotations" : [ ]
+  }, {
+    "name" : "getLineLength",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22,24,25,26,27,28,30,32",
+    "annotations" : [ ]
+  }, {
+    "name" : "getCurrentCountryName",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "36,37",
+    "annotations" : [ ]
+  }, {
+    "name" : "getCountry",
+    "desc" : "(Ljava/lang/String;Z)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "41,42,43,45",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/io/Reader;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "49,50,53,54,56",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 2012096019,
+  "name" : "examples/flowanalysis/np/MessageFormatter",
+  "src" : "MessageFormatter.java",
+  "crc" : 544631034,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6",
+    "annotations" : [ ]
+  }, {
+    "name" : "printMessage",
+    "desc" : "(Lexamples/flowanalysis/np/DatabaseObject;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "9,10",
+    "annotations" : [ ]
+  }, {
+    "name" : "printMessage",
+    "desc" : "(Ljava/lang/Object;Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "13,14",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -281394042,
+  "name" : "examples/flowanalysis/np/MyDictionary",
+  "src" : "MyDictionary.java",
+  "crc" : 1522037246,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 9,
+    "lns" : "9,11",
+    "annotations" : [ ]
+  }, {
+    "name" : "putToDictionary",
+    "desc" : "(Ljava/lang/Object;Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15,16,18,19",
+    "annotations" : [ ]
+  }, {
+    "name" : "getFromDictionary",
+    "desc" : "(Ljava/lang/Object;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "22",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1543762970,
+  "name" : "examples/flowanalysis/np/NullPointer",
+  "src" : "NullPointer.java",
+  "crc" : 3387635309,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7,9",
+    "annotations" : [ ]
+  }, {
+    "name" : "getLineLength",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "12,13,15,16,17,18,20,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/io/Reader;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "27,28,30",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1858346945,
+  "name" : "examples/flowanalysis/SQLInjection",
+  "src" : "SQLInjection.java",
+  "crc" : 2278149717,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 10,
+    "lns" : "10",
+    "annotations" : [ ]
+  }, {
+    "name" : "auth",
+    "desc" : "(Ljavax/servlet/http/HttpServletRequest;Ljava/sql/Connection;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "17,18,19,20,21,23,24,25,31,34,35,37",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/sql/ResultSet;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "40,41,44,45,47",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/sql/Statement;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "50,51,54,55,57",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1747271921,
+  "name" : "examples/flowanalysis/SystemInjection",
+  "src" : "SystemInjection.java",
+  "crc" : 2173934230,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 8,
+    "lns" : "8,10",
+    "annotations" : [ ]
+  }, {
+    "name" : "getData",
+    "desc" : "(Ljava/lang/String;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "13",
+    "annotations" : [ ]
+  }, {
+    "name" : "execInjection",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "22,23,24",
+    "annotations" : [ ]
+  }, {
+    "name" : "environmentInjection",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "31,32,33",
+    "annotations" : [ ]
+  }, {
+    "name" : "libraryInjection",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "41,42,43",
+    "annotations" : [ ]
+  }, {
+    "name" : "reflectionInjection",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "48,49,50",
+    "annotations" : [ ]
+  }, {
+    "name" : "processValue",
+    "desc" : "(Ljava/lang/String;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "chooseLibrary",
+    "desc" : "(Ljava/lang/String;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1629748774,
+  "name" : "examples/flowanalysis/UnreachableCode",
+  "src" : "UnreachableCode.java",
+  "crc" : 2672939727,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6",
+    "annotations" : [ ]
+  }, {
+    "name" : "printCalculationResult",
+    "desc" : "(Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "9,10,11,13,14,15,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "guessFigure",
+    "desc" : "(ZZ)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22,23,24,25,26,27,28,30,32,33,35,37,39,40,42,43,45,48",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1553175784,
+  "name" : "examples/flowanalysis/UseBeforeInConstructorInitialization$RestrictedUser",
+  "src" : "UseBeforeInConstructorInitialization.java",
+  "crc" : 3272511140,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 31,
+    "lns" : "28,31,32",
+    "annotations" : [ ]
+  }, {
+    "name" : "checkData",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "40,41,44",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1841694132,
+  "name" : "examples/flowanalysis/UseBeforeInConstructorInitialization$User",
+  "src" : "UseBeforeInConstructorInitialization.java",
+  "crc" : 1102606983,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 15,
+    "lns" : "15,16,17,18,19",
+    "annotations" : [ ]
+  }, {
+    "name" : "checkData",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "23",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1336554003,
+  "name" : "examples/flowanalysis/UseBeforeInConstructorInitialization",
+  "src" : "UseBeforeInConstructorInitialization.java",
+  "crc" : 2657473164,
+  "encMet" : null,
+  "inClass" : [ "examples/flowanalysis/UseBeforeInConstructorInitialization$RestrictedUser", "examples/flowanalysis/UseBeforeInConstructorInitialization$User" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1783378132,
+  "name" : "examples/flowanalysis/UseBeforeInitialization$ValueStorage",
+  "src" : "UseBeforeInitialization.java",
+  "crc" : 3966278269,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/flowanalysis/UseBeforeInitialization;)V",
+    "attr" : [ ],
+    "cln" : 55,
+    "lns" : "55",
+    "annotations" : [ ]
+  }, {
+    "name" : "getValue",
+    "desc" : "()Ljava/lang/Object;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "60",
+    "annotations" : [ ]
+  }, {
+    "name" : "setValue",
+    "desc" : "(Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "64,65",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -204026392,
+  "name" : "examples/flowanalysis/UseBeforeInitialization",
+  "src" : "UseBeforeInitialization.java",
+  "crc" : 1358172323,
+  "encMet" : null,
+  "inClass" : [ "examples/flowanalysis/UseBeforeInitialization$ValueStorage" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11",
+    "annotations" : [ ]
+  }, {
+    "name" : "process",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20,22,23,24,25,26,27,28,29,31,32,33,34,37,38,40,41,43",
+    "annotations" : [ ]
+  }, {
+    "name" : "close",
+    "desc" : "(Ljava/io/InputStream;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "50,51,53",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -493044151,
+  "name" : "examples/flowanalysis/WebApplication",
+  "src" : "WebApplication.java",
+  "crc" : 834853600,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 12,
+    "lns" : "12",
+    "annotations" : [ ]
+  }, {
+    "name" : "doPost",
+    "desc" : "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "doGet",
+    "desc" : "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "31,32,33,34,35,36,37,38,39",
+    "annotations" : [ ]
+  }, {
+    "name" : "addHeader",
+    "desc" : "(Ljavax/servlet/ServletOutputStream;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "42,43,44,45",
+    "annotations" : [ ]
+  }, {
+    "name" : "addFooter",
+    "desc" : "(Ljavax/servlet/ServletOutputStream;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "48,49,50",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1595866225,
+  "name" : "examples/flowanalysis/XMLInjection",
+  "src" : "XMLInjection.java",
+  "crc" : 437262507,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 8,
+    "lns" : "8",
+    "annotations" : [ ]
+  }, {
+    "name" : "createXMLDocumentAndStoreData",
+    "desc" : "(Lorg/w3c/dom/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "25,26,27,28,29,30,38",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 11112837,
+  "name" : "examples/junit/ChoosingConstructor",
+  "src" : "ChoosingConstructor.java",
+  "crc" : 80306106,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 21,
+    "lns" : "21,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/Readable;)V",
+    "attr" : [ ],
+    "cln" : 24,
+    "lns" : "24,25,26",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "(Ljava/io/InputStream;)V",
+    "attr" : [ ],
+    "cln" : 29,
+    "lns" : "29,30",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "(Ljava/io/OutputStream;)V",
+    "attr" : [ ],
+    "cln" : 33,
+    "lns" : "33,34",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/Readable;Ljava/io/InputStream;Ljava/io/OutputStream;)V",
+    "attr" : [ ],
+    "cln" : 36,
+    "lns" : "36,37,38,39,40",
+    "annotations" : [ ]
+  }, {
+    "name" : "performAction",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "43,44,45,46",
+    "annotations" : [ ]
+  }, {
+    "name" : "read",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "49,50",
+    "annotations" : [ ]
+  }, {
+    "name" : "getFromStream",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "53,54",
+    "annotations" : [ ]
+  }, {
+    "name" : "putToStream",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "57,58",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1048112522,
+  "name" : "examples/junit/CustomMoney",
+  "src" : "CustomMoney.java",
+  "crc" : 1273955134,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(ILjava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 9,
+    "lns" : "9,10",
+    "annotations" : [ ]
+  }, {
+    "name" : "changeCurrency",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "13,14",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1968338602,
+  "name" : "examples/junit/IMoney",
+  "src" : "IMoney.java",
+  "crc" : 1141978039,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "add",
+    "desc" : "(Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "addMoney",
+    "desc" : "(Lexamples/junit/Money;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "addMoneyBag",
+    "desc" : "(Lexamples/junit/MoneyBag;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "isZero",
+    "desc" : "()Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "multiply",
+    "desc" : "(I)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "negate",
+    "desc" : "()Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "subtract",
+    "desc" : "(Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "appendTo",
+    "desc" : "(Lexamples/junit/MoneyBag;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1987392546,
+  "name" : "examples/junit/IntegerComparator",
+  "src" : "IntegerComparator.java",
+  "crc" : 3617275306,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 9,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "isGreater",
+    "desc" : "(II)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "13",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 803204903,
+  "name" : "examples/junit/Money",
+  "src" : "Money.java",
+  "crc" : 1674700284,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(ILjava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 16,
+    "lns" : "16,17,18,19",
+    "annotations" : [ ]
+  }, {
+    "name" : "add",
+    "desc" : "(Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "25",
+    "annotations" : [ ]
+  }, {
+    "name" : "addMoney",
+    "desc" : "(Lexamples/junit/Money;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29,30,31",
+    "annotations" : [ ]
+  }, {
+    "name" : "addMoneyBag",
+    "desc" : "(Lexamples/junit/MoneyBag;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "35",
+    "annotations" : [ ]
+  }, {
+    "name" : "amount",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "39",
+    "annotations" : [ ]
+  }, {
+    "name" : "currency",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "43",
+    "annotations" : [ ]
+  }, {
+    "name" : "equals",
+    "desc" : "(Ljava/lang/Object;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "48,49,50,51,52,53,55",
+    "annotations" : [ ]
+  }, {
+    "name" : "hashCode",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "60,61,62",
+    "annotations" : [ ]
+  }, {
+    "name" : "isZero",
+    "desc" : "()Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "66",
+    "annotations" : [ ]
+  }, {
+    "name" : "multiply",
+    "desc" : "(I)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "70",
+    "annotations" : [ ]
+  }, {
+    "name" : "negate",
+    "desc" : "()Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "74",
+    "annotations" : [ ]
+  }, {
+    "name" : "subtract",
+    "desc" : "(Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "78",
+    "annotations" : [ ]
+  }, {
+    "name" : "toString",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "83,84,85",
+    "annotations" : [ ]
+  }, {
+    "name" : "appendTo",
+    "desc" : "(Lexamples/junit/MoneyBag;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "89,90",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -822599770,
+  "name" : "examples/junit/MoneyBag",
+  "src" : "MoneyBag.java",
+  "crc" : 712617875,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 16,
+    "lns" : "16,18",
+    "annotations" : [ ]
+  }, {
+    "name" : "create",
+    "desc" : "(Lexamples/junit/IMoney;Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22,23,24",
+    "annotations" : [ ]
+  }, {
+    "name" : "add",
+    "desc" : "(Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "28",
+    "annotations" : [ ]
+  }, {
+    "name" : "addMoney",
+    "desc" : "(Lexamples/junit/Money;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "32",
+    "annotations" : [ ]
+  }, {
+    "name" : "addMoneyBag",
+    "desc" : "(Lexamples/junit/MoneyBag;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "36",
+    "annotations" : [ ]
+  }, {
+    "name" : "appendBag",
+    "desc" : "(Lexamples/junit/MoneyBag;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "40,41,42",
+    "annotations" : [ ]
+  }, {
+    "name" : "appendMoney",
+    "desc" : "(Lexamples/junit/Money;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "45,46,47,48,49,50,52,53,54,55,56,57",
+    "annotations" : [ ]
+  }, {
+    "name" : "equals",
+    "desc" : "(Ljava/lang/Object;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "61,62,63,64,65,66,67,68,69,70,71,73",
+    "annotations" : [ ]
+  }, {
+    "name" : "findMoney",
+    "desc" : "(Ljava/lang/String;)Lexamples/junit/Money;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "77,78,79,80",
+    "annotations" : [ ]
+  }, {
+    "name" : "contains",
+    "desc" : "(Lexamples/junit/Money;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "84,85,86,87",
+    "annotations" : [ ]
+  }, {
+    "name" : "hashCode",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "92,93,94,95",
+    "annotations" : [ ]
+  }, {
+    "name" : "isZero",
+    "desc" : "()Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "99",
+    "annotations" : [ ]
+  }, {
+    "name" : "multiply",
+    "desc" : "(I)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "103,104,105,106,107",
+    "annotations" : [ ]
+  }, {
+    "name" : "negate",
+    "desc" : "()Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "111,112,113,114",
+    "annotations" : [ ]
+  }, {
+    "name" : "simplify",
+    "desc" : "()Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "118,119,120",
+    "annotations" : [ ]
+  }, {
+    "name" : "subtract",
+    "desc" : "(Lexamples/junit/IMoney;)Lexamples/junit/IMoney;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "124",
+    "annotations" : [ ]
+  }, {
+    "name" : "toString",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "129,130,131,132,133,134",
+    "annotations" : [ ]
+  }, {
+    "name" : "appendTo",
+    "desc" : "(Lexamples/junit/MoneyBag;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "138,139",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 75507444,
+  "name" : "examples/junit/NaiveStringBuilder",
+  "src" : "NaiveStringBuilder.java",
+  "crc" : 4054971629,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11,12,13",
+    "annotations" : [ ]
+  }, {
+    "name" : "createInstance",
+    "desc" : "(Ljava/lang/String;)Lexamples/junit/NaiveStringBuilder;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "16",
+    "annotations" : [ ]
+  }, {
+    "name" : "append",
+    "desc" : "(Ljava/lang/String;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20,21,23,24",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -838952385,
+  "name" : "examples/junit/SimpleObjectHandler",
+  "src" : "SimpleObjectHandler.java",
+  "crc" : 497139125,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/Object;)V",
+    "attr" : [ ],
+    "cln" : 18,
+    "lns" : "18,19,20",
+    "annotations" : [ ]
+  }, {
+    "name" : "getList",
+    "desc" : "()Ljava/util/Collection;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "23,24",
+    "annotations" : [ ]
+  }, {
+    "name" : "getMap",
+    "desc" : "()Ljava/util/Map;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "28,29",
+    "annotations" : [ ]
+  }, {
+    "name" : "getString",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "33",
+    "annotations" : [ ]
+  }, {
+    "name" : "getElement",
+    "desc" : "()Ljava/lang/Object;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 739176607,
+  "name" : "examples/metrics/MetricsExample",
+  "src" : "MetricsExample.java",
+  "crc" : 4180851136,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11",
+    "annotations" : [ ]
+  }, {
+    "name" : "collectErrorCodesFromFiles",
+    "desc" : "([Ljava/io/File;)Ljava/util/Set;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15,16,17,18,20,21,22,23,24,25,26,27,29,30,31,32,37,38,39,42,44,46,50",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 222282131,
+  "name" : "examples/mock/CharacterReader$1ReadableHandler",
+  "src" : "CharacterReader.java",
+  "crc" : 1552796192,
+  "encMet" : "prepareCharBuffer#(Ljava/io/Reader;)Ljava/nio/CharBuffer;",
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/mock/CharacterReader;)V",
+    "attr" : [ ],
+    "cln" : 46,
+    "lns" : "46",
+    "annotations" : [ ]
+  }, {
+    "name" : "read",
+    "desc" : "(Ljava/lang/Readable;)Ljava/nio/CharBuffer;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "49,50,51",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -883157560,
+  "name" : "examples/mock/CharacterReader",
+  "src" : "CharacterReader.java",
+  "crc" : 2955847955,
+  "encMet" : null,
+  "inClass" : [ "examples/mock/CharacterReader$1ReadableHandler" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11",
+    "annotations" : [ ]
+  }, {
+    "name" : "read",
+    "desc" : "(Ljava/io/Reader;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "readString",
+    "desc" : "(Ljava/io/Reader;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20,22,23,24,25,26,31,32,33,35,39,40,42",
+    "annotations" : [ ]
+  }, {
+    "name" : "prepareCharBuffer",
+    "desc" : "(Ljava/io/Reader;)Ljava/nio/CharBuffer;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "54,55",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1387565339,
+  "name" : "examples/mock/FileExample",
+  "src" : "FileExample.java",
+  "crc" : 779948495,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11",
+    "annotations" : [ ]
+  }, {
+    "name" : "analyze",
+    "desc" : "(Ljava/io/File;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15,16,17,18,19,20,21,22,23",
+    "annotations" : [ ]
+  }, {
+    "name" : "isOversize",
+    "desc" : "(Ljava/lang/String;J)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29,30,31,32",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1876781364,
+  "name" : "examples/mock/Interpreter",
+  "src" : "Interpreter.java",
+  "crc" : 718185801,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/io/InputStream;)V",
+    "attr" : [ ],
+    "cln" : 14,
+    "lns" : "14,15,16",
+    "annotations" : [ ]
+  }, {
+    "name" : "getNext",
+    "desc" : "()Ljava/lang/Integer;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "19,20,21,22,23,24,25,26,27,28,29",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 576143748,
+  "name" : "examples/mock/MultiSourceCharacterReader",
+  "src" : "MultiSourceCharacterReader.java",
+  "crc" : 1662503988,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/Readable;)V",
+    "attr" : [ ],
+    "cln" : 21,
+    "lns" : "21,22,23",
+    "annotations" : [ ]
+  }, {
+    "name" : "initialize",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "26,27",
+    "annotations" : [ ]
+  }, {
+    "name" : "performAction",
+    "desc" : "(Ljava/nio/CharBuffer;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "30,31,32,33",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 612924750,
+  "name" : "examples/mock/PathUtil",
+  "src" : "PathUtil.java",
+  "crc" : 1292229364,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 12,
+    "lns" : "12",
+    "annotations" : [ ]
+  }, {
+    "name" : "getFileLength",
+    "desc" : "(Ljava/lang/String;)J",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1613644121,
+  "name" : "examples/nbank/AbstractTransaction",
+  "src" : "AbstractTransaction.java",
+  "crc" : 3000780290,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 10,
+    "lns" : "10,11,12,13",
+    "annotations" : [ ]
+  }, {
+    "name" : "fee",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "16",
+    "annotations" : [ ]
+  }, {
+    "name" : "isTransactionAvailable",
+    "desc" : "()Ljava/lang/Boolean;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 302025534,
+  "name" : "examples/nbank/Account",
+  "src" : "Account.java",
+  "crc" : 4127667263,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<clinit>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "116",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "(Lexamples/nbank/Customer;I)V",
+    "attr" : [ ],
+    "cln" : 24,
+    "lns" : "24,25,26,27,28,29,30,31",
+    "annotations" : [ ]
+  }, {
+    "name" : "setAccountStatus",
+    "desc" : "(I)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "34,35,36,37,39",
+    "annotations" : [ ]
+  }, {
+    "name" : "reportToCreditAgency",
+    "desc" : "(Lexamples/nbank/ICreditAgency;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "47,48,49",
+    "annotations" : [ ]
+  }, {
+    "name" : "getID",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "54",
+    "annotations" : [ ]
+  }, {
+    "name" : "getCustomer",
+    "desc" : "()Lexamples/nbank/Customer;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "58",
+    "annotations" : [ ]
+  }, {
+    "name" : "getBalance",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "62",
+    "annotations" : [ ]
+  }, {
+    "name" : "getStatus",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "66",
+    "annotations" : [ ]
+  }, {
+    "name" : "setBalance",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "70,71,72,73,74,75,76,78",
+    "annotations" : [ ]
+  }, {
+    "name" : "isOverdrawn",
+    "desc" : "(I)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "81,82,83,85,86,87,88,89,90,92,93,94,95,96",
+    "annotations" : [ ]
+  }, {
+    "name" : "apply",
+    "desc" : "(Lexamples/nbank/ITransaction;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "105,106,108",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -893790044,
+  "name" : "examples/nbank/Bank",
+  "src" : "Bank.java",
+  "crc" : 2765952102,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<clinit>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "16,18",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 20,
+    "lns" : "14,20,21,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "initialize",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "25,26,27,28,29,30,31",
+    "annotations" : [ ]
+  }, {
+    "name" : "addAccount",
+    "desc" : "(Lexamples/nbank/Account;)Ljava/lang/Boolean;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "34,35,37,38,39",
+    "annotations" : [ ]
+  }, {
+    "name" : "closeAccounts",
+    "desc" : "(Ljava/util/List;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "43,44,45,46,47,48,50",
+    "annotations" : [ ]
+  }, {
+    "name" : "getAccount",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)Lexamples/nbank/Account;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "53,54,55,57,59,61,62,64",
+    "annotations" : [ ]
+  }, {
+    "name" : "isMaintenanceMode",
+    "desc" : "()Ljava/lang/Boolean;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "68",
+    "annotations" : [ ]
+  }, {
+    "name" : "startMaintenance",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "72,73",
+    "annotations" : [ ]
+  }, {
+    "name" : "endMaintenance",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "76,77",
+    "annotations" : [ ]
+  }, {
+    "name" : "setAccountsLimit",
+    "desc" : "(Ljava/lang/Integer;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "80,81",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -797687865,
+  "name" : "examples/nbank/BankState",
+  "src" : "BankState.java",
+  "crc" : 981348324,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 3,
+    "lns" : "3",
+    "annotations" : [ ]
+  }, {
+    "name" : "isMaintenanceMode",
+    "desc" : "()Ljava/lang/Boolean;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "8,9,10,12",
+    "annotations" : [ ]
+  }, {
+    "name" : "startMaintenance",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "16,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "endMaintenance",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "20,21",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1282541445,
+  "name" : "examples/nbank/ConnectionException",
+  "src" : "ConnectionException.java",
+  "crc" : 2647073713,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 6,
+    "lns" : "6,7",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -968863958,
+  "name" : "examples/nbank/CreditCard",
+  "src" : "CreditCard.java",
+  "crc" : 1635323239,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<clinit>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "13,15,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 42,
+    "lns" : "42,43,44,45,46,47,48,49,50,51",
+    "annotations" : [ ]
+  }, {
+    "name" : "validate",
+    "desc" : "()Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "58,59,60",
+    "annotations" : [ ]
+  }, {
+    "name" : "validate",
+    "desc" : "([ILjava/lang/String;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "70,71,72,74,75,77,78,79,82",
+    "annotations" : [ ]
+  }, {
+    "name" : "displayStatement",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "89,90,91,92,93",
+    "annotations" : [ ]
+  }, {
+    "name" : "makePayment",
+    "desc" : "(Lexamples/nbank/Account;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "104,105,106,107,108",
+    "annotations" : [ ]
+  }, {
+    "name" : "get_creditCardNumber",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "114",
+    "annotations" : [ ]
+  }, {
+    "name" : "set_creditCardNumber",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "122,123",
+    "annotations" : [ ]
+  }, {
+    "name" : "get_currentBalance",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "129",
+    "annotations" : [ ]
+  }, {
+    "name" : "set_currentBalance",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "137,138",
+    "annotations" : [ ]
+  }, {
+    "name" : "get_customerId",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "144",
+    "annotations" : [ ]
+  }, {
+    "name" : "set_customerId",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "152,153",
+    "annotations" : [ ]
+  }, {
+    "name" : "get_customerName",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "159",
+    "annotations" : [ ]
+  }, {
+    "name" : "set_customerName",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "167,168",
+    "annotations" : [ ]
+  }, {
+    "name" : "get_socialSecurityNumber",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "174",
+    "annotations" : [ ]
+  }, {
+    "name" : "set_socialSecurityNumber",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "182,183",
+    "annotations" : [ ]
+  }, {
+    "name" : "get_zipcode",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "189",
+    "annotations" : [ ]
+  }, {
+    "name" : "set_zipcode",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "197,198",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 712150342,
+  "name" : "examples/nbank/Customer",
+  "src" : "Customer.java",
+  "crc" : 2038339345,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 22,
+    "lns" : "22,23,24,25,26,27,28,29",
+    "annotations" : [ ]
+  }, {
+    "name" : "getName",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "32",
+    "annotations" : [ ]
+  }, {
+    "name" : "getSSN",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "36",
+    "annotations" : [ ]
+  }, {
+    "name" : "setName",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "40,41",
+    "annotations" : [ ]
+  }, {
+    "name" : "setSSN",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "44,45",
+    "annotations" : [ ]
+  }, {
+    "name" : "toStrng",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "48",
+    "annotations" : [ ]
+  }, {
+    "name" : "equals",
+    "desc" : "(Ljava/lang/Object;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "53,54,55,56,57,61",
+    "annotations" : [ ]
+  }, {
+    "name" : "hashCode",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "66",
+    "annotations" : [ ]
+  }, {
+    "name" : "loadCustomer",
+    "desc" : "()Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "70,71,72,74,75,76,77,78,79,80,81,84,85,86,87,88,89,90,91,92,94",
+    "annotations" : [ ]
+  }, {
+    "name" : "main",
+    "desc" : "([Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "98,99,100,101,102,103,105",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 699401627,
+  "name" : "examples/nbank/DepositTransaction",
+  "src" : "DepositTransaction.java",
+  "crc" : 897318460,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : 10,
+    "lns" : "10,11,12",
+    "annotations" : [ ]
+  }, {
+    "name" : "apply",
+    "desc" : "(Lexamples/nbank/Account;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15,16,17,18,20",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 562751628,
+  "name" : "examples/nbank/ICreditAgency",
+  "src" : "ICreditAgency.java",
+  "crc" : 346396818,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "report",
+    "desc" : "(Lexamples/nbank/Account;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -969062112,
+  "name" : "examples/nbank/ITransaction",
+  "src" : "ITransaction.java",
+  "crc" : 3881652113,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "fee",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "apply",
+    "desc" : "(Lexamples/nbank/Account;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1899178847,
+  "name" : "examples/nbank/LogAccountInfo$LoggingThread",
+  "src" : "LogAccountInfo.java",
+  "crc" : 4294362837,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/nbank/LogAccountInfo;Lexamples/nbank/Account;)V",
+    "attr" : [ ],
+    "cln" : 31,
+    "lns" : "31,32,33,34",
+    "annotations" : [ ]
+  }, {
+    "name" : "run",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37,38,40,41,42,43,44,46",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -793489726,
+  "name" : "examples/nbank/LogAccountInfo",
+  "src" : "LogAccountInfo.java",
+  "crc" : 2052146504,
+  "encMet" : null,
+  "inClass" : [ "examples/nbank/LogAccountInfo$LoggingThread" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 18,
+    "lns" : "18,19,20",
+    "annotations" : [ ]
+  }, {
+    "name" : "log",
+    "desc" : "(Lexamples/nbank/Account;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "23,24",
+    "annotations" : [ ]
+  }, {
+    "name" : "access$0",
+    "desc" : "(Lexamples/nbank/LogAccountInfo;)Ljava/io/File;",
+    "attr" : [ "SYNTHETIC" ],
+    "cln" : -1,
+    "lns" : "16",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1282574582,
+  "name" : "examples/nbank/WithdrawalTransaction",
+  "src" : "WithdrawalTransaction.java",
+  "crc" : 1865671903,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : 12,
+    "lns" : "12,13,14,15,16",
+    "annotations" : [ ]
+  }, {
+    "name" : "apply",
+    "desc" : "(Lexamples/nbank/Account;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "19,20",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1510636155,
+  "name" : "examples/queue/EmptyQueueException",
+  "src" : "Queue.java",
+  "crc" : 476940265,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 82,
+    "lns" : "82",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 898137499,
+  "name" : "examples/queue/Queue$QueueItem",
+  "src" : "Queue.java",
+  "crc" : 2763180082,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/queue/Queue;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 60,
+    "lns" : "60,61,62",
+    "annotations" : [ ]
+  }, {
+    "name" : "getItem",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "65",
+    "annotations" : [ ]
+  }, {
+    "name" : "getNext",
+    "desc" : "()Lexamples/queue/Queue$QueueItem;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "69",
+    "annotations" : [ ]
+  }, {
+    "name" : "setNext",
+    "desc" : "(Lexamples/queue/Queue$QueueItem;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "73,74",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -201384252,
+  "name" : "examples/queue/Queue",
+  "src" : "Queue.java",
+  "crc" : 516399431,
+  "encMet" : null,
+  "inClass" : [ "examples/queue/Queue$QueueItem" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 5,
+    "lns" : "5,6,7,8",
+    "annotations" : [ ]
+  }, {
+    "name" : "add",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "11,12,13,14,15,16,17,19",
+    "annotations" : [ ]
+  }, {
+    "name" : "remove",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "28,29,30",
+    "annotations" : [ ]
+  }, {
+    "name" : "isEmpty",
+    "desc" : "()Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "34",
+    "annotations" : [ ]
+  }, {
+    "name" : "removeAll",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "38,39,40",
+    "annotations" : [ ]
+  }, {
+    "name" : "toString",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "44,45,46,47,48,50,51",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -54429504,
+  "name" : "examples/security/InputValidation",
+  "src" : "InputValidation.java",
+  "crc" : 1972936404,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 57,
+    "lns" : "57",
+    "annotations" : [ ]
+  }, {
+    "name" : "doGet",
+    "desc" : "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "63,65,66,70,71,74,76,77",
+    "annotations" : [ ]
+  }, {
+    "name" : "authorize",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "83,84,89,90,91,92,94,97,98,100",
+    "annotations" : [ ]
+  }, {
+    "name" : "validate",
+    "desc" : "(Ljava/lang/String;)Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "112,113,115",
+    "annotations" : [ ]
+  }, {
+    "name" : "logInvalidLogin",
+    "desc" : "(Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "120,121,122,123,126",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1518219991,
+  "name" : "examples/servlets/ExampleServlet",
+  "src" : "ExampleServlet.java",
+  "crc" : 2027748121,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 15,
+    "lns" : "15",
+    "annotations" : [ ]
+  }, {
+    "name" : "doGet",
+    "desc" : "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "19,20,21,23,24",
+    "annotations" : [ ]
+  }, {
+    "name" : "tryThis",
+    "desc" : "(Ljavax/servlet/ServletContext;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "27,28,29,30,31,32,33,34,36,37,38,39,41",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1775037425,
+  "name" : "examples/stackmachine/AbstractStackMachine",
+  "src" : "AbstractStackMachine.java",
+  "crc" : 636156810,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 11,
+    "lns" : "11",
+    "annotations" : [ ]
+  }, {
+    "name" : "add",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "23,24,25,26,27",
+    "annotations" : [ ]
+  }, {
+    "name" : "subtract",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "40,41,42,43,44",
+    "annotations" : [ ]
+  }, {
+    "name" : "multiply",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "57,58,59,62,63",
+    "annotations" : [ ]
+  }, {
+    "name" : "divide",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "76,77,78,79,80",
+    "annotations" : [ ]
+  }, {
+    "name" : "at",
+    "desc" : "(I)I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "91",
+    "annotations" : [ ]
+  }, {
+    "name" : "isInteger",
+    "desc" : "(Ljava/lang/String;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "103,104,105,106",
+    "annotations" : [ ]
+  }, {
+    "name" : "popInt",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "pushInt",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1775877930,
+  "name" : "examples/stackmachine/CommandLineStackMachine",
+  "src" : "CommandLineStackMachine.java",
+  "crc" : 2763893569,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<clinit>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "15",
+    "annotations" : [ ]
+  }, {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 13,
+    "lns" : "13",
+    "annotations" : [ ]
+  }, {
+    "name" : "displayMenu",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "18,19,20,21,22,23,24,25,26",
+    "annotations" : [ ]
+  }, {
+    "name" : "getStack",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "34",
+    "annotations" : [ ]
+  }, {
+    "name" : "nextCommand",
+    "desc" : "()Ljava/lang/String;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "43,44,46,47,48,49",
+    "annotations" : [ ]
+  }, {
+    "name" : "processCommand",
+    "desc" : "(Ljava/lang/String;)Z",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "61,62,63,65,66,67,68,69,70,71,72,73,74,75,76,77,79,80,81,82,85",
+    "annotations" : [ ]
+  }, {
+    "name" : "main",
+    "desc" : "([Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "96,97,98,101,104,105,106,107,108",
+    "annotations" : [ ]
+  }, {
+    "name" : "autoMode",
+    "desc" : "([Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "112,113,114,115,118,119,120,121,124,126,127,128,129,130,132,133",
+    "annotations" : [ ]
+  }, {
+    "name" : "printUsage",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "137,138,139,140,141,142,143,144,146",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1530960759,
+  "name" : "examples/stackmachine/CustomListRenderer",
+  "src" : "CustomListRenderer.java",
+  "crc" : 568196570,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 15,
+    "lns" : "15,17",
+    "annotations" : [ ]
+  }, {
+    "name" : "paint",
+    "desc" : "(Ljava/awt/Graphics;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "24,25,26,27,28,29",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1023330399,
+  "name" : "examples/stackmachine/FifoStackMachine",
+  "src" : "FifoStackMachine.java",
+  "crc" : 1978611748,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7",
+    "annotations" : [ ]
+  }, {
+    "name" : "push",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15",
+    "annotations" : [ ]
+  }, {
+    "name" : "pop",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "popInt",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29",
+    "annotations" : [ ]
+  }, {
+    "name" : "pushInt",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37,38",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1210975969,
+  "name" : "examples/stackmachine/LifoStackMachine",
+  "src" : "LifoStackMachine.java",
+  "crc" : 2039407316,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 7,
+    "lns" : "7",
+    "annotations" : [ ]
+  }, {
+    "name" : "push",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "14,15",
+    "annotations" : [ ]
+  }, {
+    "name" : "pop",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "21,22",
+    "annotations" : [ ]
+  }, {
+    "name" : "popInt",
+    "desc" : "()I",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "29",
+    "annotations" : [ ]
+  }, {
+    "name" : "pushInt",
+    "desc" : "(I)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37,38",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -137905085,
+  "name" : "examples/stackmachine/RunnableStackMachine$AddButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 3205604348,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 323,
+    "lns" : "323,324,325,326",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "329,330",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 233111947,
+  "name" : "examples/stackmachine/RunnableStackMachine$DivideButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 253969652,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 359,
+    "lns" : "359,360,361,362",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "365,366",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -610702107,
+  "name" : "examples/stackmachine/RunnableStackMachine$FifoRadioButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 2110165,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 284,
+    "lns" : "284,285,286,287,288",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "291,292,293,294",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -411604362,
+  "name" : "examples/stackmachine/RunnableStackMachine$ImageButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 2248523024,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : 371,
+    "lns" : "371,372,373,374,375,376,377,378,379",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1574480364,
+  "name" : "examples/stackmachine/RunnableStackMachine$LifoRadioButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 439053157,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 268,
+    "lns" : "268,269,270,271,272,273",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "276,277,278,279",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1712881510,
+  "name" : "examples/stackmachine/RunnableStackMachine$MultiplyButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 2308933857,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 347,
+    "lns" : "347,348,349,350",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "353,354",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -467837529,
+  "name" : "examples/stackmachine/RunnableStackMachine$PopButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 1545110762,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 311,
+    "lns" : "311,312,313,314",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "317,318",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 507005732,
+  "name" : "examples/stackmachine/RunnableStackMachine$PushButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 3070941339,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 299,
+    "lns" : "299,300,301,302",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "305,306",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -1145477600,
+  "name" : "examples/stackmachine/RunnableStackMachine$PushTextField",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 894676196,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 255,
+    "lns" : "255,256,257,258",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "261,262,263",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1685562634,
+  "name" : "examples/stackmachine/RunnableStackMachine$SubtractButton",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 1578532382,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 335,
+    "lns" : "335,336,337,338",
+    "annotations" : [ ]
+  }, {
+    "name" : "actionPerformed",
+    "desc" : "(Ljava/awt/event/ActionEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "341,342",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 1739722953,
+  "name" : "examples/stackmachine/RunnableStackMachine",
+  "src" : "RunnableStackMachine.java",
+  "crc" : 1335010426,
+  "encMet" : null,
+  "inClass" : [ "examples/stackmachine/RunnableStackMachine$AddButton", "examples/stackmachine/RunnableStackMachine$DivideButton", "examples/stackmachine/RunnableStackMachine$FifoRadioButton", "examples/stackmachine/RunnableStackMachine$ImageButton", "examples/stackmachine/RunnableStackMachine$LifoRadioButton", "examples/stackmachine/RunnableStackMachine$MultiplyButton", "examples/stackmachine/RunnableStackMachine$PopButton", "examples/stackmachine/RunnableStackMachine$PushButton", "examples/stackmachine/RunnableStackMachine$PushTextField", "examples/stackmachine/RunnableStackMachine$SubtractButton" ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 36,
+    "lns" : "36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowActivated",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "67",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowClosed",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "70",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowClosing",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "73,74",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowDeactivated",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "77",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowDeiconified",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "80",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowIconified",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "83",
+    "annotations" : [ ]
+  }, {
+    "name" : "windowOpened",
+    "desc" : "(Ljava/awt/event/WindowEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "86",
+    "annotations" : [ ]
+  }, {
+    "name" : "componentHidden",
+    "desc" : "(Ljava/awt/event/ComponentEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "89",
+    "annotations" : [ ]
+  }, {
+    "name" : "componentMoved",
+    "desc" : "(Ljava/awt/event/ComponentEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "92",
+    "annotations" : [ ]
+  }, {
+    "name" : "componentResized",
+    "desc" : "(Ljava/awt/event/ComponentEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "95,96",
+    "annotations" : [ ]
+  }, {
+    "name" : "componentShown",
+    "desc" : "(Ljava/awt/event/ComponentEvent;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "99",
+    "annotations" : [ ]
+  }, {
+    "name" : "createStackPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118",
+    "annotations" : [ ]
+  }, {
+    "name" : "createStackButtonPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137",
+    "annotations" : [ ]
+  }, {
+    "name" : "createInputPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161",
+    "annotations" : [ ]
+  }, {
+    "name" : "createApiPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "165,166,167,168,169,170",
+    "annotations" : [ ]
+  }, {
+    "name" : "createOperationButtonsPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193",
+    "annotations" : [ ]
+  }, {
+    "name" : "createInputFieldsPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "197,198,199,200,201,202,203,204,205,206",
+    "annotations" : [ ]
+  }, {
+    "name" : "createRadioOptionsPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230",
+    "annotations" : [ ]
+  }, {
+    "name" : "createPushPanel",
+    "desc" : "()Ljavax/swing/JPanel;",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250",
+    "annotations" : [ ]
+  }, {
+    "name" : "main",
+    "desc" : "([Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "392,393,394,395",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -427809161,
+  "name" : "examples/stackmachine/StackInterface",
+  "src" : "StackInterface.java",
+  "crc" : 961127630,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "push",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  }, {
+    "name" : "pop",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : 213226095,
+  "name" : "examples/stackmachine/StackList",
+  "src" : "StackList.java",
+  "crc" : 125894590,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "(Lexamples/stackmachine/RunnableStackMachine;)V",
+    "attr" : [ ],
+    "cln" : 17,
+    "lns" : "17,18,19,20,21,22,23,24,25,95,97,99",
+    "annotations" : [ ]
+  }, {
+    "name" : "updateModel",
+    "desc" : "(Z)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "28,29,30,31,33,34",
+    "annotations" : [ ]
+  }, {
+    "name" : "updateStackSizeLabel",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "37,38",
+    "annotations" : [ ]
+  }, {
+    "name" : "push",
+    "desc" : "(Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "41,42,43,44",
+    "annotations" : [ ]
+  }, {
+    "name" : "pop",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "47,48,49,50",
+    "annotations" : [ ]
+  }, {
+    "name" : "add",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "53,54,55,56",
+    "annotations" : [ ]
+  }, {
+    "name" : "subtract",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "59,60,61,62",
+    "annotations" : [ ]
+  }, {
+    "name" : "multiply",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "65,66,67,68",
+    "annotations" : [ ]
+  }, {
+    "name" : "divide",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "71,72,73,74",
+    "annotations" : [ ]
+  }, {
+    "name" : "adjustScroll",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "77,78,79,80,81,82,83,84,85,86,87,88,89,90,92,93",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -490338111,
+  "name" : "examples/suppress/AllFileSuppress",
+  "src" : "AllFileSuppress.java",
+  "crc" : 2320963083,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 4,
+    "lns" : "4",
+    "annotations" : [ ]
+  }, {
+    "name" : "main",
+    "desc" : "([Ljava/lang/String;)V",
+    "attr" : [ ],
+    "cln" : -1,
+    "lns" : "7,8,9,10,11",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+}, {
+  "id" : -488916111,
+  "name" : "examples/suppress/Example",
+  "src" : "Example.java",
+  "crc" : 1722949509,
+  "encMet" : null,
+  "inClass" : [ ],
+  "attr" : [ ],
+  "methods" : [ {
+    "name" : "<init>",
+    "desc" : "()V",
+    "attr" : [ ],
+    "cln" : 3,
+    "lns" : "3",
+    "annotations" : [ ]
+  } ],
+  "annotations" : [ ]
+} ]

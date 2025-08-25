@@ -36,9 +36,9 @@ jobs:
       run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
 
     # Runs code analysis with Jtest.
-    - name: Run Jtest
-      id: jtest
-      uses: parasoft/run-jtest-action@2.0.2
-      with:
-        #Uses the jtest.data.json generated with the Gradle command in the previous step
-        input: build/jtest/jtest.data.json
+    #- name: Run Jtest
+    #  id: jtest
+    #  uses: parasoft/run-jtest-action@2.0.2
+    #  with:
+    #    #Uses the jtest.data.json generated with the Gradle command in the previous step
+    #    input: build/jtest/jtest.data.json

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examples.junit.NaiveStringBuilderParameterizedTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2025-08-25T11:26:55" hostname="STINGER" time="0.01">
+  <properties/>
+  <testcase name="testAppend( , 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890) [0]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.001"/>
+  <testcase name="testAppend(, hello world) [1]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.0"/>
+  <testcase name="testAppend(hello world,  ) [2]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.0"/>
+  <testcase name="testAppend(01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890, null) [3]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.007">
+    <failure message="java.lang.IllegalArgumentException" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException
+	at examples.junit.NaiveStringBuilder.append(NaiveStringBuilder.java:21)
+	at examples.junit.NaiveStringBuilderParameterizedTest.testAppend(NaiveStringBuilderParameterizedTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at junitparams.internal.InvokeParameterisedMethod.evaluate(InvokeParameterisedMethod.java:234)
+	at junitparams.internal.ParameterisedTestMethodRunner.runMethodInvoker(ParameterisedTestMethodRunner.java:47)
+	at junitparams.internal.ParameterisedTestMethodRunner.runTestMethod(ParameterisedTestMethodRunner.java:40)
+	at junitparams.internal.ParameterisedTestClassRunner.runParameterisedTest(ParameterisedTestClassRunner.java:146)
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:446)
+	at junitparams.JUnitParamsRunner.runChild(JUnitParamsRunner.java:393)
+</failure>
+  </testcase>
+  <testcase name="testAppend(null, ) [4]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

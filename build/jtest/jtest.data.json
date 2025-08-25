@@ -1,0 +1,415 @@
+{
+  "name": "com.parasoft:demo",
+  "location": "D:\\workspace\\github\\demo\\build.gradle",
+  "type": "classpath_project",
+  "build_id": "2025.1.1.F202506051331",
+  "schema_version": "1.5",
+  "testoutcomes": [
+    {
+      "type": "junit.listener",
+      "files": [
+        "D:\\workspace\\github\\demo\\build\\jtest-agent\\unit_test_data"
+      ]
+    },
+    {
+      "type": "junit",
+      "files": [
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.servlets.ExampleServletTest.xml",
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.mock.FileExampleTest.xml",
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.mock.InterpreterTest.xml",
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.junit.NaiveStringBuilderParameterizedTest.xml",
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.eval.SimpleTest.xml",
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.junit.MoneyBagParameterizedTest.xml",
+        "D:\\workspace\\github\\demo\\build\\test-results\\test\\TEST-examples.junit.MoneyTest.xml"
+      ]
+    },
+    {
+      "type": "junit",
+      "files": []
+    }
+  ],
+  "compilations": [
+    {
+      "id": "test",
+      "related_project_id": "",
+      "sourcepath": [
+        "D:\\workspace\\github\\demo\\src\\test\\java"
+      ],
+      "resourcepath": [],
+      "includes": [],
+      "excludes": [],
+      "compiler_output_path": [
+        "D:\\workspace\\github\\demo\\build\\classes\\java\\test"
+      ],
+      "classpath_entries": [
+        {
+          "path": "C:\\Program Files\\Java\\jdk-18.0.2.1\\lib\\jrt-fs.jar",
+          "type": "JDK",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\resources\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\javax\\servlet\\servlet-api\\2.4\\servlet-api-2.4.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\hamcrest\\hamcrest\\2.2\\hamcrest-2.2.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\mockito\\mockito-junit-jupiter\\4.11.0\\mockito-junit-jupiter-4.11.0.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\mockito\\mockito-inline\\4.11.0\\mockito-inline-4.11.0.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter\\5.12.1\\junit-jupiter-5.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-migrationsupport\\5.12.1\\junit-jupiter-migrationsupport-5.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.12.1\\junit-vintage-engine-5.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\pl\\pragmatists\\JUnitParams\\1.1.1\\JUnitParams-1.1.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\mockito\\mockito-core\\4.11.0\\mockito-core-4.11.0.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\net\\bytebuddy\\byte-buddy\\1.15.1\\byte-buddy-1.15.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.12.1\\junit-jupiter-params-5.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.12.1\\junit-jupiter-api-5.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\junit\\junit\\4.13.2\\junit-4.13.2.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.12.1\\junit-platform-engine-1.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.12.1\\junit-platform-commons-1.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.2\\apiguardian-api-1.1.2.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\net\\bytebuddy\\byte-buddy-agent\\1.12.19\\byte-buddy-agent-1.12.19.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.3.0\\opentest4j-1.3.0.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\test",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-runner\\1.12.1\\junit-platform-runner-1.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.12.1\\junit-jupiter-engine-5.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-suite-commons\\1.12.1\\junit-platform-suite-commons-1.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-launcher\\1.12.1\\junit-platform-launcher-1.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-suite-api\\1.12.1\\junit-platform-suite-api-1.12.1.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\objenesis\\objenesis\\3.3\\objenesis-3.3.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        }
+      ],
+      "encoding": "UTF-8",
+      "sourcelevel": "1.8",
+      "test_compilation": true
+    },
+    {
+      "id": "main",
+      "related_project_id": "",
+      "sourcepath": [
+        "D:\\workspace\\github\\demo\\src\\main\\java"
+      ],
+      "resourcepath": [
+        "D:\\workspace\\github\\demo\\src\\main\\resources"
+      ],
+      "includes": [],
+      "excludes": [],
+      "compiler_output_path": [
+        "D:\\workspace\\github\\demo\\build\\classes\\java\\main"
+      ],
+      "classpath_entries": [
+        {
+          "path": "C:\\Program Files\\Java\\jdk-18.0.2.1\\lib\\jrt-fs.jar",
+          "type": "JDK",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\javax\\servlet\\servlet-api\\2.4\\servlet-api-2.4.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\resources\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        }
+      ],
+      "encoding": "UTF-8",
+      "sourcelevel": "1.8",
+      "test_compilation": false
+    }
+  ],
+  "extras": {},
+  "generated_by": "Gradle",
+  "generator_version": "8.4",
+  "encoding": "UTF-8"
+}

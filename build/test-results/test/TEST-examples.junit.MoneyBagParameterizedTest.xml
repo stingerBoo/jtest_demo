@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examples.junit.MoneyBagParameterizedTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-08-25T11:26:55" hostname="STINGER" time="0.01">
+  <properties/>
+  <testcase name="testMultiply[Run 0: factor=0]" classname="examples.junit.MoneyBagParameterizedTest" time="0.002"/>
+  <testcase name="testMultiply[Run 1: factor=0]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 2: factor=0]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 3: factor=0]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 4: factor=0]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 5: factor=1]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 6: factor=1]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 7: factor=1]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 8: factor=1]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 9: factor=1]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 10: factor=13]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 11: factor=13]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 12: factor=13]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 13: factor=13]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <testcase name="testMultiply[Run 14: factor=13]" classname="examples.junit.MoneyBagParameterizedTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

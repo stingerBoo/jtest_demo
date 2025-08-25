@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examples.servlets.ExampleServletTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-08-25T11:26:57" hostname="STINGER" time="0.233">
+  <properties/>
+  <testcase name="testTryThis1" classname="examples.servlets.ExampleServletTest" time="0.022"/>
+  <testcase name="testTryThis2" classname="examples.servlets.ExampleServletTest" time="0.178"/>
+  <testcase name="testTryThis3" classname="examples.servlets.ExampleServletTest" time="0.028"/>
+  <testcase name="testTryThis4" classname="examples.servlets.ExampleServletTest" time="0.002"/>
+  <system-out><![CDATA[null
+
+0
+hello world
+5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

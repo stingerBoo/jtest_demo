@@ -2,6 +2,7 @@
  * @author staff This is a class showcasing the ability of Jtest. This code has
  * a number of Coding Standards errors developers commonly make.
  */
+ //
 package examples.eval;
 
 /**
@@ -59,6 +60,7 @@ public class Simple {
      *         if done by hand but is easy for Jtest. It will test tirelessly and
      *         will never get bored of testing.
      */
+	 //
     public static boolean startsWith(String str, String match) {
         for (int i = 0; i < match.length(); ++i)
             if (str.charAt(i) != match.charAt(i))

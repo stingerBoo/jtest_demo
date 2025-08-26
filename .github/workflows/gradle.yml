@@ -34,10 +34,7 @@ jobs:
     - name: Create input for Jtest
       shell: cmd
       run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
-<<<<<<< HEAD
-=======
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
->>>>>>> 71b60bdb90c42546c06f114ca77b06a18c2f732f
 
     # Runs code analysis with Jtest.
     #- name: Run Jtest

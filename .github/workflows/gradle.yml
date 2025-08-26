@@ -5,6 +5,8 @@ on:
   # Trigger the workflow on push or pull request events but only for the main branch.
   push:
     branches: [ main ]
+        env:
+        GITHUB_WORKSPACE: d:/workspace/github/demo
   pull_request:
     branches: [ main ]
 

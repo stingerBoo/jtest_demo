@@ -30,7 +30,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        path: d\:/workspace/github/demo
+        path: d:/workspace/github/demo
       
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest

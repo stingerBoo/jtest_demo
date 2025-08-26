@@ -16,6 +16,7 @@ public class Customer {
     private static final String SSN_REGEX = "\\d\\d\\d-\\d\\d-\\d\\d\\d\\d";
 
     private String _name;
+	private String _name1;
 
     private String _ssn;
 
@@ -25,6 +26,7 @@ public class Customer {
         if (!ssn.matches(SSN_REGEX))
             throw new IllegalArgumentException("Invalid social security number: " + ssn);
         _name = name;
+		_name1 = name;
         _ssn = ssn;
     }
 
@@ -84,6 +86,7 @@ public class Customer {
             statement = connection.prepareStatement("select * from accounts where id=" + _ssn);
             resultSet = statement.executeQuery();
             _name = resultSet.getString(0);
+			_name1 = resultSet.getString(0);
             _ssn = resultSet.getString(2);
             resultSet.close();
             statement.close();

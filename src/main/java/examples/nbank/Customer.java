@@ -74,17 +74,17 @@ public class Customer {
             Class.forName("org.gjt.mm.mysql.Driver");
             connection = DriverManager.getConnection("bank", "bank", "system");
         } catch (ClassNotFoundException e) {
-            //System.err.println("No suitable driver...");
-            //throw new ConnectionException("Connection Failed");
+            System.err.println("No suitable driver...");
+            throw new ConnectionException("Connection Failed");
         } catch (SQLException e) {
-            //System.err.println("Cannot connect to database: " + e.getMessage());
-            //throw new ConnectionException("Connection Failed");
+            System.err.println("Cannot connect to database: " + e.getMessage());
+            throw new ConnectionException("Connection Failed");
         }
         try {
             statement = connection.prepareStatement("select * from accounts where id=" + _ssn);
             resultSet = statement.executeQuery();
             _name = resultSet.getString(0);
-            //_ssn = resultSet.getString(2);
+            _ssn = resultSet.getString(2);
             resultSet.close();
             statement.close();
         } catch (SQLException exception) {

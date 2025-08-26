@@ -85,8 +85,8 @@ public class Customer {
         try {
             statement = connection.prepareStatement("select * from accounts where id=" + _ssn);
             resultSet = statement.executeQuery();
-            _name = resultSet.getString(0);
-			_name1 = resultSet.getString(0);
+            //_name = resultSet.getString(0);
+			//_name1 = resultSet.getString(0);
             _ssn = resultSet.getString(2);
             resultSet.close();
             statement.close();

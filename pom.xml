@@ -23,7 +23,7 @@
             <plugin>
                 <groupId>com.parasoft.jtest</groupId>
                 <artifactId>jtest-maven-plugin</artifactId>
-                <version>2025.1.0</version>
+                <version>2025.2.2</version>
                 <configuration>
                     <!-- enforcing chosen configuration   
                     <config>builtin://Demo Configuration</config>
@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>com.parasoft.jtest.tia</groupId>
                 <artifactId>tia-maven-plugin</artifactId>
-                <version>2025.1.0</version>
+                <version>2025.2.2</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

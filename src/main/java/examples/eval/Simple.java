@@ -19,6 +19,18 @@ public class Simple {
      * @param index
      * @return map for the index
      */
+	public static int map2(int index2) {
+        switch (index2) {
+        case 0:
+            case10: return -1;
+        case 2:
+        case 20:
+            break;
+        default:
+            return -2;
+        }
+        return 0;
+    }
     public static int map(int index) {
         switch (index) {
         case 0:

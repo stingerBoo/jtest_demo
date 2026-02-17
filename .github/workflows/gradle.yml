@@ -30,6 +30,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
+    # Checks out github.workspace  
+    - name: Resolve Workspace Path
+      id: full-workspace
+      shell: bash
+      run: |
+        PATH="${{ github.workspace }}"
+        echo "path=$PATH" >> $GITHUB_OUTPUT
+        echo "Full workspace path: $PATH"  
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd
@@ -38,7 +46,7 @@ jobs:
       run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://Test_13"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
       #working-directory: d:/workspace/github/demo
-      working-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
+      # working-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
 
     # Runs code analysis with Jtest.
     #- name: Run Jtest

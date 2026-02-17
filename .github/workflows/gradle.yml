@@ -41,12 +41,13 @@ jobs:
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd
+      working-directory: d:\workspace\github\demo
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=builtin://Recommended Rules"
       run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://Test_13"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
       #working-directory: d:/workspace/github/demo
-      # working-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
+      #working-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
 
     # Runs code analysis with Jtest.
     #- name: Run Jtest

@@ -35,8 +35,8 @@ jobs:
     # Repository name with owner. For example, actions/checkout
        #Default: ${{ github.repository }}
        #path: d:\workspace\github\demo
-       path: d:/workspace/github/demo
-       #ref: ${{ github.workspace }}
+       #path: d:/workspace/github/demo
+       ref: ${{ github.workspace }}
        #ref: "d:/workspace/github/demo"
        #ref: ${{ github.repository }}
        #workspace: "d:/workspace/github/demo"
@@ -53,6 +53,9 @@ jobs:
         PATH="${{ github.workspace }}"
         echo "path=$PATH" >> $GITHUB_OUTPUT
         echo "Full workspace path: $PATH"  
+    - name: Modified files Simple.java
+      run: |
+          git blame src/main/java/examples/eval/Simple.java
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest      
       shell: cmd      

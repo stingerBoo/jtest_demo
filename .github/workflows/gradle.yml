@@ -32,6 +32,7 @@ jobs:
       with:
     # Repository name with owner. For example, actions/checkout
        #Default: ${{ github.repository }}
+       working-directory: d:\workspace\github\demo
        ref: ${{ github.workspace }}
        repository: stingerBoo/jtest_demo
        #token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}

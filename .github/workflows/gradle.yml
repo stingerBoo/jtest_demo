@@ -28,7 +28,7 @@ jobs:
     
     # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       
     # Checks out github.workspace  
     - name: Resolve Workspace Path
@@ -39,8 +39,8 @@ jobs:
         echo "path=$PATH" >> $GITHUB_OUTPUT
         echo "Full workspace path: $PATH"  
     # Generates the jtest.data.json input file.
-    - name: Create input for Jtest
-      shell: cmd
+    - name: Create input for Jtest      
+      shell: cmd      
       #working-directory: d:\workspace\github\demo
       #working-directory: d:/workspace/github/demo
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"

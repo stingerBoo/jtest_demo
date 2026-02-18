@@ -37,6 +37,7 @@ jobs:
        #path: d:\workspace\github\demo
        #ref: ${{ github.workspace }}
        #ref: "d:/workspace/github/demo"
+       ref: ${{ github.repository }}
        workspace: "d:/workspace/github/demo"
        repository: stingerBoo/jtest_demo
        #token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}

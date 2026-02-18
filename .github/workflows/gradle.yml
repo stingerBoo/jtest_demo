@@ -40,6 +40,7 @@ jobs:
        #ref: "d:/workspace/github/demo"
        #ref: ${{ github.repository }}
        #workspace: "d:/workspace/github/demo"
+       set-safe-directory: 'd:/workspace/github/demo2'
        repository: stingerBoo/jtest_demo
        #token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}
        #path: infrastructure-helm

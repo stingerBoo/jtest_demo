@@ -34,7 +34,7 @@ jobs:
        #Default: ${{ github.repository }}
        ref: ${{ github.workspace }}
        repository: stingerBoo/jtest_demo
-       token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}
+       #token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}
        path: infrastructure-helm
        fetch-depth: 0
       

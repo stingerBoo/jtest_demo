@@ -43,7 +43,7 @@ jobs:
        #path: d:\workspace\github\demo
        #path: d:/workspace/github/demo
        path: .
-       ref: ${{ github.workspace }}
+       #ref: ${{ github.workspace }}
        #ref: "d:/workspace/github/demo"
        #ref: ${{ github.repository }}
        #ref: main

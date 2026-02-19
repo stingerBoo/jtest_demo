@@ -29,13 +29,7 @@ jobs:
     # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
     - name: Checkout repository
       uses: actions/checkout@v4
-      #uses: actions/checkout@v5
-      # === IMPORTANT ===
-      # below actions/checkout@v6 has option ref which refing to direcotory/workspace of the runner or can refer to main brach like below
-      # it means that ref:main refers to the original repository, 
-      # where non ref or ref:${{ github.workspace }} refers to workspase of the runner where timestamp of files are modify
-      # and Test Configuration of Parasoft tool may have conflict using date filter
-      # =====
+      #uses: actions/checkout@v5     
       #uses: actions/checkout@v6
       with:
     # Repository name with owner. For example, actions/checkout
@@ -53,7 +47,10 @@ jobs:
        #repository: stingerBoo/jtest_demo
        #token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}
        #path: infrastructure-helm
-       #fetch-depth: 0
+      # === IMPORTANT ===
+      # more likely fetch-depth 0 does not change timestamp of te files
+      # =====
+       fetch-depth: 0
       
     # Checks out github.workspace  
     - name: Check github.workspace

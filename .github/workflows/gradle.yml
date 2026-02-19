@@ -43,10 +43,10 @@ jobs:
        #path: d:\workspace\github\demo
        #path: d:/workspace/github/demo
        path: .
-       #ref: ${{ github.workspace }}
+       ref: ${{ github.workspace }}
        #ref: "d:/workspace/github/demo"
        #ref: ${{ github.repository }}
-       ref: main
+       #ref: main
        #workspace: "d:/workspace/github/demo"
        #set-safe-directory: 'd:/workspace/github/demo2'
        set-safe-directory: 'C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'

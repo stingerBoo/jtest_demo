@@ -50,7 +50,7 @@ jobs:
       # === IMPORTANT ===
       # more likely fetch-depth 0 does not change timestamp of te files
       # =====
-      # fetch-depth: 0
+       fetch-depth: 0
       
     # Checks out github.workspace  
     - name: Check github.workspace

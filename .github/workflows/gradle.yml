@@ -112,7 +112,7 @@ jobs:
 # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
       if: always()
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@v4
       with:
         #sarif_file: reports/report.sarif # reports is a default location for reports directory
         sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif

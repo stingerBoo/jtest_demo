@@ -71,7 +71,10 @@ jobs:
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=builtin://Recommended Rules"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://Test_13"
-      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://2026-02-11_testModify" "-Djtest.report=reports"
+      #
+      #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://2026-02-11_testModify" "-Djtest.report=reports"
+      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=builtin://Recommended Rules" "-Djtest.report=reports"
+
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
       #working-directory: d:/workspace/github/demo
       #working-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
@@ -93,20 +96,9 @@ jobs:
         #category: parasoft-jtest-SoftCode4
         checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
         #matrix: null
-        wait-for-processing: false
+        wait-for-processing: false   
         
-    - name: Upload results (SARIF)
-      if: always()
-      uses: github/codeql-action/upload-sarif@v4
-      with:
-        #sarif_file: reports/report.sarif # reports is a default location for reports directory        
-        sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif
-        #category: parasoft-jtest-SoftCode4
-        checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
-        #matrix: null
-        wait-for-processing: false
-        
-      # Uploads an archive that includes all report files (.xml, .html, .sarif).
+    # Uploads an archive that includes all report files (.xml, .html, .sarif).
     - name: Archive reports
       if: always()
       uses: actions/upload-artifact@v4
@@ -131,6 +123,7 @@ jobs:
         retention-days: 7
         if-no-files-found: ignore
         compression-level: 6
+        
 # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
       if: always()

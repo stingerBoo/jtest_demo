@@ -28,7 +28,7 @@ jobs:
     
     # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       #uses: actions/checkout@v5     
       #uses: actions/checkout@v6
       with:
@@ -118,7 +118,7 @@ jobs:
         sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif
         category: parasoft-jtest-SoftCode4
         checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
-        #matrix: null
+        matrix: null
         wait-for-processing: true
 
   

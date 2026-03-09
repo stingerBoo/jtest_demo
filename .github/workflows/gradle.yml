@@ -91,7 +91,11 @@ jobs:
         #sarif_file: reports/report.sarif # reports is a default location for reports directory        
         sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif
         #category: parasoft-jtest-SoftCode4
-        #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo 
+        #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
+        category: parasoft-jtest-SoftCode4
+        checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
+        #matrix: null
+        wait-for-processing: false
         
       # Uploads an archive that includes all report files (.xml, .html, .sarif).
     - name: Archive reports

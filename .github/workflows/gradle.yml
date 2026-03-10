@@ -74,7 +74,7 @@ jobs:
       #
       # run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://2026-02-11_testModify" "-Djtest.report=reports"
       # run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=builtin://Recommended Rules" "-Djtest.report=reports"
-      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=user://Test_SCC2" "-Djtest.report=reports"
+      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=jtest.dtp://Recommended Rules_cloneRules" "-Djtest.report=reports"
 
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
       #working-directory: d:/workspace/github/demo

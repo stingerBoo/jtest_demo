@@ -1,0 +1,885 @@
+[ 3/9/26, 11:48?AM - Initialized console 'Jtest']
+DTP Services: Loading available services from https://stinger.parasoft.com.pl:8443/grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://stinger.parasoft.com.pl:8443/grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, licenseServerV1.2, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+Settings: 
+  # from: C:\Parasoft\jtest\2025.2.2\etc\jtestcli.properties
+  com.parasoft.jtest.globals.analyzer.parallel.processing=true
+  com.parasoft.jtest.globals.analyzer.simultaneous.processing.limit=64
+  com.parasoft.xtest.standards.api.java.virtual_mode=false
+  configuration.dir.builtin=${jtest.installdir}/configs/builtin
+  configuration.dir.user=${jtest.installdir}/configs/user
+  coverage.preprocess.cli=true
+  jprofiler.trace.amount=3
+  jprofiler.trace.begin=1
+  jprofiler.trace.filenames.toskip=
+  jtest.acd.max.amount.of.path=80000
+  jtest.analyzer.execution.coverage.show.synthetic.members=false
+  jtest.analyzer.static.dupcode.parser.cache.enabled=true
+  jtest.analyzer.static.dupcode.simultaneous.processing.limit=400
+  jtest.analyzer.static.flow.batch.parse.limit=100
+  jtest.analyzer.static.flow.graphs.parallel.processing=false
+  jtest.analyzer.static.flow.graphs.simultaneous.processing.limit=50
+  jtest.analyzer.static.flow.models.cache.enabled=false
+  jtest.analyzer.static.flow.models.inMemorySize=75
+  jtest.analyzer.static.flow.parallel.processing=true
+  jtest.analyzer.static.flow.parser.java.xast.xmethodbinding.getMethodDeclaration=false
+  jtest.analyzer.static.flow.res.root.dir=${jtest.installdir}/plugins/builtin/res
+  jtest.analyzer.static.flow.simultaneous.processing.limit=100
+  jtest.analyzer.static.java.group.minutes.timeout=1440
+  jtest.analyzer.static.java.parallel.processing=true
+  jtest.analyzer.static.java.parser.cache.enabled=true
+  jtest.analyzer.static.java.simultaneous.processing.limit=400
+  jtest.analyzer.static.machinelearning.group.minutes.timeout=1440
+  jtest.analyzer.static.machinelearning.parser.cache.enabled=true
+  jtest.analyzer.static.machinelearning.simultaneous.processing.limit=400
+  jtest.analyzer.static.metrics.parallel.processing=true
+  jtest.analyzer.static.metrics.parser.cache.enabled=true
+  jtest.analyzer.static.metrics.simultaneous.processing.limit=400
+  jtest.analyzer.static.prop.parallel.processing=true
+  jtest.analyzer.static.prop.parser.cache.enabled=true
+  jtest.analyzer.static.prop.simultaneous.processing.limit=50
+  jtest.analyzer.static.rulewizard.parallel.processing=true
+  jtest.analyzer.static.rulewizard.parser.cache.enabled=true
+  jtest.analyzer.static.rulewizard.simultaneous.processing.limit=400
+  jtest.analyzer.static.xml.parallel.processing=true
+  jtest.analyzer.static.xml.parser.cache.enabled=true
+  jtest.analyzer.static.xml.simultaneous.processing.limit=50
+  jtest.configuration=builtin://Recommended Rules
+  jtest.configuration.dir.builtin9x=${jtest.installdir}/configs/builtin9x
+  jtest.context.serialize=true
+  jtest.context.serializepath=${local.storage.dir}/context_tree.log
+  jtest.coverage.runtimefiles.amount.max=1000
+  jtest.coverage.testid.enabled=true
+  jtest.database.dir=${local.storage.dir}/com.parasoft.jtest.database
+  jtest.database.recreate=false
+  jtest.database.store.threads=1
+  jtest.database.url.suffix=;TRACE_LEVEL_FILE=1;LOCK_TIMEOUT=10000;DEFRAG_ALWAYS=TRUE
+  jtest.default.sourcelevel=1.8
+  jtest.global.data.collector.enabled=true
+  jtest.global.data.dir=${local.storage.dir}/data-global
+  jtest.globals.filesearch.legacy=false
+  jtest.includeTestSources=false
+  jtest.injected.field.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.field.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.field.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.field.annotations.maven=org.apache.maven.plugins.annotations.Parameter,org.apache.maven.plugins.annotations.Component
+  jtest.injected.field.annotations.seam=org.jboss.seam.annotations.In
+  jtest.injected.field.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.field.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.method.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.method.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.method.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.method.annotations.maven=
+  jtest.injected.method.annotations.seam=org.jboss.seam.annotations.In,org.jboss.seam.annotations.Logger
+  jtest.injected.method.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.method.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.parameter.annotations.fxjava=
+  jtest.injected.parameter.annotations.j2ee=javax.ws.rs.core.Context,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.parameter.annotations.jpa=
+  jtest.injected.parameter.annotations.maven=
+  jtest.injected.parameter.annotations.seam=
+  jtest.injected.parameter.annotations.spring=org.springframework.beans.factory.annotation.Value
+  jtest.injected.parameter.annotations.struts=com.opensymphony.xwork2.inject.Inject
+  jtest.parser.bom=default
+  jtest.parser.ignoreParseErrors=false
+  jtest.parser.includeCompilerOutput=true
+  jtest.parser.includeRunningVMBootclasspath=false
+  jtest.parser.java.batch.parse.limit=1
+  jtest.preanalyze.enabled=true
+  jtest.preanalyze.simultaneous.processing.limit=100
+  jtest.preanalyze.simultaneous.processing.pool=4
+  jtest.rulewizard.dictionaries.dir=${jtest.installdir}/etc/rulewizard
+  jtest.supported.javaversion=1.3,1.4,1.5,1.6,1.7,1.8,9,10,11,15,16,17,18,19,20,21
+  jtest.suppression.equivalent.creation.enabled=false
+  jtest.suppression.equivalent.creation.path=${jtest.workspace.dir}/suppression_equivalents.txt
+  jtest.techsupport.include.configuration=true
+  jtest.techsupport.include.coverage=true
+  jtest.techsupport.include.coverage.data=true
+  jtest.techsupport.include.database=false
+  jtest.techsupport.include.metrics=true
+  jtest.techsupport.include.mldata=true
+  jtest.techsupport.include.report=true
+  jtest.techsupport.include.testoutcomes=true
+  jtest.unit.executor.parallel.processing.enable=true
+  jtest.unittest.report.assumption.as.incomplete=false
+  jtest.unittest.xml.results.processing.enabled=false
+  jtest.workspace.dir=.
+  local.storage.dir=${jtest.workspace.dir}/.jtest
+  report.active_rules=true
+  report.associations=true
+  report.authors_details=false
+  report.contexts_details=true
+  report.coverage.version=2
+  report.developer_errors=true
+  report.developer_reports=false
+  report.format=html
+  report.location=${jtest.workspace.dir}/report
+  report.setup.problems=bottom
+  report.test_params=true
+  report.xsl.dir.builtin=${jtest.installdir}/etc/xsl
+  rule.dir.user=${jtest.installdir}/rules/user
+  rules.provider_dupcode.analyzer=com.parasoft.jtest.standards.dupcode
+  rules.provider_dupcode.data=${jtest.installdir}/rules/dcrules.xml
+  rules.provider_dupcode.id=com.parasoft.jtest.standards.dupcode.rules
+  rules.provider_flowanalysis_builtin.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_builtin.data=${jtest.installdir}/rules/farules.xml
+  rules.provider_flowanalysis_builtin.id=com.parasoft.jtest.flowanalyzer.rules.builtin
+  rules.provider_flowanalysis_builtin.separator=.
+  rules.provider_flowanalysis_external.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_external.data=${jtest.installdir}/rules/external_farules.xml
+  rules.provider_flowanalysis_external.id=com.parasoft.jtest.flowanalyzer.rules.external
+  rules.provider_flowanalysis_external.separator=.
+  rules.provider_java_builtin.analyzer=com.parasoft.jtest.standards.checkers.java
+  rules.provider_java_builtin.data=${jtest.installdir}/rules/corerules.xml
+  rules.provider_java_builtin.deprecated=${jtest.installdir}/rules/deprecated_rules.xml
+  rules.provider_java_builtin.id=com.parasoft.jtest.rules.java.builtin
+  rules.provider_java_builtin.separator=.
+  rules.provider_metric.analyzer=com.parasoft.jtest.standards.metrics.analyzer
+  rules.provider_metric.data=${jtest.installdir}/rules/metrics.xml
+  rules.provider_metric.id=com.parasoft.jtest.rules.metrics.builtin
+  rules.provider_metric.separator=.
+  rules.provider_metric.type=metrics
+  rules.provider_prop.analyzer=com.parasoft.jtest.standards.checkers.prop
+  rules.provider_prop.data=${jtest.installdir}/rules/proprules.xml
+  rules.provider_prop.id=com.parasoft.jtest.rules.prop.builtin
+  rules.provider_prop.separator=.
+  rules.provider_rulewizard_builtin.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_builtin.data=${jtest.installdir}/rules/rwrules.xml
+  rules.provider_rulewizard_builtin.directory=${jtest.installdir}/rules/builtin/
+  rules.provider_rulewizard_builtin.id=com.parasoft.jtest.rules.rulewizard.builtin
+  rules.provider_rulewizard_builtin.mapping=${jtest.installdir}/rules/builtin/rulemap.xml
+  rules.provider_rulewizard_builtin.separator=.
+  rules.provider_rulewizard_dtp.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_dtp.categories=${local.storage.dir}/rules/dtp/categories.properties
+  rules.provider_rulewizard_dtp.data=${local.storage.dir}/rules/dtp/rules.xml
+  rules.provider_rulewizard_dtp.dir=${local.storage.dir}/rules/dtp/
+  rules.provider_rulewizard_dtp.id=com.parasoft.jtest.rules.rulewizard.dtp
+  rules.provider_rulewizard_dtp.mapping=${local.storage.dir}/rules/dtp/rulemap.xml
+  rules.provider_rulewizard_dtp.separator=.
+  rules.provider_rulewizard_dtp.share.url=true
+  rules.provider_rulewizard_team.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_team.categories=${local.storage.dir}/rules/team/categories.properties
+  rules.provider_rulewizard_team.data=${local.storage.dir}/rules/team/rules.xml
+  rules.provider_rulewizard_team.dir=${local.storage.dir}/rules/team/
+  rules.provider_rulewizard_team.id=com.parasoft.jtest.rules.rulewizard.team
+  rules.provider_rulewizard_team.mapping=${local.storage.dir}/rules/team/rulemap.xml
+  rules.provider_rulewizard_team.separator=.
+  rules.provider_rulewizard_user.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_user.data=${rule.dir.user}/rules.xml
+  rules.provider_rulewizard_user.dir=${rule.dir.user}
+  rules.provider_rulewizard_user.id=com.parasoft.jtest.rules.rulewizard.user
+  rules.provider_rulewizard_user.mapping=${rule.dir.user}/rulemap.xml
+  rules.provider_rulewizard_user.separator=.
+  rules.provider_xml.analyzer=com.parasoft.jtest.standards.checkers.xml
+  rules.provider_xml.data=${jtest.installdir}/rules/xmlrules.xml
+  rules.provider_xml.id=com.parasoft.jtest.rules.xml.builtin
+  rules.provider_xml.separator=.
+  settings.rules.file.jtest=${jtest.installdir}/etc/settings_rules.properties
+  suppression.equivalents.enabled=false
+  suppression.equivalents.file=${jtest.installdir}/rules/suppression.equivalents.txt
+  suppression1.comment=//
+  suppression1.file.ext=java
+  suppression2.block.only=true
+  suppression2.comment=#
+  suppression2.file.ext=properties,mf
+  suppression3.block.only=true
+  suppression3.comment=<!--
+  suppression3.comment.suffix=-->
+  suppression3.file.ext=xml,wsdd,xmi
+  suppression4.block.only=true
+  suppression4.comment=/*
+  suppression4.comment.suffix=*/
+  suppression4.file.ext=java
+  techsupport.create.on.exit=true
+  
+  # from: C:\Parasoft\jtest\2025.2.2\jtestcli.properties
+  console.verbosity.level=high
+  dtp.autoconfig=true
+  dtp.password=>>hidden<<
+  dtp.project=JTest
+  dtp.share.enabled=true
+  dtp.url=https://stinger.parasoft.com.pl:8443
+  dtp.user=admin
+  jtest.license.custom_edition_features=Jtest, Static Analysis, Flow Analysis, OWASP Rules, CWE Rules, PCI DSS Rules, DISA STIG Rules, Security Rules, Automation, Desktop Command Line, DTP Publish, Coverage, Unit Test, Unit Test Single Class Creation, Unit Test Bulk Creation Tier 1, Unit Test Bulk Creation Tier 2, Unit Test Bulk Creation Tier 3, Unit Test Bulk Creation Tier 4, Unit Test Spring Framework, Test Impact Analysis, LLM Integration
+  jtest.license.network.edition=custom_edition
+  jtest.license.use_network=true
+  jtest.showsettings=true
+  logging.scontrol.verbose=true
+  logging.verbose=true
+  parasoft.eula.accepted=true
+  report.associations=true
+  report.authors_details=true
+  report.contexts_details=true
+  report.dtp.publish=true
+  report.format=pdf,html,sarif
+  report.location=\reports
+  report.scontrol=full
+  scontrol.git.exec=C:\Program Files\Git\bin\git.exe
+  scontrol.rep1.git.branch=main
+  scontrol.rep1.git.url=https://github.com/stingerBoo/jtest_demo.git
+  scontrol.rep1.git.workspace=C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo
+  scontrol.rep1.type=git
+  scope.scontrol=true
+  techsupport.archive.location=d:\Parasoft\SupportPackage\jtest
+  techsupport.create.on.exit=true
+  techsupport.enabled=true
+  
+  # from: C:\Users\sgrabinski\jtestcli.properties
+  
+  # from: D:\workspace\github\demo\jtestcli.properties
+  jtest.configuration=user://RR_modify1
+  jtest.license.custom_edition_features=Jtest, Static Analysis, Flow Analysis, OWASP Rules, CWE Rules, PCI DSS Rules, DISA STIG Rules, Security Rules, Automation, Desktop Command Line, Coverage, Unit Test, Test Impact Analysis, LLM Integration
+  jtest.license.network.edition=custom_edition
+  report.assoc.url.pr=http://bugzilla.company.com/show_bug.cgi?id=[%ID%]
+  report.assoc.url.req=http://req.company.com:8443/browse/[%ID%]
+  report.assoc.url.task=http://dtp.company.com:8080/grs/jsf/planning/task/edit_task.jsf?entityId=[%ID%]
+  report.associations=true
+  session.tag=demo
+  
+  # from: command line options
+  jtest.configuration=user://2026-02-11_testModify
+  jtest.data=D:\workspace\github\demo\build\jtest\jtest.data.json
+  jtest.installdir=C:\Parasoft\jtest\2025.2.2
+  jtest.workspace.dir=D:\workspace\github\demo\build\jtest
+  report.location=D:\workspace\github\demo\reports
+  runtime.command_line=jtestcli -data D:\workspace\github\demo\build\jtest\jtest.data.json -config user://2026-02-11_testModify -report D:\workspace\github\demo\reports
+  
+  # from: preferences services
+  
+  # from: test configuration
+  
+  # final: 
+  com.parasoft.jtest.globals.analyzer.parallel.processing=true
+  com.parasoft.jtest.globals.analyzer.simultaneous.processing.limit=64
+  com.parasoft.xtest.standards.api.java.virtual_mode=false
+  configuration.dir.builtin=C:\Parasoft\jtest\2025.2.2/configs/builtin
+  configuration.dir.user=C:\Parasoft\jtest\2025.2.2/configs/user
+  console.verbosity.level=high
+  coverage.preprocess.cli=true
+  dtp.autoconfig=true
+  dtp.password=>>hidden<<
+  dtp.project=JTest
+  dtp.share.enabled=true
+  dtp.url=https://stinger.parasoft.com.pl:8443
+  dtp.user=admin
+  jprofiler.trace.amount=3
+  jprofiler.trace.begin=1
+  jprofiler.trace.filenames.toskip=
+  jtest.acd.max.amount.of.path=80000
+  jtest.analyzer.execution.coverage.show.synthetic.members=false
+  jtest.analyzer.static.dupcode.parser.cache.enabled=true
+  jtest.analyzer.static.dupcode.simultaneous.processing.limit=400
+  jtest.analyzer.static.flow.batch.parse.limit=100
+  jtest.analyzer.static.flow.graphs.parallel.processing=false
+  jtest.analyzer.static.flow.graphs.simultaneous.processing.limit=50
+  jtest.analyzer.static.flow.models.cache.enabled=false
+  jtest.analyzer.static.flow.models.inMemorySize=75
+  jtest.analyzer.static.flow.parallel.processing=true
+  jtest.analyzer.static.flow.parser.java.xast.xmethodbinding.getMethodDeclaration=false
+  jtest.analyzer.static.flow.res.root.dir=C:\Parasoft\jtest\2025.2.2/plugins/builtin/res
+  jtest.analyzer.static.flow.simultaneous.processing.limit=100
+  jtest.analyzer.static.java.group.minutes.timeout=1440
+  jtest.analyzer.static.java.parallel.processing=true
+  jtest.analyzer.static.java.parser.cache.enabled=true
+  jtest.analyzer.static.java.simultaneous.processing.limit=400
+  jtest.analyzer.static.machinelearning.group.minutes.timeout=1440
+  jtest.analyzer.static.machinelearning.parser.cache.enabled=true
+  jtest.analyzer.static.machinelearning.simultaneous.processing.limit=400
+  jtest.analyzer.static.metrics.parallel.processing=true
+  jtest.analyzer.static.metrics.parser.cache.enabled=true
+  jtest.analyzer.static.metrics.simultaneous.processing.limit=400
+  jtest.analyzer.static.prop.parallel.processing=true
+  jtest.analyzer.static.prop.parser.cache.enabled=true
+  jtest.analyzer.static.prop.simultaneous.processing.limit=50
+  jtest.analyzer.static.rulewizard.parallel.processing=true
+  jtest.analyzer.static.rulewizard.parser.cache.enabled=true
+  jtest.analyzer.static.rulewizard.simultaneous.processing.limit=400
+  jtest.analyzer.static.xml.parallel.processing=true
+  jtest.analyzer.static.xml.parser.cache.enabled=true
+  jtest.analyzer.static.xml.simultaneous.processing.limit=50
+  jtest.configuration=user://2026-02-11_testModify
+  jtest.configuration.dir.builtin9x=C:\Parasoft\jtest\2025.2.2/configs/builtin9x
+  jtest.context.id=1773053310337
+  jtest.context.serialize=true
+  jtest.context.serializepath=D:\workspace\github\demo\build\jtest/.jtest/context_tree.log
+  jtest.coverage.runtimefiles.amount.max=1000
+  jtest.coverage.testid.enabled=true
+  jtest.data=D:\workspace\github\demo\build\jtest\jtest.data.json
+  jtest.database.dir=D:\workspace\github\demo\build\jtest/.jtest/com.parasoft.jtest.database
+  jtest.database.recreate=false
+  jtest.database.store.threads=1
+  jtest.database.url.suffix=;TRACE_LEVEL_FILE=1;LOCK_TIMEOUT=10000;DEFRAG_ALWAYS=TRUE
+  jtest.default.sourcelevel=1.8
+  jtest.global.data.collector.enabled=true
+  jtest.global.data.dir=D:\workspace\github\demo\build\jtest/.jtest/data-global
+  jtest.globals.filesearch.legacy=false
+  jtest.includeTestSources=false
+  jtest.injected.field.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.field.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.field.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.field.annotations.maven=org.apache.maven.plugins.annotations.Parameter,org.apache.maven.plugins.annotations.Component
+  jtest.injected.field.annotations.seam=org.jboss.seam.annotations.In
+  jtest.injected.field.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.field.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.method.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.method.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.method.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.method.annotations.maven=
+  jtest.injected.method.annotations.seam=org.jboss.seam.annotations.In,org.jboss.seam.annotations.Logger
+  jtest.injected.method.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.method.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.parameter.annotations.fxjava=
+  jtest.injected.parameter.annotations.j2ee=javax.ws.rs.core.Context,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.parameter.annotations.jpa=
+  jtest.injected.parameter.annotations.maven=
+  jtest.injected.parameter.annotations.seam=
+  jtest.injected.parameter.annotations.spring=org.springframework.beans.factory.annotation.Value
+  jtest.injected.parameter.annotations.struts=com.opensymphony.xwork2.inject.Inject
+  jtest.installdir=C:\Parasoft\jtest\2025.2.2
+  jtest.license.custom_edition_features=Jtest, Static Analysis, Flow Analysis, OWASP Rules, CWE Rules, PCI DSS Rules, DISA STIG Rules, Security Rules, Automation, Desktop Command Line, Coverage, Unit Test, Test Impact Analysis, LLM Integration
+  jtest.license.network.edition=custom_edition
+  jtest.license.use_network=true
+  jtest.parser.bom=default
+  jtest.parser.ignoreParseErrors=false
+  jtest.parser.includeCompilerOutput=true
+  jtest.parser.includeRunningVMBootclasspath=false
+  jtest.parser.java.batch.parse.limit=1
+  jtest.preanalyze.enabled=true
+  jtest.preanalyze.simultaneous.processing.limit=100
+  jtest.preanalyze.simultaneous.processing.pool=4
+  jtest.rulewizard.dictionaries.dir=C:\Parasoft\jtest\2025.2.2/etc/rulewizard
+  jtest.showsettings=true
+  jtest.supported.javaversion=1.3,1.4,1.5,1.6,1.7,1.8,9,10,11,15,16,17,18,19,20,21
+  jtest.suppression.equivalent.creation.enabled=false
+  jtest.suppression.equivalent.creation.path=D:\workspace\github\demo\build\jtest/suppression_equivalents.txt
+  jtest.techsupport.include.configuration=true
+  jtest.techsupport.include.coverage=true
+  jtest.techsupport.include.coverage.data=true
+  jtest.techsupport.include.database=false
+  jtest.techsupport.include.metrics=true
+  jtest.techsupport.include.mldata=true
+  jtest.techsupport.include.report=true
+  jtest.techsupport.include.testoutcomes=true
+  jtest.unit.executor.parallel.processing.enable=true
+  jtest.unittest.report.assumption.as.incomplete=false
+  jtest.unittest.xml.results.processing.enabled=false
+  jtest.workspace.dir=D:\workspace\github\demo\build\jtest
+  local.storage.dir=D:\workspace\github\demo\build\jtest/.jtest
+  logging.scontrol.verbose=true
+  logging.verbose=true
+  parasoft.eula.accepted=true
+  report.active_rules=true
+  report.assoc.url.pr=http://bugzilla.company.com/show_bug.cgi?id=[%ID%]
+  report.assoc.url.req=http://req.company.com:8443/browse/[%ID%]
+  report.assoc.url.task=http://dtp.company.com:8080/grs/jsf/planning/task/edit_task.jsf?entityId=[%ID%]
+  report.associations=true
+  report.authors_details=true
+  report.contexts_details=true
+  report.coverage.version=2
+  report.developer_errors=true
+  report.developer_reports=false
+  report.dtp.publish=true
+  report.format=pdf,html,sarif
+  report.location=D:\workspace\github\demo\reports
+  report.scontrol=full
+  report.setup.problems=bottom
+  report.test_params=true
+  report.xsl.dir.builtin=C:\Parasoft\jtest\2025.2.2/etc/xsl
+  rule.dir.user=C:\Parasoft\jtest\2025.2.2/rules/user
+  rules.provider_dupcode.analyzer=com.parasoft.jtest.standards.dupcode
+  rules.provider_dupcode.data=C:\Parasoft\jtest\2025.2.2/rules/dcrules.xml
+  rules.provider_dupcode.id=com.parasoft.jtest.standards.dupcode.rules
+  rules.provider_flowanalysis_builtin.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_builtin.data=C:\Parasoft\jtest\2025.2.2/rules/farules.xml
+  rules.provider_flowanalysis_builtin.id=com.parasoft.jtest.flowanalyzer.rules.builtin
+  rules.provider_flowanalysis_builtin.separator=.
+  rules.provider_flowanalysis_external.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_external.data=C:\Parasoft\jtest\2025.2.2/rules/external_farules.xml
+  rules.provider_flowanalysis_external.id=com.parasoft.jtest.flowanalyzer.rules.external
+  rules.provider_flowanalysis_external.separator=.
+  rules.provider_java_builtin.analyzer=com.parasoft.jtest.standards.checkers.java
+  rules.provider_java_builtin.data=C:\Parasoft\jtest\2025.2.2/rules/corerules.xml
+  rules.provider_java_builtin.deprecated=C:\Parasoft\jtest\2025.2.2/rules/deprecated_rules.xml
+  rules.provider_java_builtin.id=com.parasoft.jtest.rules.java.builtin
+  rules.provider_java_builtin.separator=.
+  rules.provider_metric.analyzer=com.parasoft.jtest.standards.metrics.analyzer
+  rules.provider_metric.data=C:\Parasoft\jtest\2025.2.2/rules/metrics.xml
+  rules.provider_metric.id=com.parasoft.jtest.rules.metrics.builtin
+  rules.provider_metric.separator=.
+  rules.provider_metric.type=metrics
+  rules.provider_prop.analyzer=com.parasoft.jtest.standards.checkers.prop
+  rules.provider_prop.data=C:\Parasoft\jtest\2025.2.2/rules/proprules.xml
+  rules.provider_prop.id=com.parasoft.jtest.rules.prop.builtin
+  rules.provider_prop.separator=.
+  rules.provider_rulewizard_builtin.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_builtin.data=C:\Parasoft\jtest\2025.2.2/rules/rwrules.xml
+  rules.provider_rulewizard_builtin.directory=C:\Parasoft\jtest\2025.2.2/rules/builtin/
+  rules.provider_rulewizard_builtin.id=com.parasoft.jtest.rules.rulewizard.builtin
+  rules.provider_rulewizard_builtin.mapping=C:\Parasoft\jtest\2025.2.2/rules/builtin/rulemap.xml
+  rules.provider_rulewizard_builtin.separator=.
+  rules.provider_rulewizard_dtp.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_dtp.categories=D:\workspace\github\demo\build\jtest/.jtest/rules/dtp/categories.properties
+  rules.provider_rulewizard_dtp.data=D:\workspace\github\demo\build\jtest/.jtest/rules/dtp/rules.xml
+  rules.provider_rulewizard_dtp.dir=D:\workspace\github\demo\build\jtest/.jtest/rules/dtp/
+  rules.provider_rulewizard_dtp.id=com.parasoft.jtest.rules.rulewizard.dtp
+  rules.provider_rulewizard_dtp.mapping=D:\workspace\github\demo\build\jtest/.jtest/rules/dtp/rulemap.xml
+  rules.provider_rulewizard_dtp.separator=.
+  rules.provider_rulewizard_dtp.share.url=true
+  rules.provider_rulewizard_team.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_team.categories=D:\workspace\github\demo\build\jtest/.jtest/rules/team/categories.properties
+  rules.provider_rulewizard_team.data=D:\workspace\github\demo\build\jtest/.jtest/rules/team/rules.xml
+  rules.provider_rulewizard_team.dir=D:\workspace\github\demo\build\jtest/.jtest/rules/team/
+  rules.provider_rulewizard_team.id=com.parasoft.jtest.rules.rulewizard.team
+  rules.provider_rulewizard_team.mapping=D:\workspace\github\demo\build\jtest/.jtest/rules/team/rulemap.xml
+  rules.provider_rulewizard_team.separator=.
+  rules.provider_rulewizard_user.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_user.data=C:\Parasoft\jtest\2025.2.2/rules/user/rules.xml
+  rules.provider_rulewizard_user.dir=C:\Parasoft\jtest\2025.2.2/rules/user
+  rules.provider_rulewizard_user.id=com.parasoft.jtest.rules.rulewizard.user
+  rules.provider_rulewizard_user.mapping=C:\Parasoft\jtest\2025.2.2/rules/user/rulemap.xml
+  rules.provider_rulewizard_user.separator=.
+  rules.provider_xml.analyzer=com.parasoft.jtest.standards.checkers.xml
+  rules.provider_xml.data=C:\Parasoft\jtest\2025.2.2/rules/xmlrules.xml
+  rules.provider_xml.id=com.parasoft.jtest.rules.xml.builtin
+  rules.provider_xml.separator=.
+  runtime.command_line=jtestcli -data D:\workspace\github\demo\build\jtest\jtest.data.json -config user://2026-02-11_testModify -report D:\workspace\github\demo\reports
+  scontrol.git.exec=C:\Program Files\Git\bin\git.exe
+  scontrol.rep1.git.branch=main
+  scontrol.rep1.git.url=https://github.com/stingerBoo/jtest_demo.git
+  scontrol.rep1.git.workspace=C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo
+  scontrol.rep1.type=git
+  scope.scontrol=true
+  session.tag=demo
+  settings.rules.file.jtest=C:\Parasoft\jtest\2025.2.2/etc/settings_rules.properties
+  suppression.equivalents.enabled=false
+  suppression.equivalents.file=C:\Parasoft\jtest\2025.2.2/rules/suppression.equivalents.txt
+  suppression1.comment=//
+  suppression1.file.ext=java
+  suppression2.block.only=true
+  suppression2.comment=#
+  suppression2.file.ext=properties,mf
+  suppression3.block.only=true
+  suppression3.comment=<!--
+  suppression3.comment.suffix=-->
+  suppression3.file.ext=xml,wsdd,xmi
+  suppression4.block.only=true
+  suppression4.comment=/*
+  suppression4.comment.suffix=*/
+  suppression4.file.ext=java
+  techsupport.archive.location=d:\Parasoft\SupportPackage\jtest
+  techsupport.create.on.exit=true
+  techsupport.enabled=true
+DTP Services: Loading available services from https://stinger.parasoft.com.pl:8443/grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://stinger.parasoft.com.pl:8443/grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, licenseServerV1.2, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+License: Initializing network license for Jtest 10.7
+License: Activating Custom Edition
+License: Checking features
+License: Main Jtest feature: License is valid
+License: Unit Test feature: License is valid
+License: Static Analysis feature: License is valid
+License: Coverage feature: License is valid
+License: Flow Analysis feature: License is valid
+License: Test Impact Analysis feature: License is valid
+License: Security Rules feature: License is valid
+License: CWE Rules feature: License is valid
+License: OWASP Rules feature: License is valid
+License: PCI DSS Rules feature: License is valid
+License: DISA STIG Rules feature: License is valid
+License: Automation feature: License is valid
+License: LLM Integration feature: License is valid
+License: Desktop Command Line feature: License is valid
+License: Activation finished: License is valid
+License: Machine id WIN32-1815e92e (Default)
+Sending usage data is disabled, use usage.reporting.enabled to enable
+Rule update service scanning directory: D:\workspace\github\demo\build\jtest\.jtest\rules\team for provider com.parasoft.jtest.rules.rulewizard.team
+using categories description file: D:\workspace\github\demo\build\jtest\.jtest\rules\team\categories.properties
+Rules have changed, performing update
+Rules refresh service, successfully written rules descriptions file: D:\workspace\github\demo\build\jtest\.jtest\rules\team\rules.xml
+Rule update service scanning directory: C:\Parasoft\jtest\2025.2.2\rules\user for provider com.parasoft.jtest.rules.rulewizard.user
+Rules file is up to date, skipped update
+No shared rule providers registered.
+Configuration: 2026-02-11_testModify (user://2026-02-11_testModify).
+Command line: jtestcli -data D:\workspace\github\demo\build\jtest\jtest.data.json -config user://2026-02-11_testModify -report D:\workspace\github\demo\reports
+[ 0%] > Computing testing context.
+Excluded element: unit_test_data
+Excluded element: TEST-examples.servlets.ExampleServletTest.xml
+Excluded element: TEST-examples.mock.FileExampleTest.xml
+Excluded element: TEST-examples.mock.InterpreterTest.xml
+Excluded element: TEST-examples.junit.NaiveStringBuilderParameterizedTest.xml
+Excluded element: TEST-examples.eval.SimpleTest.xml
+Excluded element: TEST-examples.junit.MoneyBagParameterizedTest.xml
+Excluded element: TEST-examples.junit.MoneyTest.xml
+Excluded test element: SimpleTest.java
+Excluded test element: MoneyBagParameterizedTest.java
+Excluded test element: MoneyTest.java
+Excluded test element: NaiveStringBuilderParameterizedTest.java
+Excluded test element: FileExampleTest.java
+Excluded test element: InterpreterTest.java
+Excluded test element: ExampleServletTest.java
+Excluded test element: SimpleTest.java
+Excluded test element: MoneyBagParameterizedTest.java
+Excluded test element: MoneyTest.java
+Excluded test element: NaiveStringBuilderParameterizedTest.java
+Excluded test element: FileExampleTest.java
+Excluded test element: FileExampleTest.java
+Excluded test element: InterpreterTest.java
+Excluded test element: ExampleServletTest.java
+Number of excluded elements: 23.
+[ 2%] < Computing testing context.: 100% 
+[ 2%] > PreAnalysis
+[ 7%]   PreAnalysis: 100% 
+[ 7%] < PreAnalysis: 100% 
+[ 7%] > Scope
+[ 7%] > Scope > Resources Filter
+[ 7%] > Scope > Lines Filter
+[ 7%] > Scope > Resources Filter > Checking resources to exclude
+[ 7%] < Scope > Resources Filter > Checking resources to exclude: 67 of 67 
+[ 7%]   Scope: accepted /com.parasoft:demo/.../Simple.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseGSS.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseGSS.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseImages.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseImages.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseLogging.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseLogging.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseSockets.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseSockets.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../DivisionByZero.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../DivisionByZero.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../FilesInjection.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../FilesInjection.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../InefficientMapRemoval.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../InefficientMapRemoval.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../InefficientMapUsage.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../InefficientMapUsage.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../SQLInjection.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../SQLInjection.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../SystemInjection.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../SystemInjection.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../UnreachableCode.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../UnreachableCode.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../UseBeforeInitialization.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../UseBeforeInitialization.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../WebApplication.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../WebApplication.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../XMLInjection.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../XMLInjection.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../DatabaseObject.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../DatabaseObject.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../ExtendedNullPointer.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../ExtendedNullPointer.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../MessageFormatter.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../MessageFormatter.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../MyDictionary.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../MyDictionary.java
+[ 7%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../NullPointer.java
+[ 7%]   Scope: rejected /com.parasoft:demo/.../NullPointer.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../ChoosingConstructor.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../ChoosingConstructor.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../CustomMoney.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../CustomMoney.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../IMoney.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../IMoney.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../IntegerComparator.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../IntegerComparator.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../Money.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../Money.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../MoneyBag.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../MoneyBag.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../NaiveStringBuilder.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../NaiveStringBuilder.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../SimpleObjectHandler.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../SimpleObjectHandler.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../MetricsExample.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../MetricsExample.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../CharacterReader.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../CharacterReader.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../FileExample.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../FileExample.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../Interpreter.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../Interpreter.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[ 8%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../PathUtil.java
+[ 8%]   Scope: rejected /com.parasoft:demo/.../PathUtil.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AbstractTransaction.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../AbstractTransaction.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../Account.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../Account.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../Bank.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../Bank.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../BankState.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../BankState.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../ConnectionException.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../ConnectionException.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../CreditCard.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../CreditCard.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../Customer.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../DepositTransaction.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../DepositTransaction.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../ICreditAgency.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../ICreditAgency.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../ITransaction.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../ITransaction.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../LogAccountInfo.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../LogAccountInfo.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../WithdrawalTransaction.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../WithdrawalTransaction.java
+[ 9%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../Queue.java
+[ 9%]   Scope: rejected /com.parasoft:demo/.../Queue.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../InputValidation.java
+[10%]   Scope: rejected /com.parasoft:demo/.../InputValidation.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../ExampleServlet.java
+[10%]   Scope: rejected /com.parasoft:demo/.../ExampleServlet.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AbstractStackMachine.java
+[10%]   Scope: rejected /com.parasoft:demo/.../AbstractStackMachine.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../CommandLineStackMachine.java
+[10%]   Scope: rejected /com.parasoft:demo/.../CommandLineStackMachine.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../CustomListRenderer.java
+[10%]   Scope: rejected /com.parasoft:demo/.../CustomListRenderer.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../FifoStackMachine.java
+[10%]   Scope: rejected /com.parasoft:demo/.../FifoStackMachine.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../LifoStackMachine.java
+[10%]   Scope: rejected /com.parasoft:demo/.../LifoStackMachine.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../RunnableStackMachine.java
+[10%]   Scope: rejected /com.parasoft:demo/.../RunnableStackMachine.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../StackInterface.java
+[10%]   Scope: rejected /com.parasoft:demo/.../StackInterface.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../StackList.java
+[10%]   Scope: rejected /com.parasoft:demo/.../StackList.java
+[10%] < Scope > Resources Filter: rejected 0 of 67 analyzed inputs 
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../AllFileSuppress.java
+[10%]   Scope: rejected /com.parasoft:demo/.../AllFileSuppress.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../Example.java
+[10%]   Scope: rejected /com.parasoft:demo/.../Example.java
+[10%]   Scope > Lines Filter: rejected /com.parasoft:demo/.../MANIFEST.MF
+[10%]   Scope: rejected /com.parasoft:demo/.../MANIFEST.MF
+[11%] < Scope > Lines Filter: rejected 65 of 67 analyzed inputs 
+[11%] < Scope: rejected 65 of 67 analyzed inputs                                  >>> Scope time 0.15s
+Code Duplication: parser with 2 active rule(s) is enabled.
+Code Duplication: Duplicates detection is enabled.
+[11%] > Reporting
+[11%] > Analysis
+[11%] > Analysis > Scope Analyzer
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Simple.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseGSS.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseImages.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseLogging.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseSockets.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DivisionByZero.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../FilesInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InefficientMapRemoval.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InefficientMapUsage.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../SQLInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../SystemInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../UnreachableCode.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../UseBeforeInitialization.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../WebApplication.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../XMLInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DatabaseObject.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ExtendedNullPointer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MessageFormatter.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MyDictionary.java
+Sending reports by mail is disabled, use report.mail.enabled setting to enable.
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../NullPointer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ChoosingConstructor.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CustomMoney.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../IMoney.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../IntegerComparator.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Money.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MoneyBag.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../NaiveStringBuilder.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../SimpleObjectHandler.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MetricsExample.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CharacterReader.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../FileExample.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Interpreter.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../PathUtil.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AbstractTransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Account.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Bank.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../BankState.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ConnectionException.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CreditCard.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Customer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DepositTransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ICreditAgency.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ITransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../LogAccountInfo.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../WithdrawalTransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Queue.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InputValidation.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ExampleServlet.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AbstractStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CommandLineStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CustomListRenderer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../FifoStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../LifoStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../RunnableStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../StackInterface.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../StackList.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AllFileSuppress.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Example.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MANIFEST.MF
+[11%] < Analysis > Scope Analyzer: analyzed 67 
+[11%] > Results
+[11%] > Analysis > IOC
+[14%] < Analysis > IOC: number of analyzed inputs 0 of 90, skipped 90             >>> IOC time 0s
+[14%] > Analysis > Code Duplication
+[14%] > Results > Metrics processor
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Simple.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Customer.java
+[17%] < Analysis > Code Duplication: Parsed 2 of 67 inputs                        >>> Code Duplication time 0.08s
+[17%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPM 
+[21%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPM : 100% 
+[21%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPM 
+[25%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPM 
+[25%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPT 
+[29%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPT : 100% 
+[29%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPT 
+[33%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPT 
+[34%] > Analysis > Java Flow
+[34%]   Analysis > Java Flow: Parasoft Java Flow Analyzer 10.7.3.20251014B6172
+[34%] > Results > Unified Rules Processor
+[34%] > Results > Scope Processor
+[34%] > Results > Duplicates Processor
+[34%] > Results > Tokens Mismatch Filter Processor
+[34%] > Results > Rule Limit Processor
+Applying limit of maximum violations per rule: 1,000 
+[34%] > Results > Source Control Processor
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Simple.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Simple.java
+[34%] > Results > Coverage Processor
+[34%] > Results > Metadata Processor
+[34%] > Results > Author Processor
+[34%] > Results > Suppression Processor
+[34%] > Results > Goals Processor
+[34%] > Results > Violations Scope Decorator
+[34%]   Analysis > Java Flow: Created 4 graphs for /com.parasoft:demo/.../Simple.java
+[34%]   Analysis > Java Flow: Created 11 graphs for /com.parasoft:demo/.../Customer.java
+[34%]   Analysis > Java Flow > Graph scanning: Initializing control flow graphs prescan
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 0%
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 100%
+[34%] > Analysis > Java Flow > Graph scanning > Processing methods: Collecting exceptions info, phase 1
+[34%] < Analysis > Java Flow > Graph scanning > Processing methods: Collecting exceptions info, phase 1: 100% 
+[34%]   Analysis > Java Flow > Graph scanning: Finalizing control flow graphs prescan
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [1/11] - Customer.Customer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [2/11] - Customer.getName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [3/11] - Customer.getSSN
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [4/11] - Customer.setName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [5/11] - Customer.setSSN
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [6/11] - Customer.toStrng
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [7/11] - Customer.equals
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [8/11] - Customer.hashCode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [9/11] - Customer.loadCustomer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [10/11] - Customer.main
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [11/11] - Customer.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [1/4] - Simple.map2
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [2/4] - Simple.map
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [3/4] - Simple.startsWith
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [4/4] - Simple.Simple
+[35%]   Analysis > Java Flow: found 3 violations in /com.parasoft:demo/.../Customer.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../SimpleTest.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../FileExampleTest.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../NaiveStringBuilderParameterizedTest.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ExampleServletTest.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MoneyTest.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Simple.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MoneyBagParameterizedTest.java
+[35%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../InterpreterTest.java
+[38%] < Analysis > Java Flow: 100%                                                >>> Java Flow time 2.5s
+[38%] > Analysis > Metrics
+[38%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../Simple.java
+[39%]   Analysis > Metrics: calculated 31 metric values for /com.parasoft:demo/.../Customer.java
+[47%] < Analysis > Metrics: calculated 41 metric values on analyzed 2 of 67 inputs, skipped 65       >>> Metrics time 0.09s
+[47%] > Analysis > Java Static
+[47%]   Analysis > Java Static: found 2 violations in /com.parasoft:demo/.../Customer.java
+[52%]   Analysis > Java Static: found 4 violations in /com.parasoft:demo/.../Simple.java
+[58%] < Analysis > Java Static: found 6 violations on analyzed 2 of 67 inputs, skipped 65       >>> Java Static time 0.36s
+[58%] > Analysis > Properties Static
+[61%] < Analysis > Properties Static: found 0 violations on analyzed 0 of 67 inputs, skipped 67       >>> Properties Static time 0s
+[61%] > Analysis > XML Static
+[65%] < Analysis > XML Static: found 0 violations on analyzed 0 of 67 inputs, skipped 67       >>> XML Static time 0s
+[65%] < Analysis: found 9 violations                                              >>> Analysis time 3.17s
+[65%] < Results > Metrics processor: processed 9 accepted violations 
+[65%] < Results > Unified Rules Processor: processed 9 accepted violations 
+[65%] < Results > Scope Processor: removed 0 of 9 violations 
+[65%] < Results > Duplicates Processor: removed 0 of 6 violations  
+[65%] < Results > Tokens Mismatch Filter Processor: processed 9 accepted violations 
+[65%] < Results > Rule Limit Processor: removed 0 of 9 violations  
+[65%] < Results > Source Control Processor: processed 9 accepted violations 
+[65%] < Results > Coverage Processor: processed 0 of 0 coverage infos 
+[73%] < Results > Metadata Processor: DTP metadata available for 9 of 9 applicable findings  
+[73%] < Results > Author Processor: reassigned 0 of 9 accepted violations 
+[73%] < Results > Suppression Processor: suppressed 0 of 9 accepted violations 
+[73%] < Results > Goals Processor: processed 9 accepted violations 
+[87%] < Results > Violations Scope Decorator: processed 9 accepted violations 
+[96%] < Results: processed 9 accepted violations                                  >>> Results time 0.64s
+[97%] < Reporting: reported 9 accepted violations                                 >>> Reporting time 0.2s
+[97%]                                                                             >>> Total time 5.42s
+[97%] > Finalizing reporters.
+Files in scope: 2
+Rules violated: 4/189
+Metrics enabled: 4
+Static analysis violations: 9
+Suppressed violations: 0
+Unit Tests failures: 0
+Executed test cases: 0
+Coverage: 0/0 lines (0% covered)
+Coverage collection is disabled in the current test configuration.
+Running time in seconds : 8
+[97%]   Finalizing reporters.: 10% 
+The following setup problems have been encountered during analysis:
+  Source Control configuration issues:
+    - A different 'git' repository has been found in settings, but it does not match source repository of tested resources:
+       - branch:   expected >>none<<   :   found main
+       - url:   expected git@github.com:stingerBoo/jtest_demo.git   :   found https://github.com/stingerBoo/jtest_demo.git
+       - workspace:   expected D:\workspace\github\demo   :   found C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo
+Generated XML report: D:\workspace\github\demo\reports\report.xml
+Publishing to DTP https://stinger.parasoft.com.pl:8443 for JTest project ...
+Report published successfully to DTP: File has been uploaded successfully.
+[97%]   Finalizing reporters.: 12% 
+Preparing report data...
+Generated HTML report: D:\workspace\github\demo\reports\report.html
+[97%]   Finalizing reporters.: 15% 
+Preparing report data...
+Generated PDF report: D:\workspace\github\demo\reports\report.pdf
+[97%]   Finalizing reporters.: 17% 
+Generated JSON SARIF (Static Analysis Results Interchange Format) report: D:\workspace\github\demo\reports\report.sarif
+[98%]   Finalizing reporters.: 20% 
+Total source files published to DTP: 0 of 2 (0 B) in 0s
+2 of them were not published because they are already available on DTP server.
+Generated XML report: D:\workspace\github\demo\reports\metrics.xml
+Publishing to DTP https://stinger.parasoft.com.pl:8443 for JTest project ...
+Report published successfully to DTP: File has been uploaded successfully.
+[98%]   Finalizing reporters.: 30% 
+[100%] < Finalizing reporters.: 100% 
+Creating technical support archive on application exit
+Technical support archive created: d:\Parasoft\SupportPackage\jtest\TechnicalSupport_22.zip

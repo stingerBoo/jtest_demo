@@ -4,9 +4,9 @@ name: Jtest with Gradle
 on:
   # Trigger the workflow on push or pull request events but only for the main branch.
   push:
-    branches: [ main ]
+    branches: [ branch1 ]
   pull_request:
-    branches: [ main ]
+    branches: [ branch1 ]
 
   # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
@@ -33,7 +33,7 @@ jobs:
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd
-      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
+      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=jtest.dtp://Recommended Rules_CustomRule_ABC"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
 
     # Runs code analysis with Jtest.
@@ -43,3 +43,14 @@ jobs:
     #  with:
     #    #Uses the jtest.data.json generated with the Gradle command in the previous step
     #    input: build/jtest/jtest.data.json
+    # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
+    - name: Upload results (SARIF)
+      if: always()
+      uses: github/codeql-action/upload-sarif@v4
+      with:
+        #sarif_file: reports/report.sarif # reports is a default location for reports directory
+        sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif
+        category: parasoft-jtest-SoftCode4
+        #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
+        #matrix: null
+        wait-for-processing: true

@@ -53,5 +53,6 @@ jobs:
       uses: github/codeql-action/upload-sarif@v4
       with:
         #sarif_file: reports/report.sarif # reports is a default location for reports directory
+        # below report contains error because it contains violation from custom rule. Reproduce of case: 00106709
         sarif_file: "${{ github.workspace }}/reports/reportRuleABC.sarif"
         wait-for-processing: true

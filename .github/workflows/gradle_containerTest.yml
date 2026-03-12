@@ -53,11 +53,12 @@ jobs:
        fetch-depth: 0 
        
     - name: Run Container
-      #run: docker run --rm -v ${{ github.workspace }}:/home/parasoft/example --name c_jtest2025.2 -it jtest2025.2 jtestcli -data demo.data.json -config "builtin://Recommended Rules"     
+      # /f/docker/jTest/2025.2/demo:/home/parasoft/example
+      # -v "${{ github.workspace }}:/home/parasoft/example"
       run: >
        docker run
        --rm 
-       -v "${{ github.workspace }}:/home/parasoft/example" 
+       -v /f/docker/jTest/2025.2/demo:/home/parasoft/example
        --name c_jtest2025.2 jtest2025.2
        jtestcli -data demo.data.json -config "builtin://Recommended Rules"
       shell: cmd

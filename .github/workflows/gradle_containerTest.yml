@@ -53,8 +53,7 @@ jobs:
        fetch-depth: 0 
        
     - name: Run Container
-      run: cmd |              
-              docker run --rm -v ${{ github.workspace }}:/home/parasoft/example --name c_jtest2025.2 -it jtest2025.2 jtestcli -data demo.data.json -config "builtin://Recommended Rules"     
+      run: docker run --rm -v ${{ github.workspace }}:/home/parasoft/example --name c_jtest2025.2 -it jtest2025.2 jtestcli -data demo.data.json -config "builtin://Recommended Rules"     
        
 # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)

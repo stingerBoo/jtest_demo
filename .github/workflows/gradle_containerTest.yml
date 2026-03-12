@@ -32,28 +32,12 @@ jobs:
       #uses: actions/checkout@v5     
       #uses: actions/checkout@v6
       with:
-    # Repository name with owner. For example, actions/checkout
-       #Default: ${{ github.repository }}
-       #path: d:\workspace\github\demo
-       #path: d:/workspace/github/demo
-       #path: .
-       #ref: ${{ github.workspace }}
-       #ref: "d:/workspace/github/demo"
-       #ref: ${{ github.repository }}
        ref: container_test1
-       #workspace: "d:/workspace/github/demo"
-       #set-safe-directory: 'd:/workspace/github/demo2'
-       #set-safe-directory: 'C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'
-       #repository: stingerBoo/jtest_demo
-       #token: ${{ secrets.GIT_TECHDEPLOY_TOKEN }}
-       #path: infrastructure-helm
-      # === IMPORTANT ===
-      # more likely fetch-depth 0 does not change timestamp of te files
-      # =====
        fetch-depth: 0 
        
     - name: Run Container
-      # /f/docker/jTest/2025.2/demo:/home/parasoft/example
+      # -v /f/docker/jTest/2025.2/demo:/home/parasoft/example
+      # below github.workspace is taken from location of self-hosted runner
       # -v "${{ github.workspace }}:/home/parasoft/example"
       run: >
        docker run
@@ -62,17 +46,4 @@ jobs:
        --name c_jtest2025.2 jtest2025.2
        jtestcli -data demo.data.json -config "builtin://Recommended Rules"
       shell: cmd
-       
-# Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
-    - name: Upload results (SARIF)
-      if: always()
-      uses: github/codeql-action/upload-sarif@v4
-      with:
-        #sarif_file: reports/report.sarif # reports is a default location for reports directory
-        sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/_reports/report.sarif
-        category: parasoft-jtest-SoftCode4
-        #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
-        #matrix: null
-        wait-for-processing: true
-
-  
+      

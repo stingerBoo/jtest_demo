@@ -4,9 +4,9 @@ name: Jtest with Gradle
 on:
   # Trigger the workflow on push or pull request events but only for the main branch.
   push:
-    branches: [ upload_Sarif_report ]
+    branches: [ container_test1 ]
   pull_request:
-    branches: [ upload_Sarif_report ]
+    branches: [ container_test1 ]
 
   # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
@@ -40,7 +40,7 @@ jobs:
        #ref: ${{ github.workspace }}
        #ref: "d:/workspace/github/demo"
        #ref: ${{ github.repository }}
-       ref: upload_Sarif_report
+       ref: container_test1
        #workspace: "d:/workspace/github/demo"
        #set-safe-directory: 'd:/workspace/github/demo2'
        #set-safe-directory: 'C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'
@@ -50,7 +50,16 @@ jobs:
       # === IMPORTANT ===
       # more likely fetch-depth 0 does not change timestamp of te files
       # =====
-       fetch-depth: 0  
+       fetch-depth: 0 
+       
+    - name: Run Container
+            run: |              
+              docker run --rm \
+                -v ${{ github.workspace }}:/home/parasoft/example \
+                --name c_jtest2025.2 -it jtest2025.2 \
+                jtestcli \
+                  -data demo.data.json \
+                  -config "builtin://Recommended Rules"     
        
 # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
@@ -58,7 +67,7 @@ jobs:
       uses: github/codeql-action/upload-sarif@v4
       with:
         #sarif_file: reports/report.sarif # reports is a default location for reports directory
-        sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/reportCustomer_update2.sarif
+        sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/_reports/report.sarif
         category: parasoft-jtest-SoftCode4
         #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
         #matrix: null

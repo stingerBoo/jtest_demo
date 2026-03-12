@@ -60,6 +60,6 @@ jobs:
         # below report contains error because it contains violation from custom rule. Reproduce of case: 00106709
         #sarif_file: "${{ github.workspace }}/reports/reportRuleABC.sarif"
         
-        # below report contains error because it contains violation from custom rule. Reproduce of case: 00106709
-        sarif_file: "${{ github.workspace }}/reports/report.sarif"
+        # below report should be fine after update. Reproduce of case: 00106709
+        sarif_file: "${{ github.workspace }}/reports/reportCustomer_update.sarif"
         wait-for-processing: true

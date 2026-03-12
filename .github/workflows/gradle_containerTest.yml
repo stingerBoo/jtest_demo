@@ -34,8 +34,12 @@ jobs:
       with:
        ref: container_test1
        fetch-depth: 0 
-       
+
+    # this is a usage of continer on localmachine where it's on windows with docker desktop
+    # the image was created on windows with: docker build -t jtest2025.2 .
+    # Dockerfile is here: f:\docker\jTest\2025.2\
     - name: Run Container
+      # another options below that works:
       # -v /f/docker/jTest/2025.2/demo:/home/parasoft/example
       # below github.workspace is taken from location of self-hosted runner
       # -v "${{ github.workspace }}:/home/parasoft/example"
@@ -54,5 +58,8 @@ jobs:
       with:
         #sarif_file: reports/report.sarif # reports is a default location for reports directory
         # below report contains error because it contains violation from custom rule. Reproduce of case: 00106709
-        sarif_file: "${{ github.workspace }}/reports/reportRuleABC.sarif"
+        #sarif_file: "${{ github.workspace }}/reports/reportRuleABC.sarif"
+        
+        # below report contains error because it contains violation from custom rule. Reproduce of case: 00106709
+        sarif_file: "${{ github.workspace }}/reports/report.sarif"
         wait-for-processing: true

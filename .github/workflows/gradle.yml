@@ -30,6 +30,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v6
       with:  
+       ref: 'branch1'
        fetch-depth: 0
        set-safe-directory: 'C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'
 

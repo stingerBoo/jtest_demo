@@ -52,7 +52,7 @@ jobs:
       # more likely fetch-depth 0 does not change timestamp of te files
       # =====
        clean: true
-       set-safe-directory: 'c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'
+       set-safe-directory: true
        fetch-depth: 0
     - name: Pre-clean Workspace
       run: |

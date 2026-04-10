@@ -53,13 +53,7 @@ jobs:
       # =====
        clean: true
        set-safe-directory: true
-       fetch-depth: 0
-    - name: Pre-clean Workspace
-      run: |
-        if (Test-Path -Path "C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo") {
-          Remove-Item -Recurse -Force "C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo"
-        }
-      shell: powershell       
+       fetch-depth: 0     
        
 # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)

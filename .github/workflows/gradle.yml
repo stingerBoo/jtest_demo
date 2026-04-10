@@ -29,6 +29,9 @@ jobs:
     # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:  
+       fetch-depth: 0
+       safe-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
       
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest

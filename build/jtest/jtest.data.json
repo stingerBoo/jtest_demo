@@ -1,9 +1,9 @@
 {
   "name": "com.parasoft:demo",
-  "location": "D:\\workspace\\github\\demo\\build.gradle",
+  "location": "D:\\workspace\\github\\demo",
   "type": "classpath_project",
-  "build_id": "2025.1.1.F202506051331",
-  "schema_version": "1.5",
+  "build_id": "2025.2.2.F202601271205",
+  "schema_version": "1.6",
   "testoutcomes": [
     {
       "type": "junit.listener",
@@ -30,20 +30,118 @@
   ],
   "compilations": [
     {
-      "id": "test",
+      "id": "main",
       "related_project_id": "",
       "sourcepath": [
-        "D:\\workspace\\github\\demo\\src\\test\\java"
+        {
+          "path": "D:\\workspace\\github\\demo\\src\\main\\java",
+          "exists": true,
+          "auto_generated": false
+        }
       ],
-      "resourcepath": [],
+      "resourcepath": [
+        {
+          "path": "D:\\workspace\\github\\demo\\src\\main\\resources",
+          "exists": true,
+          "auto_generated": false
+        }
+      ],
       "includes": [],
       "excludes": [],
       "compiler_output_path": [
-        "D:\\workspace\\github\\demo\\build\\classes\\java\\test"
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\main",
+          "exists": true,
+          "auto_generated": true
+        }
       ],
       "classpath_entries": [
         {
-          "path": "C:\\Program Files\\Java\\jdk-18.0.2.1\\lib\\jrt-fs.jar",
+          "path": "C:\\Program Files\\Java\\jdk-21.0.7\\lib\\jrt-fs.jar",
+          "type": "JDK",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\javax\\servlet\\servlet-api\\2.4\\servlet-api-2.4.jar",
+          "type": "LIBRARY",
+          "scope": {
+            "runtime": true,
+            "compile": true,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\resources\\main",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        }
+      ],
+      "encoding": "UTF-8",
+      "sourcelevel": "1.8",
+      "targetlevel": "1.8",
+      "javapath": "C:\\Program Files\\Java\\jdk-21.0.7",
+      "test_compilation": false
+    },
+    {
+      "id": "test",
+      "related_project_id": "",
+      "sourcepath": [
+        {
+          "path": "D:\\workspace\\github\\demo\\src\\test\\java",
+          "exists": true,
+          "auto_generated": false
+        }
+      ],
+      "resourcepath": [
+        {
+          "path": "D:\\workspace\\github\\demo\\src\\test\\resources",
+          "exists": false,
+          "auto_generated": false
+        }
+      ],
+      "includes": [],
+      "excludes": [],
+      "compiler_output_path": [
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\test",
+          "exists": true,
+          "auto_generated": true
+        }
+      ],
+      "classpath_entries": [
+        {
+          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\test",
+          "type": "DIRECTORY",
+          "scope": {
+            "runtime": true,
+            "compile": false,
+            "exported": false,
+            "obligatory": false
+          }
+        },
+        {
+          "path": "C:\\Program Files\\Java\\jdk-21.0.7\\lib\\jrt-fs.jar",
           "type": "JDK",
           "scope": {
             "runtime": true,
@@ -263,16 +361,6 @@
           }
         },
         {
-          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\test",
-          "type": "DIRECTORY",
-          "scope": {
-            "runtime": true,
-            "compile": false,
-            "exported": false,
-            "obligatory": false
-          }
-        },
-        {
           "path": "C:\\Users\\sgrabinski\\.m2\\repository\\org\\junit\\platform\\junit-platform-runner\\1.12.1\\junit-platform-runner-1.12.1.jar",
           "type": "LIBRARY",
           "scope": {
@@ -345,67 +433,9 @@
       ],
       "encoding": "UTF-8",
       "sourcelevel": "1.8",
+      "targetlevel": "1.8",
+      "javapath": "C:\\Program Files\\Java\\jdk-21.0.7",
       "test_compilation": true
-    },
-    {
-      "id": "main",
-      "related_project_id": "",
-      "sourcepath": [
-        "D:\\workspace\\github\\demo\\src\\main\\java"
-      ],
-      "resourcepath": [
-        "D:\\workspace\\github\\demo\\src\\main\\resources"
-      ],
-      "includes": [],
-      "excludes": [],
-      "compiler_output_path": [
-        "D:\\workspace\\github\\demo\\build\\classes\\java\\main"
-      ],
-      "classpath_entries": [
-        {
-          "path": "C:\\Program Files\\Java\\jdk-18.0.2.1\\lib\\jrt-fs.jar",
-          "type": "JDK",
-          "scope": {
-            "runtime": true,
-            "compile": true,
-            "exported": false,
-            "obligatory": false
-          }
-        },
-        {
-          "path": "C:\\Users\\sgrabinski\\.m2\\repository\\javax\\servlet\\servlet-api\\2.4\\servlet-api-2.4.jar",
-          "type": "LIBRARY",
-          "scope": {
-            "runtime": true,
-            "compile": true,
-            "exported": false,
-            "obligatory": false
-          }
-        },
-        {
-          "path": "D:\\workspace\\github\\demo\\build\\classes\\java\\main",
-          "type": "DIRECTORY",
-          "scope": {
-            "runtime": true,
-            "compile": false,
-            "exported": false,
-            "obligatory": false
-          }
-        },
-        {
-          "path": "D:\\workspace\\github\\demo\\build\\resources\\main",
-          "type": "DIRECTORY",
-          "scope": {
-            "runtime": true,
-            "compile": false,
-            "exported": false,
-            "obligatory": false
-          }
-        }
-      ],
-      "encoding": "UTF-8",
-      "sourcelevel": "1.8",
-      "test_compilation": false
     }
   ],
   "extras": {},

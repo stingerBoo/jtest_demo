@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mergePnt id="setupProblems">
+  <SetupProblems>
+    <Problem msg="Source Control configuration issues:" sev="0" totErrs="1" type="Misconfig">
+      <ErrorList>
+        <Error val="A different 'git' repository has been found in settings, but it does not match source repository of tested resources:&#xd;&#xa;- branch:   expected >>none&lt;&lt;   :   found main&#xd;&#xa;- url:   expected git@github.com:stingerBoo/jtest_demo.git   :   found https://github.com/stingerBoo/jtest_demo.git&#xd;&#xa;- workspace:   expected D:\workspace\github\demo   :   found C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo&#xd;&#xa;"/>
+      </ErrorList>
+    </Problem>
+  </SetupProblems>
+</mergePnt>

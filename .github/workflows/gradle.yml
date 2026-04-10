@@ -31,7 +31,15 @@ jobs:
       uses: actions/checkout@v4
       with:  
        fetch-depth: 0
-       safe-directory: C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo
+       set-safe-directory: 'C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'
+
+    # Use git command and add safe.directory which potentially solves 
+    # the issue with Test Configuration > Scope > "Test only files modified between the current working branch and 'main'"
+    - name: Git commands and safe.directory
+      shell: cmd
+      run: git fetch --all |
+           git rev-parse --verify --quiet branch1 |
+           git config --global --add safe.directory "C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo"
       
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest

@@ -50,6 +50,8 @@ jobs:
       # === IMPORTANT ===
       # more likely fetch-depth 0 does not change timestamp of te files
       # =====
+       clean: true
+       set-safe-directory: 'false'
        fetch-depth: 0  
        
 # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.

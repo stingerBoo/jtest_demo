@@ -55,6 +55,30 @@ public class Simple {
         }
         return 0;
     }
+		public static int map1_1(int index) {
+        switch (index) {
+        case 0:
+            case10: return -1;
+        case 2:
+        case 20:
+            break;
+        default:
+            return -2;
+        }
+        return 0;
+    }
+			public static int map1_2(int index) {
+        switch (index) {
+        case 0:
+            case10: return -1;
+        case 2:
+        case 20:
+            break;
+        default:
+            return -2;
+        }
+        return 0;
+    }
 
     /**
      * Takes two arguments and returns the boolean result if 'str' starts with the

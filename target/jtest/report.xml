@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?><ResultsSession buildId="jtest-2026-05-15" climode="true" endTime="2026-05-15T11:26:44+02:00" execEnv="win32_x86_64" hasViols="false" id="1779964772690" lang="en_US" machine="falon" prjModule="com.parasoft:demo" project="jtest" scBranch="branch1" tag="demo" time="2026-05-15T11:26:42+02:00" toolDispName="Jtest" toolId="jtest" toolName="DTP Engine for Java" toolVer="2025.2.4" user="sgrabinski">
+<?xml version='1.0' encoding='UTF-8'?><ResultsSession buildId="jtest-2026-05-15" climode="true" endTime="2026-05-15T11:42:31+02:00" execEnv="win32_x86_64" hasViols="false" id="1779965720171" lang="en_US" machine="falon" prjModule="com.parasoft:demo" project="jtest" scBranch="branch1" tag="demo" time="2026-05-15T11:42:29+02:00" toolDispName="Jtest" toolId="jtest" toolName="DTP Engine for Java" toolVer="2025.2.4" user="sgrabinski">
    <TestParameters cmdLn="jtestcli -data c:\_workspace\github\demo\target\jtest\jtest.data.json -config jtest.dtp://Recommended Rules_master_branch1 -settings C:\_parasoft\jtest\sourceControl1.properties -report c:\_workspace\github\demo\target\jtest -fail false -monitor false"/>
    <TestConfig machine="falon" name="Recommended Rules_master_branch1" pseudoUrl="jtest.dtp://Recommended Rules_master_branch1" user="sgrabinski"/>
    <Authors/>
@@ -44,7 +44,7 @@
          <Rep repRef="1" type="git" url="git@github.com:stingerBoo/jtest_demo.git"/>
       </Repositories>
       <Locations>
-         <Loc accLns="0" branch="branch1" hash="1605226466" jtestScopeFiltered="true" locRef="1" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" rejBy="Files Filter" repRef="1" resProjPath="src/main/java/examples/eval/Simple.java" rev="5fa98781e4deff32a8de8c36aff46039c37bee61" scPath="src/main/java/examples/eval/Simple.java" totLns="70" uri="file:/C:/_workspace/github/demo/src/main/java/examples/eval/Simple.java"/>
+         <Loc accLns="0" branch="branch1" hash="-1134924343" jtestScopeFiltered="true" locRef="1" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" rejBy="Files Filter" repRef="1" resProjPath="src/main/java/examples/eval/Simple.java" rev="6f4770fd56d6fb231ed1dba922ff272ca227cee9" scPath="src/main/java/examples/eval/Simple.java" totLns="118" uri="file:/C:/_workspace/github/demo/src/main/java/examples/eval/Simple.java"/>
          <Loc accLns="0" branch="branch1" hash="-32679949" jtestScopeFiltered="true" locRef="2" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" rejBy="Files Filter" repRef="1" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseGSS.java" rev="52822f46545b67095dbeef2c0f2348ab818fb085" scPath="src/main/java/examples/flowanalysis/AlwaysCloseGSS.java" totLns="34" uri="file:/C:/_workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java"/>
          <Loc accLns="0" branch="branch1" hash="1088242968" jtestScopeFiltered="true" locRef="3" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" rejBy="Files Filter" repRef="1" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseImages.java" rev="52822f46545b67095dbeef2c0f2348ab818fb085" scPath="src/main/java/examples/flowanalysis/AlwaysCloseImages.java" totLns="35" uri="file:/C:/_workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java"/>
          <Loc accLns="0" branch="branch1" hash="-89489575" jtestScopeFiltered="true" locRef="4" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" rejBy="Files Filter" repRef="1" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseLogging.java" rev="52822f46545b67095dbeef2c0f2348ab818fb085" scPath="src/main/java/examples/flowanalysis/AlwaysCloseLogging.java" totLns="25" uri="file:/C:/_workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java"/>
@@ -114,11 +114,17 @@
       </Locations>
    </Scope>
    
-  <SetupProblems/>
+  <SetupProblems>
+    <Problem msg="Source Control problems:" sev="1" totErrs="1" type="SourceControl">
+      <ErrorList>
+        <Error val="Cannot recognize the following reference branch specified to limit the test scope: master &#xa;Ensure that the branch is available and correctly specified to be used by your test configuration."/>
+      </ErrorList>
+    </Problem>
+  </SetupProblems>
 
    <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:00">
       <Projects>
-         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="0" checkedLns="0" id="com.parasoft:demo" name="com.parasoft:demo" qfixErrs="0" suppErrs="0" totErrs="0" totFiles="67" totLns="3770"/>
+         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="0" checkedLns="0" id="com.parasoft:demo" name="com.parasoft:demo" qfixErrs="0" suppErrs="0" totErrs="0" totFiles="67" totLns="3818"/>
       </Projects>
       
       <History>
@@ -130,8 +136,8 @@
             </Categories>
             <Total secSer="1" title="" xTitle="Date" yTitle="Lines" yTitle2="Tasks">
                <X>05-15-26,</X>
-               <Y>3770,0,0,</Y>
-               <Delta>3770,0,0,</Delta>
+               <Y>3818,0,0,</Y>
+               <Delta>3818,0,0,</Delta>
             </Total>
          </Graph>
       </History>

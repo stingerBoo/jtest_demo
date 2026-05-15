@@ -1,0 +1,10 @@
+ver=1
+start_time=26-05-15(11-39-59)+0200
+jvm_current_mem_memory_session_statistics=164
+jvm_total_mem_memory_session_statistics=519
+jvm_max_mem_memory_session_statistics=3818
+session_total_time_time_session_statistics=5
+results.processors_time_session_statistics=1
+scope.filters_time_session_statistics=1
+reports_time_session_statistics=3
+analyzers_time_session_statistics=2

@@ -1,4 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <mergePnt id="setupProblems">
-  <SetupProblems/>
+  <SetupProblems>
+    <Problem msg="Source Control problems:" sev="1" totErrs="1" type="SourceControl">
+      <ErrorList>
+        <Error val="Cannot recognize the following reference branch specified to limit the test scope: master &#xa;Ensure that the branch is available and correctly specified to be used by your test configuration."/>
+      </ErrorList>
+    </Problem>
+  </SetupProblems>
 </mergePnt>

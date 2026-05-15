@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mergePnt id="csViolations">
+  <StdViols>
+    <StdViol msg="Replace this with your own text" ln="126" locFile="/com.parasoft:demo/src/main/java/examples/stackmachine/CommandLineStackMachine.java" auth="sgrabinski" rule="A.B.C" lnHash="1551307810" pkg="examples.stackmachine" rule.header="headerTest" locStartPos="17" analyzer="com.parasoft.jtest.standards.checkers.rulewizard" revTime="0" lang="java" violId="1af95fc1-a006-3546-81f8-0254c72c5ce1" locEndPos="18" urgent="true" locEndLn="126" goals="1," rev="unknown.revision" locStartln="126" sev="3" locRef="58" ctx="110,4|133,5" tool="jtest" lineHash="1551307810" unbViolId="b5948a09-95e4-3291-9556-55df2ca76901" locType="sr" hash="-1581767335"/>
+  </StdViols>
+</mergePnt>

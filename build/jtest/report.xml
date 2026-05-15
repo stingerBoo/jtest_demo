@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?><ResultsSession buildId="jtest-2026-04-10" climode="true" endTime="2026-04-10T09:18:58+02:00" execEnv="win32_x86_64" hasViols="true" id="1775447399988" lang="en_US" machine="STINGER" prjModule="com.parasoft:demo" project="jtest" tag="demo" time="2026-04-10T09:18:56+02:00" toolDispName="Jtest" toolId="jtest" toolName="DTP Engine for Java" toolVer="2025.2.2" user="sgrabinski">
+   <TestParameters cmdLn="jtestcli -data D:\workspace\github\demo\build\jtest\jtest.data.json -config jtest.dtp://testCustomRule -report D:\workspace\github\demo\build\jtest"/>
+   <TestConfig machine="STINGER" name="testCustomRule" pseudoUrl="jtest.dtp://testCustomRule" user="sgrabinski"/>
+   <Authors>
+      <Author id="dev1" name="sgrabinski"/>
+   </Authors>
+   <Analyzers>
+      <Analyzer id="com.parasoft.jtest.standards.checkers.rulewizard" name="Parasoft RuleWizard Static Analyzer" ver="10.7.3.202601271205"/>
+   </Analyzers>
+   <VersionInfos>
+      <StorageInfo ownerId="" resultId="ISetupResult" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricsViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IExecutionViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IDupCodeViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IFlowAnalysisViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IFunctionalViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IChangeImpactViolation" ver="1" ver10x="1"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="ICodingStandardsViolation" ver="2" ver10x="1"/>
+      <StorageInfo ownerId="" resultId="IUnitTestViolation" ver="1" ver10x="1"/>
+   </VersionInfos>
+   <Goals tsks="1">
+      
+      <History>
+         <Graph id="gls">
+            <Categories>
+               <Category color="red" name="Total" pos="0"/>
+            </Categories>
+            <Total secSer="1" title="" xTitle="Date" yTitle="Tasks" yTitle2="Total Tasks">
+               <X>04-10-26,</X>
+               <Y>1,</Y>
+               <Delta>1,</Delta>
+            </Total>
+         </Graph>
+      </History>
+   
+   </Goals>
+   <Scope>
+      <Repositories/>
+      <Locations>
+         <Loc hash="1605226466" jtestScopeFiltered="true" locRef="1" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/eval/Simple.java" totLns="70" uri="file:/D:/workspace/github/demo/src/main/java/examples/eval/Simple.java"/>
+         <Loc hash="-32679949" jtestScopeFiltered="true" locRef="2" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseGSS.java" totLns="34" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java"/>
+         <Loc hash="1088242968" jtestScopeFiltered="true" locRef="3" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseImages.java" totLns="35" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java"/>
+         <Loc hash="-89489575" jtestScopeFiltered="true" locRef="4" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseLogging.java" totLns="25" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java"/>
+         <Loc hash="1710944294" jtestScopeFiltered="true" locRef="5" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java" totLns="40" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java"/>
+         <Loc hash="-1842798386" jtestScopeFiltered="true" locRef="6" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java" totLns="38" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java"/>
+         <Loc hash="-69784133" jtestScopeFiltered="true" locRef="7" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseSockets.java" totLns="33" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java"/>
+         <Loc hash="-1630627415" jtestScopeFiltered="true" locRef="8" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java" totLns="75" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java"/>
+         <Loc hash="726838777" jtestScopeFiltered="true" locRef="9" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/DereferenceBeforeNullCheck.java" totLns="55" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/DereferenceBeforeNullCheck.java"/>
+         <Loc hash="-1891737324" jtestScopeFiltered="true" locRef="10" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/DivisionByZero.java" totLns="69" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/DivisionByZero.java"/>
+         <Loc hash="686946442" jtestScopeFiltered="true" locRef="11" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/FilesInjection.java" totLns="30" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/FilesInjection.java"/>
+         <Loc hash="438092426" jtestScopeFiltered="true" locRef="12" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java" totLns="41" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java"/>
+         <Loc hash="1816383512" jtestScopeFiltered="true" locRef="13" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java" totLns="32" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java"/>
+         <Loc hash="-417185865" jtestScopeFiltered="true" locRef="14" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/InefficientMapRemoval.java" totLns="59" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java"/>
+         <Loc hash="-359565455" jtestScopeFiltered="true" locRef="15" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/InefficientMapUsage.java" totLns="37" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java"/>
+         <Loc hash="1862789318" jtestScopeFiltered="true" locRef="16" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/SQLInjection.java" totLns="58" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/SQLInjection.java"/>
+         <Loc hash="-152258803" jtestScopeFiltered="true" locRef="17" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/SystemInjection.java" totLns="55" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/SystemInjection.java"/>
+         <Loc hash="1709312165" jtestScopeFiltered="true" locRef="18" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/UnreachableCode.java" totLns="59" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/UnreachableCode.java"/>
+         <Loc hash="-635152949" jtestScopeFiltered="true" locRef="19" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java" totLns="46" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java"/>
+         <Loc hash="2110246917" jtestScopeFiltered="true" locRef="20" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/UseBeforeInitialization.java" totLns="67" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java"/>
+         <Loc hash="565976681" jtestScopeFiltered="true" locRef="21" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/WebApplication.java" totLns="51" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/WebApplication.java"/>
+         <Loc hash="-367659159" jtestScopeFiltered="true" locRef="22" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/XMLInjection.java" totLns="39" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/XMLInjection.java"/>
+         <Loc hash="635578452" jtestScopeFiltered="true" locRef="23" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/np/DatabaseObject.java" totLns="63" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/np/DatabaseObject.java"/>
+         <Loc hash="1118499003" jtestScopeFiltered="true" locRef="24" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/np/ExtendedNullPointer.java" totLns="57" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/np/ExtendedNullPointer.java"/>
+         <Loc hash="796982299" jtestScopeFiltered="true" locRef="25" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/np/MessageFormatter.java" totLns="15" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/np/MessageFormatter.java"/>
+         <Loc hash="1067996598" jtestScopeFiltered="true" locRef="26" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/np/MyDictionary.java" totLns="24" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/np/MyDictionary.java"/>
+         <Loc hash="-51902665" jtestScopeFiltered="true" locRef="27" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/flowanalysis/np/NullPointer.java" totLns="31" uri="file:/D:/workspace/github/demo/src/main/java/examples/flowanalysis/np/NullPointer.java"/>
+         <Loc hash="13842231" jtestScopeFiltered="true" locRef="28" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/ChoosingConstructor.java" totLns="59" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/ChoosingConstructor.java"/>
+         <Loc hash="1460192582" jtestScopeFiltered="true" locRef="29" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/CustomMoney.java" totLns="15" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/CustomMoney.java"/>
+         <Loc hash="-47973091" jtestScopeFiltered="true" locRef="30" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/IMoney.java" totLns="52" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/IMoney.java"/>
+         <Loc hash="1622384320" jtestScopeFiltered="true" locRef="31" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/IntegerComparator.java" totLns="15" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/IntegerComparator.java"/>
+         <Loc hash="-1765121077" jtestScopeFiltered="true" locRef="32" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/Money.java" totLns="91" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/Money.java"/>
+         <Loc hash="-113332437" jtestScopeFiltered="true" locRef="33" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/MoneyBag.java" totLns="140" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/MoneyBag.java"/>
+         <Loc hash="1434598914" jtestScopeFiltered="true" locRef="34" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/NaiveStringBuilder.java" totLns="26" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/NaiveStringBuilder.java"/>
+         <Loc hash="1554031451" jtestScopeFiltered="true" locRef="35" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/junit/SimpleObjectHandler.java" totLns="39" uri="file:/D:/workspace/github/demo/src/main/java/examples/junit/SimpleObjectHandler.java"/>
+         <Loc hash="-1994237948" jtestScopeFiltered="true" locRef="36" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/metrics/MetricsExample.java" totLns="52" uri="file:/D:/workspace/github/demo/src/main/java/examples/metrics/MetricsExample.java"/>
+         <Loc hash="1497176251" jtestScopeFiltered="true" locRef="37" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/mock/CharacterReader.java" totLns="57" uri="file:/D:/workspace/github/demo/src/main/java/examples/mock/CharacterReader.java"/>
+         <Loc hash="1641622182" jtestScopeFiltered="true" locRef="38" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/mock/FileExample.java" totLns="35" uri="file:/D:/workspace/github/demo/src/main/java/examples/mock/FileExample.java"/>
+         <Loc hash="1888280347" jtestScopeFiltered="true" locRef="39" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/mock/Interpreter.java" totLns="33" uri="file:/D:/workspace/github/demo/src/main/java/examples/mock/Interpreter.java"/>
+         <Loc hash="-762775565" jtestScopeFiltered="true" locRef="40" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/mock/MultiSourceCharacterReader.java" totLns="34" uri="file:/D:/workspace/github/demo/src/main/java/examples/mock/MultiSourceCharacterReader.java"/>
+         <Loc hash="922840071" jtestScopeFiltered="true" locRef="41" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/mock/PathUtil.java" totLns="18" uri="file:/D:/workspace/github/demo/src/main/java/examples/mock/PathUtil.java"/>
+         <Loc hash="-251506569" jtestScopeFiltered="true" locRef="42" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/AbstractTransaction.java" totLns="22" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/AbstractTransaction.java"/>
+         <Loc hash="-2109136904" jtestScopeFiltered="true" locRef="43" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/Account.java" totLns="117" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/Account.java"/>
+         <Loc hash="-1683403269" jtestScopeFiltered="true" locRef="44" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/Bank.java" totLns="82" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/Bank.java"/>
+         <Loc hash="2120971007" jtestScopeFiltered="true" locRef="45" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/BankState.java" totLns="22" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/BankState.java"/>
+         <Loc hash="-368683629" jtestScopeFiltered="true" locRef="46" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/ConnectionException.java" totLns="8" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/ConnectionException.java"/>
+         <Loc hash="3241407" jtestScopeFiltered="true" locRef="47" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/CreditCard.java" totLns="199" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/CreditCard.java"/>
+         <Loc hash="-1493448701" jtestScopeFiltered="true" locRef="48" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/Customer.java" totLns="109" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/Customer.java"/>
+         <Loc hash="-249228641" jtestScopeFiltered="true" locRef="49" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/DepositTransaction.java" totLns="24" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/DepositTransaction.java"/>
+         <Loc hash="1948271967" jtestScopeFiltered="true" locRef="50" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/ICreditAgency.java" totLns="8" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/ICreditAgency.java"/>
+         <Loc hash="1398902534" jtestScopeFiltered="true" locRef="51" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/ITransaction.java" totLns="25" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/ITransaction.java"/>
+         <Loc hash="-179143843" jtestScopeFiltered="true" locRef="52" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/LogAccountInfo.java" totLns="48" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/LogAccountInfo.java"/>
+         <Loc hash="-1206559161" jtestScopeFiltered="true" locRef="53" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/nbank/WithdrawalTransaction.java" totLns="24" uri="file:/D:/workspace/github/demo/src/main/java/examples/nbank/WithdrawalTransaction.java"/>
+         <Loc hash="-981357238" jtestScopeFiltered="true" locRef="54" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/queue/Queue.java" totLns="83" uri="file:/D:/workspace/github/demo/src/main/java/examples/queue/Queue.java"/>
+         <Loc hash="-1145404863" jtestScopeFiltered="true" locRef="55" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/security/InputValidation.java" totLns="127" uri="file:/D:/workspace/github/demo/src/main/java/examples/security/InputValidation.java"/>
+         <Loc hash="-1999350871" jtestScopeFiltered="true" locRef="56" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/servlets/ExampleServlet.java" totLns="42" uri="file:/D:/workspace/github/demo/src/main/java/examples/servlets/ExampleServlet.java"/>
+         <Loc hash="1553680728" jtestScopeFiltered="true" locRef="57" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/AbstractStackMachine.java" totLns="123" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/AbstractStackMachine.java"/>
+         <Loc hash="-1581767335" jtestScopeFiltered="true" locRef="58" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/CommandLineStackMachine.java" totLns="147" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/CommandLineStackMachine.java"/>
+         <Loc hash="1782082961" jtestScopeFiltered="true" locRef="59" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/CustomListRenderer.java" totLns="30" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/CustomListRenderer.java"/>
+         <Loc hash="-726989549" jtestScopeFiltered="true" locRef="60" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/FifoStackMachine.java" totLns="39" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/FifoStackMachine.java"/>
+         <Loc hash="-1559173645" jtestScopeFiltered="true" locRef="61" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/LifoStackMachine.java" totLns="39" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/LifoStackMachine.java"/>
+         <Loc hash="-339219917" jtestScopeFiltered="true" locRef="62" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/RunnableStackMachine.java" totLns="396" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/RunnableStackMachine.java"/>
+         <Loc hash="963698942" jtestScopeFiltered="true" locRef="63" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/StackInterface.java" totLns="26" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/StackInterface.java"/>
+         <Loc hash="-1082942404" jtestScopeFiltered="true" locRef="64" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/stackmachine/StackList.java" totLns="100" uri="file:/D:/workspace/github/demo/src/main/java/examples/stackmachine/StackList.java"/>
+         <Loc hash="-2129128806" jtestScopeFiltered="true" locRef="65" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/suppress/AllFileSuppress.java" totLns="13" uri="file:/D:/workspace/github/demo/src/main/java/examples/suppress/AllFileSuppress.java"/>
+         <Loc hash="2004133938" jtestScopeFiltered="true" locRef="66" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="src/main/java/examples/suppress/Example.java" totLns="10" uri="file:/D:/workspace/github/demo/src/main/java/examples/suppress/Example.java"/>
+         <Loc hash="836988928" jtestScopeFiltered="true" locRef="67" projId="com.parasoft:demo" projPath="/com.parasoft:demo" project="com.parasoft:demo" resProjPath="META-INF/MANIFEST.MF" totLns="3" uri="file:/D:/workspace/github/demo/META-INF/MANIFEST.MF"/>
+      </Locations>
+   </Scope>
+   
+  <SetupProblems>
+    <Problem msg="Source Control configuration issues:" sev="0" totErrs="1" type="Misconfig">
+      <ErrorList>
+        <Error val="A different 'git' repository has been found in settings, but it does not match source repository of tested resources:&#xd;&#xa;- branch:   expected >>none&lt;&lt;   :   found main&#xd;&#xa;- url:   expected git@github.com:stingerBoo/jtest_demo.git   :   found https://github.com/stingerBoo/jtest_demo.git&#xd;&#xa;- workspace:   expected D:\workspace\github\demo   :   found C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo&#xd;&#xa;"/>
+      </ErrorList>
+    </Problem>
+  </SetupProblems>
+
+   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:00">
+      <Projects>
+         <Project bdCheckedFiles="0" bdTotalFiles="0" checkedFiles="67" checkedLns="3770" id="com.parasoft:demo" name="com.parasoft:demo" qfixErrs="0" suppErrs="0" totErrs="1" totFiles="67" totLns="3770"/>
+      </Projects>
+      
+      <History>
+         <Graph id="lns">
+            <Categories>
+               <Category color="blue" name="Total Lines" pos="0"/>
+               <Category color="green" name="Checked Lines" pos="1"/>
+               <Category authPos="0" color="red" name="Tasks" pos="2"/>
+            </Categories>
+            <Total secSer="1" title="" xTitle="Date" yTitle="Lines" yTitle2="Tasks">
+               <X>04-10-26,</X>
+               <Y>3770,3770,1,</Y>
+               <Delta>3770,3770,1,</Delta>
+            </Total>
+            <Authors title="" xTitle="Date" yTitle="Total Tasks">
+               <Author name="sgrabinski">
+                  <X>04-10-26,</X>
+                  <Y>1,</Y>
+                  <Delta>1,</Delta>
+               </Author>
+            </Authors>
+         </Graph>
+      </History>
+   
+      
+      <Rules>
+         <CategoriesList>
+            <Category authTot="0;" authUrg="0;" desc="UNKNOWN" name="A" rules="1" total="0">
+               <Category authTot="1;" authUrg="1;" desc="UNKNOWN" name="A.B" rules="1" total="1"/>
+            </Category>
+         </CategoriesList>
+         <RulesList>
+            <Rule analyzer="com.parasoft.jtest.standards.checkers.rulewizard" authTot="1;" authUrg="1;" cat="A.B" desc="headerTest" id="A.B.C" sev="3" total="1"/>
+         </RulesList>
+         <SeverityList>
+            <Severity authTot="1;" authUrg="1;" id="3" total="1"/>
+         </SeverityList>
+      </Rules>
+      
+  <Supps/>
+
+      
+  <StdViols>
+    <StdViol msg="Replace this with your own text" ln="126" locFile="/com.parasoft:demo/src/main/java/examples/stackmachine/CommandLineStackMachine.java" auth="sgrabinski" rule="A.B.C" lnHash="1551307810" pkg="examples.stackmachine" rule.header="headerTest" locStartPos="17" analyzer="com.parasoft.jtest.standards.checkers.rulewizard" revTime="0" lang="java" violId="1af95fc1-a006-3546-81f8-0254c72c5ce1" locEndPos="18" urgent="true" locEndLn="126" goals="1," rev="unknown.revision" locStartln="126" sev="3" locRef="58" ctx="110,4|133,5" tool="jtest" lineHash="1551307810" unbViolId="b5948a09-95e4-3291-9556-55df2ca76901" locType="sr" hash="-1581767335"/>
+  </StdViols>
+
+      <TestedFilesDetails>
+         <Total name="Total (Suppressed)" supp="0" total="1">
+            <Project id="com.parasoft:demo" name="com.parasoft:demo" supp="0" total="1">
+               <Res name="src" supp="0" total="1">
+                  <Res name="main" supp="0" total="1">
+                     <Res name="java" supp="0" total="1">
+                        <Res name="examples" supp="0" total="1">
+                           <Res name="eval" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/eval/Simple.java" locRef="1" locType="sr" name="Simple.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="flowanalysis" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java" locRef="2" locType="sr" name="AlwaysCloseGSS.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java" locRef="3" locType="sr" name="AlwaysCloseImages.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java" locRef="4" locType="sr" name="AlwaysCloseLogging.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java" locRef="5" locType="sr" name="AlwaysCloseNIOChannels.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java" locRef="6" locType="sr" name="AlwaysCloseRAFs.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java" locRef="7" locType="sr" name="AlwaysCloseSockets.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java" locRef="8" locType="sr" name="AlwaysCloseXMLEncDec.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/DereferenceBeforeNullCheck.java" locRef="9" locType="sr" name="DereferenceBeforeNullCheck.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java" locRef="10" locType="sr" name="DivisionByZero.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/FilesInjection.java" locRef="11" locType="sr" name="FilesInjection.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java" locRef="12" locType="sr" name="IncorrectIteratorUsage.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java" locRef="13" locType="sr" name="InefficientCollectionRemoval.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java" locRef="14" locType="sr" name="InefficientMapRemoval.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java" locRef="15" locType="sr" name="InefficientMapUsage.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/SQLInjection.java" locRef="16" locType="sr" name="SQLInjection.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/SystemInjection.java" locRef="17" locType="sr" name="SystemInjection.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java" locRef="18" locType="sr" name="UnreachableCode.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java" locRef="19" locType="sr" name="UseBeforeInConstructorInitialization.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java" locRef="20" locType="sr" name="UseBeforeInitialization.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/WebApplication.java" locRef="21" locType="sr" name="WebApplication.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/XMLInjection.java" locRef="22" locType="sr" name="XMLInjection.java" supp="0" total="0"/>
+                              <Res name="np" supp="0" total="0">
+                                 <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/DatabaseObject.java" locRef="23" locType="sr" name="DatabaseObject.java" supp="0" total="0"/>
+                                 <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/ExtendedNullPointer.java" locRef="24" locType="sr" name="ExtendedNullPointer.java" supp="0" total="0"/>
+                                 <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/MessageFormatter.java" locRef="25" locType="sr" name="MessageFormatter.java" supp="0" total="0"/>
+                                 <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/MyDictionary.java" locRef="26" locType="sr" name="MyDictionary.java" supp="0" total="0"/>
+                                 <Res loc="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java" locRef="27" locType="sr" name="NullPointer.java" supp="0" total="0"/>
+                              </Res>
+                           </Res>
+                           <Res name="junit" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/ChoosingConstructor.java" locRef="28" locType="sr" name="ChoosingConstructor.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/CustomMoney.java" locRef="29" locType="sr" name="CustomMoney.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/IMoney.java" locRef="30" locType="sr" name="IMoney.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/IntegerComparator.java" locRef="31" locType="sr" name="IntegerComparator.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/Money.java" locRef="32" locType="sr" name="Money.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/MoneyBag.java" locRef="33" locType="sr" name="MoneyBag.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/NaiveStringBuilder.java" locRef="34" locType="sr" name="NaiveStringBuilder.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/junit/SimpleObjectHandler.java" locRef="35" locType="sr" name="SimpleObjectHandler.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="metrics" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/metrics/MetricsExample.java" locRef="36" locType="sr" name="MetricsExample.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="mock" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/mock/CharacterReader.java" locRef="37" locType="sr" name="CharacterReader.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/mock/FileExample.java" locRef="38" locType="sr" name="FileExample.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/mock/Interpreter.java" locRef="39" locType="sr" name="Interpreter.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/mock/MultiSourceCharacterReader.java" locRef="40" locType="sr" name="MultiSourceCharacterReader.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/mock/PathUtil.java" locRef="41" locType="sr" name="PathUtil.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="nbank" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/AbstractTransaction.java" locRef="42" locType="sr" name="AbstractTransaction.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/Account.java" locRef="43" locType="sr" name="Account.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/Bank.java" locRef="44" locType="sr" name="Bank.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/BankState.java" locRef="45" locType="sr" name="BankState.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/ConnectionException.java" locRef="46" locType="sr" name="ConnectionException.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/CreditCard.java" locRef="47" locType="sr" name="CreditCard.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java" locRef="48" locType="sr" name="Customer.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/DepositTransaction.java" locRef="49" locType="sr" name="DepositTransaction.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/ICreditAgency.java" locRef="50" locType="sr" name="ICreditAgency.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/ITransaction.java" locRef="51" locType="sr" name="ITransaction.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/LogAccountInfo.java" locRef="52" locType="sr" name="LogAccountInfo.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/nbank/WithdrawalTransaction.java" locRef="53" locType="sr" name="WithdrawalTransaction.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="queue" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/queue/Queue.java" locRef="54" locType="sr" name="Queue.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="security" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java" locRef="55" locType="sr" name="InputValidation.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="servlets" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java" locRef="56" locType="sr" name="ExampleServlet.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="stackmachine" supp="0" total="1">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/AbstractStackMachine.java" locRef="57" locType="sr" name="AbstractStackMachine.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/CommandLineStackMachine.java" locRef="58" locType="sr" name="CommandLineStackMachine.java" supp="0" total="1"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/CustomListRenderer.java" locRef="59" locType="sr" name="CustomListRenderer.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/FifoStackMachine.java" locRef="60" locType="sr" name="FifoStackMachine.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/LifoStackMachine.java" locRef="61" locType="sr" name="LifoStackMachine.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/RunnableStackMachine.java" locRef="62" locType="sr" name="RunnableStackMachine.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/StackInterface.java" locRef="63" locType="sr" name="StackInterface.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/stackmachine/StackList.java" locRef="64" locType="sr" name="StackList.java" supp="0" total="0"/>
+                           </Res>
+                           <Res name="suppress" supp="0" total="0">
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/suppress/AllFileSuppress.java" locRef="65" locType="sr" name="AllFileSuppress.java" supp="0" total="0"/>
+                              <Res loc="/com.parasoft:demo/src/main/java/examples/suppress/Example.java" locRef="66" locType="sr" name="Example.java" supp="0" total="0"/>
+                           </Res>
+                        </Res>
+                     </Res>
+                  </Res>
+               </Res>
+               <Res name="META-INF" supp="0" total="0">
+                  <Res loc="/com.parasoft:demo/META-INF/MANIFEST.MF" locRef="67" locType="sr" name="MANIFEST.MF" supp="0" total="0"/>
+               </Res>
+            </Project>
+         </Total>
+      </TestedFilesDetails>
+   </CodingStandards>
+   <Statistics>
+      
+   </Statistics>
+</ResultsSession>

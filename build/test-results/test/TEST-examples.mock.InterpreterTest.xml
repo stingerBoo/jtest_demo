@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.mock.InterpreterTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-08-25T11:26:56" hostname="STINGER" time="0.11">
+<testsuite name="examples.mock.InterpreterTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-04-10T07:18:48" hostname="STINGER" time="0.11">
   <properties/>
   <testcase name="testAdd34" classname="examples.mock.InterpreterTest" time="0.11">
     <failure message="org.opentest4j.AssertionFailedError: value is:-1 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: value is:-1 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
@@ -9,9 +9,9 @@
 	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
 	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
 	at app//examples.mock.InterpreterTest.testAdd34(InterpreterTest.java:38)
-	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
-	at java.base@18.0.2.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+	at java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>

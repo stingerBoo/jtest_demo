@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rules>
+   <builtin>
+      <category name="A">
+         <category name="B">
+            <rule header="headerTest" id="C" impl="A.B.C" quickfix="false" scope="line" severity="3">
+               <file path="RuleABC.rule"/>
+            </rule>
+         </category>
+      </category>
+   </builtin>
+</rules>

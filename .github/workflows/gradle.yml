@@ -49,8 +49,8 @@ jobs:
       
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
-      shell: powershell
-      run: .\gradlew clean build jtest -I "$env:JTEST/integration/gradle/init.gradle" "-Djtest.config=builtin://Recommended Rules" "-Djtest.report=reports"
+      shell: cmd
+      run: .\gradlew clean build jtest -I "%JTEST%/integration/gradle/init.gradle" "-Djtest.config=builtin://Recommended Rules" "-Djtest.report=reports"
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)

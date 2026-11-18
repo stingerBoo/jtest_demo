@@ -1,0 +1,1607 @@
+[ 11/18/26, 10:26?AM - Initialized console 'Jtest']
+DTP Services: Loading available services from https://falon.parasoft.com.pl:8443/grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://falon.parasoft.com.pl:8443/grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, licenseServerV1.2, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+Settings: 
+  # from: C:\_parasoft\jtest\2026.2\etc\jtestcli.properties
+  com.parasoft.jtest.globals.analyzer.parallel.processing=true
+  com.parasoft.jtest.globals.analyzer.simultaneous.processing.limit=64
+  com.parasoft.xtest.standards.api.java.virtual_mode=false
+  configuration.dir.builtin=${jtest.installdir}/configs/builtin
+  configuration.dir.user=${jtest.installdir}/configs/user
+  coverage.preprocess.cli=true
+  jprofiler.trace.amount=3
+  jprofiler.trace.begin=1
+  jprofiler.trace.filenames.toskip=
+  jtest.acd.max.amount.of.path=80000
+  jtest.analyzer.execution.coverage.show.synthetic.members=false
+  jtest.analyzer.static.dupcode.parser.cache.enabled=true
+  jtest.analyzer.static.dupcode.simultaneous.processing.limit=400
+  jtest.analyzer.static.flow.batch.parse.limit=100
+  jtest.analyzer.static.flow.graphs.parallel.processing=false
+  jtest.analyzer.static.flow.graphs.simultaneous.processing.limit=50
+  jtest.analyzer.static.flow.models.cache.enabled=false
+  jtest.analyzer.static.flow.models.inMemorySize=75
+  jtest.analyzer.static.flow.parallel.processing=true
+  jtest.analyzer.static.flow.parser.java.xast.xmethodbinding.getMethodDeclaration=false
+  jtest.analyzer.static.flow.res.root.dir=${jtest.installdir}/plugins/builtin/res
+  jtest.analyzer.static.flow.simultaneous.processing.limit=100
+  jtest.analyzer.static.java.group.minutes.timeout=1440
+  jtest.analyzer.static.java.parallel.processing=true
+  jtest.analyzer.static.java.parser.cache.enabled=true
+  jtest.analyzer.static.java.simultaneous.processing.limit=400
+  jtest.analyzer.static.machinelearning.group.minutes.timeout=1440
+  jtest.analyzer.static.machinelearning.parser.cache.enabled=true
+  jtest.analyzer.static.machinelearning.simultaneous.processing.limit=400
+  jtest.analyzer.static.metrics.parallel.processing=true
+  jtest.analyzer.static.metrics.parser.cache.enabled=true
+  jtest.analyzer.static.metrics.simultaneous.processing.limit=400
+  jtest.analyzer.static.prop.parallel.processing=true
+  jtest.analyzer.static.prop.parser.cache.enabled=true
+  jtest.analyzer.static.prop.simultaneous.processing.limit=50
+  jtest.analyzer.static.rulewizard.parallel.processing=true
+  jtest.analyzer.static.rulewizard.parser.cache.enabled=true
+  jtest.analyzer.static.rulewizard.simultaneous.processing.limit=400
+  jtest.analyzer.static.xml.parallel.processing=true
+  jtest.analyzer.static.xml.parser.cache.enabled=true
+  jtest.analyzer.static.xml.simultaneous.processing.limit=50
+  jtest.configuration=builtin://Recommended Rules
+  jtest.configuration.dir.builtin9x=${jtest.installdir}/configs/builtin9x
+  jtest.context.serialize=true
+  jtest.context.serializepath=${local.storage.dir}/context_tree.log
+  jtest.coverage.runtimefiles.amount.max=1000
+  jtest.coverage.testid.enabled=true
+  jtest.database.dir=${local.storage.dir}/com.parasoft.jtest.database
+  jtest.database.recreate=false
+  jtest.database.store.threads=1
+  jtest.database.url.suffix=;TRACE_LEVEL_FILE=1;LOCK_TIMEOUT=10000;DEFRAG_ALWAYS=TRUE
+  jtest.default.sourcelevel=1.8
+  jtest.global.data.collector.enabled=true
+  jtest.global.data.dir=${local.storage.dir}/data-global
+  jtest.globals.filesearch.legacy=false
+  jtest.includeTestSources=false
+  jtest.injected.field.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.field.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.field.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.field.annotations.maven=org.apache.maven.plugins.annotations.Parameter,org.apache.maven.plugins.annotations.Component
+  jtest.injected.field.annotations.seam=org.jboss.seam.annotations.In
+  jtest.injected.field.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.field.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.method.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.method.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.method.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.method.annotations.maven=
+  jtest.injected.method.annotations.seam=org.jboss.seam.annotations.In,org.jboss.seam.annotations.Logger
+  jtest.injected.method.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.method.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.parameter.annotations.fxjava=
+  jtest.injected.parameter.annotations.j2ee=javax.ws.rs.core.Context,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.parameter.annotations.jpa=
+  jtest.injected.parameter.annotations.maven=
+  jtest.injected.parameter.annotations.seam=
+  jtest.injected.parameter.annotations.spring=org.springframework.beans.factory.annotation.Value
+  jtest.injected.parameter.annotations.struts=com.opensymphony.xwork2.inject.Inject
+  jtest.parser.bom=default
+  jtest.parser.ignoreParseErrors=false
+  jtest.parser.includeCompilerOutput=true
+  jtest.parser.includeRunningVMBootclasspath=false
+  jtest.parser.java.batch.parse.limit=1
+  jtest.preanalyze.enabled=true
+  jtest.preanalyze.simultaneous.processing.limit=100
+  jtest.preanalyze.simultaneous.processing.pool=4
+  jtest.rulewizard.dictionaries.dir=${jtest.installdir}/etc/rulewizard
+  jtest.supported.javaversion=1.3,1.4,1.5,1.6,1.7,1.8,9,10,11,15,16,17,18,19,20,21,22,23,24,25
+  jtest.suppression.equivalent.creation.enabled=false
+  jtest.suppression.equivalent.creation.path=${jtest.workspace.dir}/suppression_equivalents.txt
+  jtest.techsupport.include.configuration=true
+  jtest.techsupport.include.coverage=true
+  jtest.techsupport.include.coverage.data=true
+  jtest.techsupport.include.database=false
+  jtest.techsupport.include.metrics=true
+  jtest.techsupport.include.mldata=true
+  jtest.techsupport.include.report=true
+  jtest.techsupport.include.testoutcomes=true
+  jtest.unit.executor.parallel.processing.enable=true
+  jtest.unittest.report.assumption.as.incomplete=false
+  jtest.unittest.xml.results.processing.enabled=false
+  jtest.workspace.dir=.
+  local.storage.dir=${jtest.workspace.dir}/.jtest
+  report.active_rules=true
+  report.associations=true
+  report.authors_details=false
+  report.contexts_details=true
+  report.coverage.version=2
+  report.developer_errors=true
+  report.developer_reports=false
+  report.format=html
+  report.location=${jtest.workspace.dir}/report
+  report.setup.problems=bottom
+  report.test_params=true
+  report.xsl.dir.builtin=${jtest.installdir}/etc/xsl
+  rule.dir.user=${jtest.installdir}/rules/user
+  rules.provider_dupcode.analyzer=com.parasoft.jtest.standards.dupcode
+  rules.provider_dupcode.data=${jtest.installdir}/rules/dcrules.xml
+  rules.provider_dupcode.id=com.parasoft.jtest.standards.dupcode.rules
+  rules.provider_flowanalysis_builtin.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_builtin.data=${jtest.installdir}/rules/farules.xml
+  rules.provider_flowanalysis_builtin.id=com.parasoft.jtest.flowanalyzer.rules.builtin
+  rules.provider_flowanalysis_builtin.separator=.
+  rules.provider_flowanalysis_external.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_external.data=${jtest.installdir}/rules/external_farules.xml
+  rules.provider_flowanalysis_external.id=com.parasoft.jtest.flowanalyzer.rules.external
+  rules.provider_flowanalysis_external.separator=.
+  rules.provider_java_builtin.analyzer=com.parasoft.jtest.standards.checkers.java
+  rules.provider_java_builtin.data=${jtest.installdir}/rules/corerules.xml
+  rules.provider_java_builtin.deprecated=${jtest.installdir}/rules/deprecated_rules.xml
+  rules.provider_java_builtin.id=com.parasoft.jtest.rules.java.builtin
+  rules.provider_java_builtin.separator=.
+  rules.provider_metric.analyzer=com.parasoft.jtest.standards.metrics.analyzer
+  rules.provider_metric.data=${jtest.installdir}/rules/metrics.xml
+  rules.provider_metric.id=com.parasoft.jtest.rules.metrics.builtin
+  rules.provider_metric.separator=.
+  rules.provider_metric.type=metrics
+  rules.provider_prop.analyzer=com.parasoft.jtest.standards.checkers.prop
+  rules.provider_prop.data=${jtest.installdir}/rules/proprules.xml
+  rules.provider_prop.id=com.parasoft.jtest.rules.prop.builtin
+  rules.provider_prop.separator=.
+  rules.provider_rulewizard_builtin.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_builtin.data=${jtest.installdir}/rules/rwrules.xml
+  rules.provider_rulewizard_builtin.directory=${jtest.installdir}/rules/builtin/
+  rules.provider_rulewizard_builtin.id=com.parasoft.jtest.rules.rulewizard.builtin
+  rules.provider_rulewizard_builtin.mapping=${jtest.installdir}/rules/builtin/rulemap.xml
+  rules.provider_rulewizard_builtin.separator=.
+  rules.provider_rulewizard_dtp.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_dtp.categories=${local.storage.dir}/rules/dtp/categories.properties
+  rules.provider_rulewizard_dtp.data=${local.storage.dir}/rules/dtp/rules.xml
+  rules.provider_rulewizard_dtp.dir=${local.storage.dir}/rules/dtp/
+  rules.provider_rulewizard_dtp.id=com.parasoft.jtest.rules.rulewizard.dtp
+  rules.provider_rulewizard_dtp.mapping=${local.storage.dir}/rules/dtp/rulemap.xml
+  rules.provider_rulewizard_dtp.separator=.
+  rules.provider_rulewizard_dtp.share.url=true
+  rules.provider_rulewizard_team.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_team.categories=${local.storage.dir}/rules/team/categories.properties
+  rules.provider_rulewizard_team.data=${local.storage.dir}/rules/team/rules.xml
+  rules.provider_rulewizard_team.dir=${local.storage.dir}/rules/team/
+  rules.provider_rulewizard_team.id=com.parasoft.jtest.rules.rulewizard.team
+  rules.provider_rulewizard_team.mapping=${local.storage.dir}/rules/team/rulemap.xml
+  rules.provider_rulewizard_team.separator=.
+  rules.provider_rulewizard_user.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_user.data=${rule.dir.user}/rules.xml
+  rules.provider_rulewizard_user.dir=${rule.dir.user}
+  rules.provider_rulewizard_user.id=com.parasoft.jtest.rules.rulewizard.user
+  rules.provider_rulewizard_user.mapping=${rule.dir.user}/rulemap.xml
+  rules.provider_rulewizard_user.separator=.
+  rules.provider_xml.analyzer=com.parasoft.jtest.standards.checkers.xml
+  rules.provider_xml.data=${jtest.installdir}/rules/xmlrules.xml
+  rules.provider_xml.id=com.parasoft.jtest.rules.xml.builtin
+  rules.provider_xml.separator=.
+  settings.rules.file.jtest=${jtest.installdir}/etc/settings_rules.properties
+  suppression.equivalents.enabled=false
+  suppression.equivalents.file=${jtest.installdir}/rules/suppression.equivalents.txt
+  suppression1.comment=//
+  suppression1.file.ext=java
+  suppression2.block.only=true
+  suppression2.comment=#
+  suppression2.file.ext=properties,mf
+  suppression3.block.only=true
+  suppression3.comment=<!--
+  suppression3.comment.suffix=-->
+  suppression3.file.ext=xml,wsdd,xmi
+  suppression4.block.only=true
+  suppression4.comment=/*
+  suppression4.comment.suffix=*/
+  suppression4.file.ext=java
+  tce.engine.id=jtest
+  tce.engine.location=${jtest.installdir}
+  techsupport.create.on.exit=true
+  
+  # from: C:\_parasoft\jtest\2026.2\jtestcli.properties
+  console.verbosity.level=high
+  dtp.autoconfig=true
+  dtp.password=>>hidden<<
+  dtp.project=jtest
+  dtp.share.enabled=true
+  dtp.url=https://falon.parasoft.com.pl:8443
+  dtp.user=admin
+  jtest.java.home=c:/_tools/zulujava/21.0.10
+  jtest.license.custom_edition_features=Jtest, Static Analysis, Flow Analysis, OWASP Rules, CWE Rules, PCI DSS Rules, DISA STIG Rules, Security Rules, Automation, Desktop Command Line, DTP Publish, Coverage, Unit Test, Unit Test Single Class Creation, Unit Test Bulk Creation Tier 1, Unit Test Bulk Creation Tier 2, Unit Test Bulk Creation Tier 3, Unit Test Bulk Creation Tier 4, Unit Test Spring Framework, Test Impact Analysis, LLM Integration
+  jtest.license.network.edition=custom_edition
+  jtest.license.use_network=true
+  jtest.showsettings=true
+  logging.scontrol.verbose=true
+  logging.verbose=true
+  parasoft.eula.accepted=true
+  report.associations=true
+  report.authors_details=true
+  report.contexts_details=true
+  report.dtp.publish=true
+  report.location=c:\_parasoft\TS\jtest\report
+  scontrol.git.exec=C:\Program Files\Git\bin\git.exe
+  scontrol.rep1.git.branch=main
+  scontrol.rep1.git.url=https://github.com/stingerBoo/jtest_demo.git
+  scontrol.rep1.git.workspace=C:\arJtest\_work\jtest_demo\jtest_demo
+  scontrol.rep1.type=git
+  techsupport.archive.location=c:\_parasoft\TS\jtest
+  techsupport.create.on.exit=true
+  techsupport.enabled=true
+  
+  # from: C:\Users\sgrabinski\jtestcli.properties
+  
+  # from: C:\_workspace\github\demo\jtestcli.properties
+  jtest.configuration=user://RR_modify1
+  jtest.license.custom_edition_features=Jtest, Static Analysis, Flow Analysis, OWASP Rules, CWE Rules, PCI DSS Rules, DISA STIG Rules, Security Rules, Automation, Desktop Command Line, Coverage, Unit Test, Test Impact Analysis, LLM Integration
+  jtest.license.network.edition=custom_edition
+  report.assoc.url.pr=http://bugzilla.company.com/show_bug.cgi?id=[%ID%]
+  report.assoc.url.req=http://req.company.com:8443/browse/[%ID%]
+  report.assoc.url.task=http://dtp.company.com:8080/grs/jsf/planning/task/edit_task.jsf?entityId=[%ID%]
+  report.associations=true
+  session.tag=demo
+  
+  # from: command line options
+  jtest.configuration=builtin://Recommended Rules
+  jtest.data=C:\_workspace\github\demo\build\jtest\jtest.data.json
+  jtest.installdir=C:\_parasoft\jtest\2026.2
+  jtest.workspace.dir=C:\_workspace\github\demo\build\jtest
+  report.location=C:\_workspace\github\demo\build\jtest
+  runtime.command_line=jtestcli -data C:\_workspace\github\demo\build\jtest\jtest.data.json -config builtin://Recommended Rules -report C:\_workspace\github\demo\build\jtest
+  
+  # from: preferences services
+  
+  # from: test configuration
+  
+  # final: 
+  com.parasoft.jtest.globals.analyzer.parallel.processing=true
+  com.parasoft.jtest.globals.analyzer.simultaneous.processing.limit=64
+  com.parasoft.xtest.standards.api.java.virtual_mode=false
+  configuration.dir.builtin=C:\_parasoft\jtest\2026.2/configs/builtin
+  configuration.dir.user=C:\_parasoft\jtest\2026.2/configs/user
+  console.verbosity.level=high
+  coverage.preprocess.cli=true
+  dtp.autoconfig=true
+  dtp.password=>>hidden<<
+  dtp.project=jtest
+  dtp.share.enabled=true
+  dtp.url=https://falon.parasoft.com.pl:8443
+  dtp.user=admin
+  jprofiler.trace.amount=3
+  jprofiler.trace.begin=1
+  jprofiler.trace.filenames.toskip=
+  jtest.acd.max.amount.of.path=80000
+  jtest.analyzer.execution.coverage.show.synthetic.members=false
+  jtest.analyzer.static.dupcode.parser.cache.enabled=true
+  jtest.analyzer.static.dupcode.simultaneous.processing.limit=400
+  jtest.analyzer.static.flow.batch.parse.limit=100
+  jtest.analyzer.static.flow.graphs.parallel.processing=false
+  jtest.analyzer.static.flow.graphs.simultaneous.processing.limit=50
+  jtest.analyzer.static.flow.models.cache.enabled=false
+  jtest.analyzer.static.flow.models.inMemorySize=75
+  jtest.analyzer.static.flow.parallel.processing=true
+  jtest.analyzer.static.flow.parser.java.xast.xmethodbinding.getMethodDeclaration=false
+  jtest.analyzer.static.flow.res.root.dir=C:\_parasoft\jtest\2026.2/plugins/builtin/res
+  jtest.analyzer.static.flow.simultaneous.processing.limit=100
+  jtest.analyzer.static.java.group.minutes.timeout=1440
+  jtest.analyzer.static.java.parallel.processing=true
+  jtest.analyzer.static.java.parser.cache.enabled=true
+  jtest.analyzer.static.java.simultaneous.processing.limit=400
+  jtest.analyzer.static.machinelearning.group.minutes.timeout=1440
+  jtest.analyzer.static.machinelearning.parser.cache.enabled=true
+  jtest.analyzer.static.machinelearning.simultaneous.processing.limit=400
+  jtest.analyzer.static.metrics.parallel.processing=true
+  jtest.analyzer.static.metrics.parser.cache.enabled=true
+  jtest.analyzer.static.metrics.simultaneous.processing.limit=400
+  jtest.analyzer.static.prop.parallel.processing=true
+  jtest.analyzer.static.prop.parser.cache.enabled=true
+  jtest.analyzer.static.prop.simultaneous.processing.limit=50
+  jtest.analyzer.static.rulewizard.parallel.processing=true
+  jtest.analyzer.static.rulewizard.parser.cache.enabled=true
+  jtest.analyzer.static.rulewizard.simultaneous.processing.limit=400
+  jtest.analyzer.static.xml.parallel.processing=true
+  jtest.analyzer.static.xml.parser.cache.enabled=true
+  jtest.analyzer.static.xml.simultaneous.processing.limit=50
+  jtest.configuration=builtin://Recommended Rules
+  jtest.configuration.dir.builtin9x=C:\_parasoft\jtest\2026.2/configs/builtin9x
+  jtest.context.id=1794993985943
+  jtest.context.serialize=true
+  jtest.context.serializepath=C:\_workspace\github\demo\build\jtest/.jtest/context_tree.log
+  jtest.coverage.runtimefiles.amount.max=1000
+  jtest.coverage.testid.enabled=true
+  jtest.data=C:\_workspace\github\demo\build\jtest\jtest.data.json
+  jtest.database.dir=C:\_workspace\github\demo\build\jtest/.jtest/com.parasoft.jtest.database
+  jtest.database.recreate=false
+  jtest.database.store.threads=1
+  jtest.database.url.suffix=;TRACE_LEVEL_FILE=1;LOCK_TIMEOUT=10000;DEFRAG_ALWAYS=TRUE
+  jtest.default.sourcelevel=1.8
+  jtest.global.data.collector.enabled=true
+  jtest.global.data.dir=C:\_workspace\github\demo\build\jtest/.jtest/data-global
+  jtest.globals.filesearch.legacy=false
+  jtest.includeTestSources=false
+  jtest.injected.field.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.field.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.field.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.field.annotations.maven=org.apache.maven.plugins.annotations.Parameter,org.apache.maven.plugins.annotations.Component
+  jtest.injected.field.annotations.seam=org.jboss.seam.annotations.In
+  jtest.injected.field.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.field.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.method.annotations.fxjava=javafx.fxml.FXML
+  jtest.injected.method.annotations.j2ee=javax.inject.Inject,javax.ws.rs.core.Context,javax.annotation.Resource,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.method.annotations.jpa=javax.persistence.Basic,javax.persistence.Embedded,javax.persistence.ElementCollection,javax.persistence.PersistenceContext,javax.persistence.Column,javax.persistence.ManyToMany,javax.persistence.ManyToOne,javax.persistence.OneToMany,javax.persistence.OneToOne,javax.persistence.PersistenceUnit
+  jtest.injected.method.annotations.maven=
+  jtest.injected.method.annotations.seam=org.jboss.seam.annotations.In,org.jboss.seam.annotations.Logger
+  jtest.injected.method.annotations.spring=org.springframework.beans.factory.annotation.Autowired,org.springframework.beans.factory.annotation.Value
+  jtest.injected.method.annotations.struts=com.opensymphony.xwork2.util.CreateIfNull,com.opensymphony.xwork2.inject.Inject
+  jtest.injected.parameter.annotations.fxjava=
+  jtest.injected.parameter.annotations.j2ee=javax.ws.rs.core.Context,javax.ws.rs.DefaultValue,javax.ws.rs.QueryParam,javax.ws.rs.PathParam,javax.ws.rs.MatrixParam,javax.ws.rs.CookieParam,javax.ws.rs.HeaderParam,javax.ws.rs.BeanParam,javax.ws.rs.FormParam
+  jtest.injected.parameter.annotations.jpa=
+  jtest.injected.parameter.annotations.maven=
+  jtest.injected.parameter.annotations.seam=
+  jtest.injected.parameter.annotations.spring=org.springframework.beans.factory.annotation.Value
+  jtest.injected.parameter.annotations.struts=com.opensymphony.xwork2.inject.Inject
+  jtest.installdir=C:\_parasoft\jtest\2026.2
+  jtest.java.home=c:/_tools/zulujava/21.0.10
+  jtest.license.custom_edition_features=Jtest, Static Analysis, Flow Analysis, OWASP Rules, CWE Rules, PCI DSS Rules, DISA STIG Rules, Security Rules, Automation, Desktop Command Line, Coverage, Unit Test, Test Impact Analysis, LLM Integration
+  jtest.license.network.edition=custom_edition
+  jtest.license.use_network=true
+  jtest.parser.bom=default
+  jtest.parser.ignoreParseErrors=false
+  jtest.parser.includeCompilerOutput=true
+  jtest.parser.includeRunningVMBootclasspath=false
+  jtest.parser.java.batch.parse.limit=1
+  jtest.preanalyze.enabled=true
+  jtest.preanalyze.simultaneous.processing.limit=100
+  jtest.preanalyze.simultaneous.processing.pool=4
+  jtest.rulewizard.dictionaries.dir=C:\_parasoft\jtest\2026.2/etc/rulewizard
+  jtest.showsettings=true
+  jtest.supported.javaversion=1.3,1.4,1.5,1.6,1.7,1.8,9,10,11,15,16,17,18,19,20,21,22,23,24,25
+  jtest.suppression.equivalent.creation.enabled=false
+  jtest.suppression.equivalent.creation.path=C:\_workspace\github\demo\build\jtest/suppression_equivalents.txt
+  jtest.techsupport.include.configuration=true
+  jtest.techsupport.include.coverage=true
+  jtest.techsupport.include.coverage.data=true
+  jtest.techsupport.include.database=false
+  jtest.techsupport.include.metrics=true
+  jtest.techsupport.include.mldata=true
+  jtest.techsupport.include.report=true
+  jtest.techsupport.include.testoutcomes=true
+  jtest.unit.executor.parallel.processing.enable=true
+  jtest.unittest.report.assumption.as.incomplete=false
+  jtest.unittest.xml.results.processing.enabled=false
+  jtest.workspace.dir=C:\_workspace\github\demo\build\jtest
+  local.storage.dir=C:\_workspace\github\demo\build\jtest/.jtest
+  logging.scontrol.verbose=true
+  logging.verbose=true
+  parasoft.eula.accepted=true
+  report.active_rules=true
+  report.assoc.url.pr=http://bugzilla.company.com/show_bug.cgi?id=[%ID%]
+  report.assoc.url.req=http://req.company.com:8443/browse/[%ID%]
+  report.assoc.url.task=http://dtp.company.com:8080/grs/jsf/planning/task/edit_task.jsf?entityId=[%ID%]
+  report.associations=true
+  report.authors_details=true
+  report.contexts_details=true
+  report.coverage.version=2
+  report.developer_errors=true
+  report.developer_reports=false
+  report.dtp.publish=true
+  report.format=html
+  report.location=C:\_workspace\github\demo\build\jtest
+  report.setup.problems=bottom
+  report.test_params=true
+  report.xsl.dir.builtin=C:\_parasoft\jtest\2026.2/etc/xsl
+  rule.dir.user=C:\_parasoft\jtest\2026.2/rules/user
+  rules.provider_dupcode.analyzer=com.parasoft.jtest.standards.dupcode
+  rules.provider_dupcode.data=C:\_parasoft\jtest\2026.2/rules/dcrules.xml
+  rules.provider_dupcode.id=com.parasoft.jtest.standards.dupcode.rules
+  rules.provider_flowanalysis_builtin.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_builtin.data=C:\_parasoft\jtest\2026.2/rules/farules.xml
+  rules.provider_flowanalysis_builtin.id=com.parasoft.jtest.flowanalyzer.rules.builtin
+  rules.provider_flowanalysis_builtin.separator=.
+  rules.provider_flowanalysis_external.analyzer=com.parasoft.jtest.flowanalyzer
+  rules.provider_flowanalysis_external.data=C:\_parasoft\jtest\2026.2/rules/external_farules.xml
+  rules.provider_flowanalysis_external.id=com.parasoft.jtest.flowanalyzer.rules.external
+  rules.provider_flowanalysis_external.separator=.
+  rules.provider_java_builtin.analyzer=com.parasoft.jtest.standards.checkers.java
+  rules.provider_java_builtin.data=C:\_parasoft\jtest\2026.2/rules/corerules.xml
+  rules.provider_java_builtin.deprecated=C:\_parasoft\jtest\2026.2/rules/deprecated_rules.xml
+  rules.provider_java_builtin.id=com.parasoft.jtest.rules.java.builtin
+  rules.provider_java_builtin.separator=.
+  rules.provider_metric.analyzer=com.parasoft.jtest.standards.metrics.analyzer
+  rules.provider_metric.data=C:\_parasoft\jtest\2026.2/rules/metrics.xml
+  rules.provider_metric.id=com.parasoft.jtest.rules.metrics.builtin
+  rules.provider_metric.separator=.
+  rules.provider_metric.type=metrics
+  rules.provider_prop.analyzer=com.parasoft.jtest.standards.checkers.prop
+  rules.provider_prop.data=C:\_parasoft\jtest\2026.2/rules/proprules.xml
+  rules.provider_prop.id=com.parasoft.jtest.rules.prop.builtin
+  rules.provider_prop.separator=.
+  rules.provider_rulewizard_builtin.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_builtin.data=C:\_parasoft\jtest\2026.2/rules/rwrules.xml
+  rules.provider_rulewizard_builtin.directory=C:\_parasoft\jtest\2026.2/rules/builtin/
+  rules.provider_rulewizard_builtin.id=com.parasoft.jtest.rules.rulewizard.builtin
+  rules.provider_rulewizard_builtin.mapping=C:\_parasoft\jtest\2026.2/rules/builtin/rulemap.xml
+  rules.provider_rulewizard_builtin.separator=.
+  rules.provider_rulewizard_dtp.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_dtp.categories=C:\_workspace\github\demo\build\jtest/.jtest/rules/dtp/categories.properties
+  rules.provider_rulewizard_dtp.data=C:\_workspace\github\demo\build\jtest/.jtest/rules/dtp/rules.xml
+  rules.provider_rulewizard_dtp.dir=C:\_workspace\github\demo\build\jtest/.jtest/rules/dtp/
+  rules.provider_rulewizard_dtp.id=com.parasoft.jtest.rules.rulewizard.dtp
+  rules.provider_rulewizard_dtp.mapping=C:\_workspace\github\demo\build\jtest/.jtest/rules/dtp/rulemap.xml
+  rules.provider_rulewizard_dtp.separator=.
+  rules.provider_rulewizard_dtp.share.url=true
+  rules.provider_rulewizard_team.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_team.categories=C:\_workspace\github\demo\build\jtest/.jtest/rules/team/categories.properties
+  rules.provider_rulewizard_team.data=C:\_workspace\github\demo\build\jtest/.jtest/rules/team/rules.xml
+  rules.provider_rulewizard_team.dir=C:\_workspace\github\demo\build\jtest/.jtest/rules/team/
+  rules.provider_rulewizard_team.id=com.parasoft.jtest.rules.rulewizard.team
+  rules.provider_rulewizard_team.mapping=C:\_workspace\github\demo\build\jtest/.jtest/rules/team/rulemap.xml
+  rules.provider_rulewizard_team.separator=.
+  rules.provider_rulewizard_user.analyzer=com.parasoft.jtest.standards.checkers.rulewizard
+  rules.provider_rulewizard_user.data=C:\_parasoft\jtest\2026.2/rules/user/rules.xml
+  rules.provider_rulewizard_user.dir=C:\_parasoft\jtest\2026.2/rules/user
+  rules.provider_rulewizard_user.id=com.parasoft.jtest.rules.rulewizard.user
+  rules.provider_rulewizard_user.mapping=C:\_parasoft\jtest\2026.2/rules/user/rulemap.xml
+  rules.provider_rulewizard_user.separator=.
+  rules.provider_xml.analyzer=com.parasoft.jtest.standards.checkers.xml
+  rules.provider_xml.data=C:\_parasoft\jtest\2026.2/rules/xmlrules.xml
+  rules.provider_xml.id=com.parasoft.jtest.rules.xml.builtin
+  rules.provider_xml.separator=.
+  runtime.command_line=jtestcli -data C:\_workspace\github\demo\build\jtest\jtest.data.json -config builtin://Recommended Rules -report C:\_workspace\github\demo\build\jtest
+  scontrol.git.exec=C:\Program Files\Git\bin\git.exe
+  scontrol.rep1.git.branch=main
+  scontrol.rep1.git.url=https://github.com/stingerBoo/jtest_demo.git
+  scontrol.rep1.git.workspace=C:\arJtest\_work\jtest_demo\jtest_demo
+  scontrol.rep1.type=git
+  session.tag=demo
+  settings.rules.file.jtest=C:\_parasoft\jtest\2026.2/etc/settings_rules.properties
+  suppression.equivalents.enabled=false
+  suppression.equivalents.file=C:\_parasoft\jtest\2026.2/rules/suppression.equivalents.txt
+  suppression1.comment=//
+  suppression1.file.ext=java
+  suppression2.block.only=true
+  suppression2.comment=#
+  suppression2.file.ext=properties,mf
+  suppression3.block.only=true
+  suppression3.comment=<!--
+  suppression3.comment.suffix=-->
+  suppression3.file.ext=xml,wsdd,xmi
+  suppression4.block.only=true
+  suppression4.comment=/*
+  suppression4.comment.suffix=*/
+  suppression4.file.ext=java
+  tce.engine.id=jtest
+  tce.engine.location=C:\_parasoft\jtest\2026.2
+  techsupport.archive.location=c:\_parasoft\TS\jtest
+  techsupport.create.on.exit=true
+  techsupport.enabled=true
+DTP Services: Loading available services from https://falon.parasoft.com.pl:8443/grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://falon.parasoft.com.pl:8443/grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, licenseServerV1.2, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+License: Initializing network license for Jtest 10.7
+License: Activating Custom Edition
+License: Checking features
+License: Main Jtest feature: License is valid
+License: Unit Test feature: License is valid
+License: Static Analysis feature: License is valid
+License: Coverage feature: License is valid
+License: Flow Analysis feature: License is valid
+License: Test Impact Analysis feature: License is valid
+License: Security Rules feature: License is valid
+License: CWE Rules feature: License is valid
+License: OWASP Rules feature: License is valid
+License: PCI DSS Rules feature: License is valid
+License: DISA STIG Rules feature: License is valid
+License: Automation feature: License is valid
+License: LLM Integration feature: License is valid
+License: Desktop Command Line feature: License is valid
+License: Activation finished: License is valid
+License: Machine id WIN32-2b75554b (Default)
+Sending usage data is disabled, use usage.reporting.enabled to enable
+Rule update service scanning directory: C:\_workspace\github\demo\build\jtest\.jtest\rules\team for provider com.parasoft.jtest.rules.rulewizard.team
+using categories description file: C:\_workspace\github\demo\build\jtest\.jtest\rules\team\categories.properties
+Rules have changed, performing update
+Rules refresh service, successfully written rules descriptions file: C:\_workspace\github\demo\build\jtest\.jtest\rules\team\rules.xml
+Rule update service scanning directory: C:\_parasoft\jtest\2026.2\rules\user for provider com.parasoft.jtest.rules.rulewizard.user
+Rules file is up to date, skipped update
+No shared rule providers registered.
+Configuration: Recommended Rules (builtin://Recommended Rules).
+Command line: jtestcli -data C:\_workspace\github\demo\build\jtest\jtest.data.json -config builtin://Recommended Rules -report C:\_workspace\github\demo\build\jtest
+[ 0%] > Computing testing context.
+Excluded element: unit_test_data
+Excluded element: TEST-examples.eval.SimpleTest.xml
+Excluded element: TEST-examples.servlets.ExampleServletTest.xml
+Excluded element: TEST-examples.mock.FileExampleTest.xml
+Excluded element: TEST-examples.junit.MoneyBagParameterizedTest.xml
+Excluded element: TEST-examples.junit.NaiveStringBuilderParameterizedTest.xml
+Excluded element: TEST-examples.junit.MoneyTest.xml
+Excluded element: TEST-examples.mock.InterpreterTest.xml
+Excluded test element: SimpleTest.java
+Excluded test element: MoneyBagParameterizedTest.java
+Excluded test element: MoneyTest.java
+Excluded test element: NaiveStringBuilderParameterizedTest.java
+Excluded test element: FileExampleTest.java
+Excluded test element: InterpreterTest.java
+Excluded test element: ExampleServletTest.java
+Excluded test element: SimpleTest.java
+Excluded test element: MoneyBagParameterizedTest.java
+Excluded test element: MoneyTest.java
+Excluded test element: NaiveStringBuilderParameterizedTest.java
+Excluded test element: FileExampleTest.java
+Excluded test element: FileExampleTest.java
+Excluded test element: InterpreterTest.java
+Excluded test element: ExampleServletTest.java
+Number of excluded elements: 23.
+[ 2%] < Computing testing context.: 100% 
+[ 2%] > PreAnalysis
+[ 7%]   PreAnalysis: 100% 
+[ 7%] < PreAnalysis: 100% 
+[ 7%] > Scope
+[ 7%] > Scope > Resources Filter
+[ 7%] > Scope > Resources Filter > Checking resources to exclude
+[ 7%] < Scope > Resources Filter > Checking resources to exclude: 67 of 67 
+[ 7%]   Scope: accepted /com.parasoft:demo/.../Simple.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseGSS.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseImages.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseLogging.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseSockets.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../DivisionByZero.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../FilesInjection.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../InefficientMapRemoval.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../InefficientMapUsage.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../SQLInjection.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../SystemInjection.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../UnreachableCode.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../UseBeforeInitialization.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../WebApplication.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../XMLInjection.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../DatabaseObject.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../ExtendedNullPointer.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../MessageFormatter.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../MyDictionary.java
+[ 7%]   Scope: accepted /com.parasoft:demo/.../NullPointer.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../ChoosingConstructor.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../CustomMoney.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../IMoney.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../IntegerComparator.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../Money.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../MoneyBag.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../NaiveStringBuilder.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../SimpleObjectHandler.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../MetricsExample.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../CharacterReader.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../FileExample.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../Interpreter.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[ 8%]   Scope: accepted /com.parasoft:demo/.../PathUtil.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../AbstractTransaction.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../Account.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../Bank.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../BankState.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../ConnectionException.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../CreditCard.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../Customer.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../DepositTransaction.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../ICreditAgency.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../ITransaction.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../LogAccountInfo.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../WithdrawalTransaction.java
+[ 9%]   Scope: accepted /com.parasoft:demo/.../Queue.java
+[10%]   Scope: accepted /com.parasoft:demo/.../InputValidation.java
+[10%]   Scope: accepted /com.parasoft:demo/.../ExampleServlet.java
+[10%]   Scope: accepted /com.parasoft:demo/.../AbstractStackMachine.java
+[10%]   Scope: accepted /com.parasoft:demo/.../CommandLineStackMachine.java
+[10%]   Scope: accepted /com.parasoft:demo/.../CustomListRenderer.java
+[10%]   Scope: accepted /com.parasoft:demo/.../FifoStackMachine.java
+[10%]   Scope: accepted /com.parasoft:demo/.../LifoStackMachine.java
+[10%]   Scope: accepted /com.parasoft:demo/.../RunnableStackMachine.java
+[10%]   Scope: accepted /com.parasoft:demo/.../StackInterface.java
+[10%]   Scope: accepted /com.parasoft:demo/.../StackList.java
+[10%]   Scope: accepted /com.parasoft:demo/.../AllFileSuppress.java
+[10%]   Scope: accepted /com.parasoft:demo/.../Example.java
+[10%]   Scope: accepted /com.parasoft:demo/.../MANIFEST.MF
+[11%] < Scope > Resources Filter: rejected 0 of 67 analyzed inputs 
+[11%] < Scope: rejected 0 of 67 analyzed inputs                                   >>> Scope time 0s
+Code Duplication: parser with 2 active rule(s) is enabled.
+Code Duplication: Duplicates detection is enabled.
+[11%] > Reporting
+[11%] > Analysis
+[11%] > Analysis > Scope Analyzer
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Simple.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseGSS.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseImages.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseLogging.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseSockets.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DivisionByZero.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../FilesInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InefficientMapRemoval.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InefficientMapUsage.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../SQLInjection.java
+Sending reports by mail is disabled, use report.mail.enabled setting to enable.
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../SystemInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../UnreachableCode.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../UseBeforeInitialization.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../WebApplication.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../XMLInjection.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DatabaseObject.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ExtendedNullPointer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MessageFormatter.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MyDictionary.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../NullPointer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ChoosingConstructor.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CustomMoney.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../IMoney.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../IntegerComparator.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Money.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MoneyBag.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../NaiveStringBuilder.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../SimpleObjectHandler.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MetricsExample.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CharacterReader.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../FileExample.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Interpreter.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../PathUtil.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AbstractTransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Account.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Bank.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../BankState.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ConnectionException.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CreditCard.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Customer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../DepositTransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ICreditAgency.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ITransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../LogAccountInfo.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../WithdrawalTransaction.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Queue.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../InputValidation.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../ExampleServlet.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AbstractStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CommandLineStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../CustomListRenderer.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../FifoStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../LifoStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../RunnableStackMachine.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../StackInterface.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../StackList.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../AllFileSuppress.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../Example.java
+[11%]   Analysis > Scope Analyzer: analyzed /com.parasoft:demo/.../MANIFEST.MF
+[11%] < Analysis > Scope Analyzer: analyzed 67 
+[11%] > Results
+[11%] > Analysis > IOC
+[14%] < Analysis > IOC: number of analyzed inputs 0 of 90, skipped 90             >>> IOC time 0s
+[14%] > Analysis > Code Duplication
+[14%] > Results > Metrics processor
+[14%] > Results > Unified Rules Processor
+[14%] > Results > Scope Processor
+[14%] > Results > Duplicates Processor
+[14%] > Results > Tokens Mismatch Filter Processor
+Applying limit of maximum violations per rule: 1,000 
+[14%] > Results > Coverage Processor
+DTP Services: Loading available services from https://falon.parasoft.com.pl:8443/grs/api/v1.13/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+[14%] > Results > Metadata Processor
+[14%] > Results > Author Processor
+[14%] > Results > Suppression Processor
+[14%] > Results > Rule Limit Processor
+[14%] > Results > Goals Processor
+[14%] > Results > Violations Scope Decorator
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Simple.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseGSS.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseImages.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseLogging.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseSockets.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[14%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../DivisionByZero.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../FilesInjection.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../InefficientMapRemoval.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../InefficientMapUsage.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../SQLInjection.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../SystemInjection.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../UnreachableCode.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../UseBeforeInitialization.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../WebApplication.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../XMLInjection.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../DatabaseObject.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../ExtendedNullPointer.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../MessageFormatter.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../MyDictionary.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../NullPointer.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../ChoosingConstructor.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../CustomMoney.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../IMoney.java
+[15%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../IntegerComparator.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Money.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../MoneyBag.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../NaiveStringBuilder.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../SimpleObjectHandler.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../MetricsExample.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../CharacterReader.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../FileExample.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Interpreter.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../PathUtil.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AbstractTransaction.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Account.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Bank.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../BankState.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../ConnectionException.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../CreditCard.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Customer.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../DepositTransaction.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../ICreditAgency.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../ITransaction.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../LogAccountInfo.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../WithdrawalTransaction.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Queue.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../InputValidation.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../ExampleServlet.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AbstractStackMachine.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../CommandLineStackMachine.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../CustomListRenderer.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../FifoStackMachine.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../LifoStackMachine.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../RunnableStackMachine.java
+[16%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../StackInterface.java
+[17%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../StackList.java
+[17%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../AllFileSuppress.java
+[17%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../Example.java
+[17%]   Analysis > Code Duplication: Parsed /com.parasoft:demo/.../MANIFEST.MF
+[17%] < Analysis > Code Duplication: Parsed 67 of 67 inputs                       >>> Code Duplication time 0.43s
+[17%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPM 
+[21%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPM : 100% 
+[21%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPM 
+[25%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPM : 100% 
+[25%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPT 
+[29%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPT : 100% 
+[29%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPT 
+[33%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPT 
+[34%] > Analysis > Java Flow
+[34%]   Analysis > Java Flow: Parasoft Java Flow Analyzer 10.7.5.20261019B7429
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Simple.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseImages.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseGSS.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseLogging.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseRAFs.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AlwaysCloseSockets.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../FilesInjection.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../DivisionByZero.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../IncorrectIteratorUsage.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../InefficientCollectionRemoval.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../InefficientMapRemoval.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../InefficientMapUsage.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../SQLInjection.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../UnreachableCode.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../SystemInjection.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../WebApplication.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../UseBeforeInitialization.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[34%]   Analysis > Java Flow: Created 10 graphs for /com.parasoft:demo/.../DivisionByZero.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AlwaysCloseImages.java
+[34%]   Analysis > Java Flow: Created 4 graphs for /com.parasoft:demo/.../UnreachableCode.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../InefficientMapRemoval.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AlwaysCloseSockets.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AlwaysCloseGSS.java
+[34%]   Analysis > Java Flow: Created 6 graphs for /com.parasoft:demo/.../SystemInjection.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../InefficientMapUsage.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AlwaysCloseLogging.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[34%]   Analysis > Java Flow: Created 7 graphs for /com.parasoft:demo/.../Simple.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../WebApplication.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../FilesInjection.java
+[34%]   Analysis > Java Flow: Created 4 graphs for /com.parasoft:demo/.../SQLInjection.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../ExtendedNullPointer.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../XMLInjection.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../DatabaseObject.java
+[34%]   Analysis > Java Flow: Created 6 graphs for /com.parasoft:demo/.../UseBeforeInitialization.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../XMLInjection.java
+[34%]   Analysis > Java Flow: Created 6 graphs for /com.parasoft:demo/.../DatabaseObject.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../ExtendedNullPointer.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../NullPointer.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../MyDictionary.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../MessageFormatter.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../MyDictionary.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../MessageFormatter.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../NullPointer.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../ChoosingConstructor.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../IMoney.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../CustomMoney.java
+[34%]   Analysis > Java Flow: Created 0 graphs for /com.parasoft:demo/.../IMoney.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../CustomMoney.java
+[34%]   Analysis > Java Flow: Created 9 graphs for /com.parasoft:demo/.../ChoosingConstructor.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../MoneyBag.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Money.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../IntegerComparator.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../IntegerComparator.java
+[34%]   Analysis > Java Flow: Created 14 graphs for /com.parasoft:demo/.../Money.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../NaiveStringBuilder.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../SimpleObjectHandler.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../MetricsExample.java
+[34%]   Analysis > Java Flow: Created 18 graphs for /com.parasoft:demo/.../MoneyBag.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../NaiveStringBuilder.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../SimpleObjectHandler.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../MetricsExample.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../FileExample.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Interpreter.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../CharacterReader.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../Interpreter.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../FileExample.java
+[34%]   Analysis > Java Flow: Created 6 graphs for /com.parasoft:demo/.../CharacterReader.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../MultiSourceCharacterReader.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../PathUtil.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AbstractTransaction.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../PathUtil.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../AbstractTransaction.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../BankState.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Account.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Bank.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../BankState.java
+[34%]   Analysis > Java Flow: Created 11 graphs for /com.parasoft:demo/.../Account.java
+[34%]   Analysis > Java Flow: Created 10 graphs for /com.parasoft:demo/.../Bank.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Customer.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../ConnectionException.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../CreditCard.java
+[34%]   Analysis > Java Flow: Created 1 graphs for /com.parasoft:demo/.../ConnectionException.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../ICreditAgency.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../DepositTransaction.java
+[34%]   Analysis > Java Flow: Created 0 graphs for /com.parasoft:demo/.../ICreditAgency.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../DepositTransaction.java
+[34%]   Analysis > Java Flow: Created 12 graphs for /com.parasoft:demo/.../Customer.java
+[34%]   Analysis > Java Flow: Created 18 graphs for /com.parasoft:demo/.../CreditCard.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../LogAccountInfo.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../ITransaction.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../WithdrawalTransaction.java
+[34%]   Analysis > Java Flow: Created 0 graphs for /com.parasoft:demo/.../ITransaction.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../WithdrawalTransaction.java
+[34%]   Analysis > Java Flow: Created 4 graphs for /com.parasoft:demo/.../LogAccountInfo.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../ExampleServlet.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Queue.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../InputValidation.java
+[34%]   Analysis > Java Flow: Created 3 graphs for /com.parasoft:demo/.../ExampleServlet.java
+[34%]   Analysis > Java Flow: Created 11 graphs for /com.parasoft:demo/.../Queue.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../InputValidation.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../CommandLineStackMachine.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../CustomListRenderer.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AbstractStackMachine.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../CustomListRenderer.java
+[34%]   Analysis > Java Flow: Created 7 graphs for /com.parasoft:demo/.../AbstractStackMachine.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../LifoStackMachine.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../FifoStackMachine.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../RunnableStackMachine.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../LifoStackMachine.java
+[34%]   Analysis > Java Flow: Created 5 graphs for /com.parasoft:demo/.../FifoStackMachine.java
+[34%]   Analysis > Java Flow: Created 10 graphs for /com.parasoft:demo/.../CommandLineStackMachine.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../StackList.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../StackInterface.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../AllFileSuppress.java
+[34%]   Analysis > Java Flow: Created 0 graphs for /com.parasoft:demo/.../StackInterface.java
+[34%]   Analysis > Java Flow: Created 2 graphs for /com.parasoft:demo/.../AllFileSuppress.java
+[34%]   Analysis > Java Flow: Creating graph for:/com.parasoft:demo/.../Example.java
+[34%]   Analysis > Java Flow: Created 1 graphs for /com.parasoft:demo/.../Example.java
+[34%]   Analysis > Java Flow: Created 40 graphs for /com.parasoft:demo/.../RunnableStackMachine.java
+[34%]   Analysis > Java Flow: Created 10 graphs for /com.parasoft:demo/.../StackList.java
+[34%]   Analysis > Java Flow > Graph scanning: Initializing control flow graphs prescan
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 0%
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 28%
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 56%
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 84%
+[34%]   Analysis > Java Flow > Graph scanning: Prescanning control flow graphs. Performed 100%
+[34%] > Analysis > Java Flow > Graph scanning > Processing methods: Collecting exceptions info, phase 1
+[34%] < Analysis > Java Flow > Graph scanning > Processing methods: Collecting exceptions info, phase 1: 100% 
+[34%] > Analysis > Java Flow > Graph scanning > Processing methods: Collecting exceptions info, phase 2
+[34%] < Analysis > Java Flow > Graph scanning > Processing methods: Collecting exceptions info, phase 2: 100% 
+[34%]   Analysis > Java Flow > Graph scanning: Finalizing control flow graphs prescan
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [1/40] - RunnableStackMachine.PushTextField.PushTextField
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [2/40] - RunnableStackMachine.PushTextField.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [3/40] - RunnableStackMachine.LifoRadioButton.LifoRadioButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [4/40] - RunnableStackMachine.LifoRadioButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [5/40] - RunnableStackMachine.FifoRadioButton.FifoRadioButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [6/40] - RunnableStackMachine.FifoRadioButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [7/40] - RunnableStackMachine.PushButton.PushButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [8/40] - RunnableStackMachine.PushButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [9/40] - RunnableStackMachine.PopButton.PopButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [10/40] - RunnableStackMachine.PopButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [11/40] - RunnableStackMachine.AddButton.AddButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [12/40] - RunnableStackMachine.AddButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [13/40] - RunnableStackMachine.SubtractButton.SubtractButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [14/40] - RunnableStackMachine.SubtractButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [15/40] - RunnableStackMachine.MultiplyButton.MultiplyButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [16/40] - RunnableStackMachine.MultiplyButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [17/40] - RunnableStackMachine.DivideButton.DivideButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [18/40] - RunnableStackMachine.DivideButton.actionPerformed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [19/40] - RunnableStackMachine.ImageButton.ImageButton
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [20/40] - RunnableStackMachine.RunnableStackMachine
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [21/40] - RunnableStackMachine.windowActivated
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [22/40] - RunnableStackMachine.windowClosed
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [23/40] - RunnableStackMachine.windowClosing
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [24/40] - RunnableStackMachine.windowDeactivated
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [25/40] - RunnableStackMachine.windowDeiconified
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [26/40] - RunnableStackMachine.windowIconified
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [27/40] - RunnableStackMachine.windowOpened
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [28/40] - RunnableStackMachine.componentHidden
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [29/40] - RunnableStackMachine.componentMoved
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [30/40] - RunnableStackMachine.componentResized
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [31/40] - RunnableStackMachine.componentShown
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [32/40] - RunnableStackMachine.createStackPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [33/40] - RunnableStackMachine.createStackButtonPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [34/40] - RunnableStackMachine.createInputPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [35/40] - RunnableStackMachine.createApiPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [36/40] - RunnableStackMachine.createOperationButtonsPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [37/40] - RunnableStackMachine.createInputFieldsPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [38/40] - RunnableStackMachine.createRadioOptionsPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [39/40] - RunnableStackMachine.createPushPanel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../RunnableStackMachine.java [40/40] - RunnableStackMachine.main
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [1/10] - CommandLineStackMachine.displayMenu
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [2/10] - CommandLineStackMachine.getStack
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [3/10] - CommandLineStackMachine.nextCommand
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [4/10] - CommandLineStackMachine.processCommand
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [5/10] - CommandLineStackMachine.main
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [6/10] - CommandLineStackMachine.autoMode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [7/10] - CommandLineStackMachine.printUsage
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [8/10] - CommandLineStackMachine.CommandLineStackMachine
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [9/10] - CommandLineStackMachine.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CommandLineStackMachine.java [10/10] - CommandLineStackMachine.#main
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [1/18] - MoneyBag.create
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [2/18] - MoneyBag.add
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [3/18] - MoneyBag.addMoney
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [4/18] - MoneyBag.addMoneyBag
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [5/18] - MoneyBag.appendBag
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [6/18] - MoneyBag.appendMoney
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [7/18] - MoneyBag.equals
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [8/18] - MoneyBag.findMoney
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [9/18] - MoneyBag.contains
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [10/18] - MoneyBag.hashCode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [11/18] - MoneyBag.isZero
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [12/18] - MoneyBag.multiply
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [13/18] - MoneyBag.negate
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [14/18] - MoneyBag.simplify
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [15/18] - MoneyBag.subtract
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [16/18] - MoneyBag.toString
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [17/18] - MoneyBag.appendTo
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MoneyBag.java [18/18] - MoneyBag.MoneyBag
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [1/18] - CreditCard.CreditCard
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [2/18] - CreditCard.validate
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [3/18] - CreditCard.validate
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [4/18] - CreditCard.displayStatement
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [5/18] - CreditCard.makePayment
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [6/18] - CreditCard.get_creditCardNumber
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [7/18] - CreditCard.set_creditCardNumber
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [8/18] - CreditCard.get_currentBalance
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [9/18] - CreditCard.set_currentBalance
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [10/18] - CreditCard.get_customerId
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [11/18] - CreditCard.set_customerId
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [12/18] - CreditCard.get_customerName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [13/18] - CreditCard.set_customerName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [14/18] - CreditCard.get_socialSecurityNumber
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [15/18] - CreditCard.set_socialSecurityNumber
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [16/18] - CreditCard.get_zipcode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [17/18] - CreditCard.set_zipcode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CreditCard.java [18/18] - CreditCard.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [1/11] - Account.Account
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [2/11] - Account.setAccountStatus
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [3/11] - Account.reportToCreditAgency
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [4/11] - Account.getID
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [5/11] - Account.getCustomer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [6/11] - Account.getBalance
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [7/11] - Account.getStatus
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [8/11] - Account.setBalance
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [9/11] - Account.isOverdrawn
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [10/11] - Account.apply
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Account.java [11/11] - Account.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [1/12] - Customer.Customer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [2/12] - Customer.getName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [3/12] - Customer.getSSN
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [4/12] - Customer.setName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [5/12] - Customer.setSSN
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [6/12] - Customer.toStrng
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [7/12] - Customer.equals
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [8/12] - Customer.hashCode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [9/12] - Customer.loadCustomer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [10/12] - Customer.main
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [11/12] - Customer.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Customer.java [12/12] - Customer.#main
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java [1/5] - AlwaysCloseXMLEncDec.store
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java [2/5] - AlwaysCloseXMLEncDec.read
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java [3/5] - AlwaysCloseXMLEncDec.storeClose
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java [4/5] - AlwaysCloseXMLEncDec.readClose
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java [5/5] - AlwaysCloseXMLEncDec.AlwaysCloseXMLEncDec
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [1/14] - Money.Money
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [2/14] - Money.add
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [3/14] - Money.addMoney
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [4/14] - Money.addMoneyBag
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [5/14] - Money.amount
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [6/14] - Money.currency
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [7/14] - Money.equals
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [8/14] - Money.hashCode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [9/14] - Money.isZero
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [10/14] - Money.multiply
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [11/14] - Money.negate
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [12/14] - Money.subtract
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [13/14] - Money.toString
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Money.java [14/14] - Money.appendTo
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [1/10] - Bank.Bank
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [2/10] - Bank.initialize
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [3/10] - Bank.addAccount
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [4/10] - Bank.closeAccounts
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [5/10] - Bank.getAccount
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [6/10] - Bank.isMaintenanceMode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [7/10] - Bank.startMaintenance
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [8/10] - Bank.endMaintenance
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [9/10] - Bank.setAccountsLimit
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Bank.java [10/10] - Bank.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [1/10] - StackList.StackList
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [2/10] - StackList.updateModel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [3/10] - StackList.updateStackSizeLabel
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [4/10] - StackList.push
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [5/10] - StackList.pop
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [6/10] - StackList.add
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [7/10] - StackList.subtract
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [8/10] - StackList.multiply
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [9/10] - StackList.divide
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackList.java [10/10] - StackList.adjustScroll
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InputValidation.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InputValidation.java [1/5] - InputValidation.doGet
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InputValidation.java [2/5] - InputValidation.authorize
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InputValidation.java [3/5] - InputValidation.validate
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InputValidation.java [4/5] - InputValidation.logInvalidLogin
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InputValidation.java [5/5] - InputValidation.InputValidation
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UnreachableCode.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UnreachableCode.java [1/4] - UnreachableCode.printCalculationResult
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UnreachableCode.java [2/4] - UnreachableCode.guessFigure
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UnreachableCode.java [3/4] - UnreachableCode.UnreachableCode
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UnreachableCode.java [4/4] - UnreachableCode.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExtendedNullPointer.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExtendedNullPointer.java [1/5] - ExtendedNullPointer.getLineLength
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExtendedNullPointer.java [2/5] - ExtendedNullPointer.getCurrentCountryName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExtendedNullPointer.java [3/5] - ExtendedNullPointer.getCountry
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExtendedNullPointer.java [4/5] - ExtendedNullPointer.close
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExtendedNullPointer.java [5/5] - ExtendedNullPointer.ExtendedNullPointer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [1/11] - Queue.QueueItem.QueueItem
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [2/11] - Queue.QueueItem.getItem
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [3/11] - Queue.QueueItem.getNext
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [4/11] - Queue.QueueItem.setNext
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [5/11] - Queue.Queue
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [6/11] - Queue.add
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [7/11] - Queue.remove
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [8/11] - Queue.isEmpty
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [9/11] - Queue.removeAll
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [10/11] - Queue.toString
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Queue.java [11/11] - EmptyQueueException.EmptyQueueException
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java [1/6] - DatabaseObject.getObjectFromDatabase
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java [2/6] - DatabaseObject.getClassName
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java [3/6] - DatabaseObject.getOID
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java [4/6] - DatabaseObject.close
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java [5/6] - DatabaseObject.close
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DatabaseObject.java [6/6] - DatabaseObject.DatabaseObject
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [1/10] - DivisionByZero.Consumer.setOverallSum
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [2/10] - DivisionByZero.Consumer.getOverallSum
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [3/10] - DivisionByZero.Consumer.setPersonalDiscountCoefficient
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [4/10] - DivisionByZero.Consumer.getPersonalDiscountCoefficient
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [5/10] - DivisionByZero.Consumer.Consumer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [6/10] - DivisionByZero.calculateDiscountedSum
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [7/10] - DivisionByZero.calculateCommonDiscountedSum
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [8/10] - DivisionByZero.getSpecialOfferDiscountCoefficient
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [9/10] - DivisionByZero.DivisionByZero
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DivisionByZero.java [10/10] - DivisionByZero.<clinit>
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MetricsExample.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MetricsExample.java [1/2] - MetricsExample.collectErrorCodesFromFiles
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MetricsExample.java [2/2] - MetricsExample.MetricsExample
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java [1/6] - CharacterReader.read
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java [2/6] - CharacterReader.readString
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java [3/6] - CharacterReader.ReadableHandler.read
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java [4/6] - CharacterReader.ReadableHandler.ReadableHandler
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java [5/6] - CharacterReader.prepareCharBuffer
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CharacterReader.java [6/6] - CharacterReader.CharacterReader
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LogAccountInfo.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LogAccountInfo.java [1/4] - LogAccountInfo.LoggingThread.LoggingThread
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LogAccountInfo.java [2/4] - LogAccountInfo.LoggingThread.run
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LogAccountInfo.java [3/4] - LogAccountInfo.LogAccountInfo
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LogAccountInfo.java [4/4] - LogAccountInfo.log
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SQLInjection.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SQLInjection.java [1/4] - SQLInjection.auth
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SQLInjection.java [2/4] - SQLInjection.close
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SQLInjection.java [3/4] - SQLInjection.close
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SQLInjection.java [4/4] - SQLInjection.SQLInjection
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [1/7] - Simple.map2
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [2/7] - Simple.map
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [3/7] - Simple.map1
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [4/7] - Simple.map1_1
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [5/7] - Simple.map1_2
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [6/7] - Simple.startsWith
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Simple.java [7/7] - Simple.Simple
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java [1/6] - UseBeforeInitialization.ValueStorage.getValue
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java [2/6] - UseBeforeInitialization.ValueStorage.setValue
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java [3/6] - UseBeforeInitialization.ValueStorage.ValueStorage
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java [4/6] - UseBeforeInitialization.process
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java [5/6] - UseBeforeInitialization.close
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInitialization.java [6/6] - UseBeforeInitialization.UseBeforeInitialization
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseNIOChannels.java [1/3] - AlwaysCloseNIOChannels.process
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseNIOChannels.java [2/3] - AlwaysCloseNIOChannels.processClose
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseNIOChannels.java [3/3] - AlwaysCloseNIOChannels.AlwaysCloseNIOChannels
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [1/7] - AbstractStackMachine.add
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [2/7] - AbstractStackMachine.subtract
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [3/7] - AbstractStackMachine.multiply
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [4/7] - AbstractStackMachine.divide
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [5/7] - AbstractStackMachine.at
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [6/7] - AbstractStackMachine.isInteger
+[34%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractStackMachine.java [7/7] - AbstractStackMachine.AbstractStackMachine
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseRAFs.java [1/3] - AlwaysCloseRAFs.read
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseRAFs.java [2/3] - AlwaysCloseRAFs.readClose
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseRAFs.java [3/3] - AlwaysCloseRAFs.AlwaysCloseRAFs
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseGSS.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseGSS.java [1/3] - AlwaysCloseGSS.process
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseGSS.java [2/3] - AlwaysCloseGSS.processClose
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseGSS.java [3/3] - AlwaysCloseGSS.AlwaysCloseGSS
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DereferenceBeforeNullCheck.java [1/3] - DereferenceBeforeNullCheck.readFirstLine
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DereferenceBeforeNullCheck.java [2/3] - DereferenceBeforeNullCheck.closeReader
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DereferenceBeforeNullCheck.java [3/3] - DereferenceBeforeNullCheck.DereferenceBeforeNullCheck
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapRemoval.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapRemoval.java [1/5] - InefficientMapRemoval.inefficientRemoval
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapRemoval.java [2/5] - InefficientMapRemoval.inefficientRemovalEntry
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapRemoval.java [3/5] - InefficientMapRemoval.effectiveRemoval
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapRemoval.java [4/5] - InefficientMapRemoval.effectiveRemovalKeySet
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapRemoval.java [5/5] - InefficientMapRemoval.InefficientMapRemoval
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [1/9] - ChoosingConstructor.ChoosingConstructor
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [2/9] - ChoosingConstructor.ChoosingConstructor
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [3/9] - ChoosingConstructor.ChoosingConstructor
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [4/9] - ChoosingConstructor.ChoosingConstructor
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [5/9] - ChoosingConstructor.ChoosingConstructor
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [6/9] - ChoosingConstructor.performAction
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [7/9] - ChoosingConstructor.read
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [8/9] - ChoosingConstructor.getFromStream
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ChoosingConstructor.java [9/9] - ChoosingConstructor.putToStream
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Interpreter.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Interpreter.java [1/2] - Interpreter.Interpreter
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Interpreter.java [2/2] - Interpreter.getNext
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseImages.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseImages.java [1/3] - AlwaysCloseImages.readImage
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseImages.java [2/3] - AlwaysCloseImages.readImageClose
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseImages.java [3/3] - AlwaysCloseImages.AlwaysCloseImages
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExampleServlet.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExampleServlet.java [1/3] - ExampleServlet.doGet
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExampleServlet.java [2/3] - ExampleServlet.tryThis
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ExampleServlet.java [3/3] - ExampleServlet.ExampleServlet
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseSockets.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseSockets.java [1/3] - AlwaysCloseSockets.connectClient
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseSockets.java [2/3] - AlwaysCloseSockets.connectClientClose
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseSockets.java [3/3] - AlwaysCloseSockets.AlwaysCloseSockets
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NullPointer.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NullPointer.java [1/3] - NullPointer.getLineLength
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NullPointer.java [2/3] - NullPointer.close
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NullPointer.java [3/3] - NullPointer.NullPointer
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FileExample.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FileExample.java [1/3] - FileExample.analyze
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FileExample.java [2/3] - FileExample.isOversize
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FileExample.java [3/3] - FileExample.FileExample
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java [1/6] - SystemInjection.getData
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java [2/6] - SystemInjection.execInjection
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java [3/6] - SystemInjection.environmentInjection
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java [4/6] - SystemInjection.libraryInjection
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java [5/6] - SystemInjection.reflectionInjection
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SystemInjection.java [6/6] - SystemInjection.SystemInjection
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../BankState.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../BankState.java [1/5] - BankState.isMaintenanceMode
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../BankState.java [2/5] - BankState.startMaintenance
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../BankState.java [3/5] - BankState.endMaintenance
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../BankState.java [4/5] - BankState.BankState
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../BankState.java [5/5] - BankState.<clinit>
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IncorrectIteratorUsage.java [1/3] - IncorrectIteratorUsage.removeAllElementsIncorrect
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IncorrectIteratorUsage.java [2/3] - IncorrectIteratorUsage.removeAllElementsCorrect
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IncorrectIteratorUsage.java [3/3] - IncorrectIteratorUsage.IncorrectIteratorUsage
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WithdrawalTransaction.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WithdrawalTransaction.java [1/3] - WithdrawalTransaction.WithdrawalTransaction
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WithdrawalTransaction.java [2/3] - WithdrawalTransaction.apply
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WithdrawalTransaction.java [3/3] - WithdrawalTransaction.<clinit>
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java [1/5] - UseBeforeInConstructorInitialization.User.User
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java [2/5] - UseBeforeInConstructorInitialization.User.checkData
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java [3/5] - UseBeforeInConstructorInitialization.RestrictedUser.RestrictedUser
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java [4/5] - UseBeforeInConstructorInitialization.RestrictedUser.checkData
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java [5/5] - UseBeforeInConstructorInitialization.UseBeforeInConstructorInitialization
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DepositTransaction.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DepositTransaction.java [1/2] - DepositTransaction.DepositTransaction
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../DepositTransaction.java [2/2] - DepositTransaction.apply
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapUsage.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapUsage.java [1/3] - InefficientMapUsage.inefficientIteration
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapUsage.java [2/3] - InefficientMapUsage.effectiveIteration
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientMapUsage.java [3/3] - InefficientMapUsage.InefficientMapUsage
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseLogging.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseLogging.java [1/3] - AlwaysCloseLogging.log
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseLogging.java [2/3] - AlwaysCloseLogging.logClose
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AlwaysCloseLogging.java [3/3] - AlwaysCloseLogging.AlwaysCloseLogging
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FifoStackMachine.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FifoStackMachine.java [1/5] - FifoStackMachine.push
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FifoStackMachine.java [2/5] - FifoStackMachine.pop
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FifoStackMachine.java [3/5] - FifoStackMachine.popInt
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FifoStackMachine.java [4/5] - FifoStackMachine.pushInt
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FifoStackMachine.java [5/5] - FifoStackMachine.FifoStackMachine
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NaiveStringBuilder.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NaiveStringBuilder.java [1/3] - NaiveStringBuilder.NaiveStringBuilder
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NaiveStringBuilder.java [2/3] - NaiveStringBuilder.createInstance
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../NaiveStringBuilder.java [3/3] - NaiveStringBuilder.append
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WebApplication.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WebApplication.java [1/5] - WebApplication.doPost
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WebApplication.java [2/5] - WebApplication.doGet
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WebApplication.java [3/5] - WebApplication.addHeader
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WebApplication.java [4/5] - WebApplication.addFooter
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../WebApplication.java [5/5] - WebApplication.WebApplication
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SimpleObjectHandler.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SimpleObjectHandler.java [1/5] - SimpleObjectHandler.SimpleObjectHandler
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SimpleObjectHandler.java [2/5] - SimpleObjectHandler.getList
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SimpleObjectHandler.java [3/5] - SimpleObjectHandler.getMap
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SimpleObjectHandler.java [4/5] - SimpleObjectHandler.getString
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../SimpleObjectHandler.java [5/5] - SimpleObjectHandler.getElement
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractTransaction.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractTransaction.java [1/3] - AbstractTransaction.AbstractTransaction
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractTransaction.java [2/3] - AbstractTransaction.fee
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AbstractTransaction.java [3/3] - AbstractTransaction.isTransactionAvailable
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientCollectionRemoval.java [1/3] - InefficientCollectionRemoval.inefficientRemoval
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientCollectionRemoval.java [2/3] - InefficientCollectionRemoval.effectiveRemoval
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../InefficientCollectionRemoval.java [3/3] - InefficientCollectionRemoval.InefficientCollectionRemoval
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MessageFormatter.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MessageFormatter.java [1/3] - MessageFormatter.printMessage
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MessageFormatter.java [2/3] - MessageFormatter.printMessage
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MessageFormatter.java [3/3] - MessageFormatter.MessageFormatter
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MyDictionary.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MyDictionary.java [1/3] - MyDictionary.putToDictionary
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MyDictionary.java [2/3] - MyDictionary.getFromDictionary
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MyDictionary.java [3/3] - MyDictionary.MyDictionary
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FilesInjection.java
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FilesInjection.java [1/3] - FilesInjection.fileNameContentsInjection
+[35%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FilesInjection.java [2/3] - FilesInjection.store
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../FilesInjection.java [3/3] - FilesInjection.FilesInjection
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LifoStackMachine.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LifoStackMachine.java [1/5] - LifoStackMachine.push
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LifoStackMachine.java [2/5] - LifoStackMachine.pop
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LifoStackMachine.java [3/5] - LifoStackMachine.popInt
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LifoStackMachine.java [4/5] - LifoStackMachine.pushInt
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../LifoStackMachine.java [5/5] - LifoStackMachine.LifoStackMachine
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MultiSourceCharacterReader.java [1/3] - MultiSourceCharacterReader.MultiSourceCharacterReader
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MultiSourceCharacterReader.java [2/3] - MultiSourceCharacterReader.initialize
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../MultiSourceCharacterReader.java [3/3] - MultiSourceCharacterReader.performAction
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../XMLInjection.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../XMLInjection.java [1/2] - XMLInjection.createXMLDocumentAndStoreData
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../XMLInjection.java [2/2] - XMLInjection.XMLInjection
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CustomListRenderer.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CustomListRenderer.java [1/2] - CustomListRenderer.paint
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CustomListRenderer.java [2/2] - CustomListRenderer.CustomListRenderer
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AllFileSuppress.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AllFileSuppress.java [1/2] - AllFileSuppress.main
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../AllFileSuppress.java [2/2] - AllFileSuppress.AllFileSuppress
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../PathUtil.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../PathUtil.java [1/2] - PathUtil.getFileLength
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../PathUtil.java [2/2] - PathUtil.PathUtil
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IntegerComparator.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IntegerComparator.java [1/2] - IntegerComparator.IntegerComparator
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IntegerComparator.java [2/2] - IntegerComparator.isGreater
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CustomMoney.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CustomMoney.java [1/2] - CustomMoney.CustomMoney
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../CustomMoney.java [2/2] - CustomMoney.changeCurrency
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Example.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../Example.java [1/1] - Example.Example
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ConnectionException.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ConnectionException.java [1/1] - ConnectionException.ConnectionException
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ICreditAgency.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../IMoney.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../ITransaction.java
+[36%]   Analysis > Java Flow: Checking /com.parasoft:demo/.../StackInterface.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../SimpleTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MoneyBagParameterizedTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MoneyTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../NaiveStringBuilderParameterizedTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../FileExampleTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../InterpreterTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ExampleServletTest.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Simple.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../AlwaysCloseGSS.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../AlwaysCloseImages.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../AlwaysCloseLogging.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../AlwaysCloseSockets.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[37%]   Analysis > Java Flow: found 3 violations in /com.parasoft:demo/.../DivisionByZero.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../FilesInjection.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../InefficientMapRemoval.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../InefficientMapUsage.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../SQLInjection.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../SystemInjection.java
+[37%]   Analysis > Java Flow: found 3 violations in /com.parasoft:demo/.../UnreachableCode.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../UseBeforeInitialization.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../WebApplication.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../XMLInjection.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../DatabaseObject.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ExtendedNullPointer.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MessageFormatter.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../MyDictionary.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../NullPointer.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ChoosingConstructor.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../CustomMoney.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../IMoney.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../IntegerComparator.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Money.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MoneyBag.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../NaiveStringBuilder.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../SimpleObjectHandler.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MetricsExample.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../CharacterReader.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../FileExample.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Interpreter.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../PathUtil.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../AbstractTransaction.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../Account.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Bank.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../BankState.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ConnectionException.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../CreditCard.java
+[37%]   Analysis > Java Flow: found 3 violations in /com.parasoft:demo/.../Customer.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../DepositTransaction.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ICreditAgency.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../ITransaction.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../LogAccountInfo.java
+[37%]   Analysis > Java Flow: found 2 violations in /com.parasoft:demo/.../WithdrawalTransaction.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Queue.java
+[37%]   Analysis > Java Flow: found 3 violations in /com.parasoft:demo/.../InputValidation.java
+[37%]   Analysis > Java Flow: found 1 violation in /com.parasoft:demo/.../ExampleServlet.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../AbstractStackMachine.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../CommandLineStackMachine.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../CustomListRenderer.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../FifoStackMachine.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../LifoStackMachine.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../RunnableStackMachine.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../StackInterface.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../StackList.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../AllFileSuppress.java
+[37%]   Analysis > Java Flow: found 0 violations in /com.parasoft:demo/.../Example.java
+[38%] < Analysis > Java Flow: 100%                                                >>> Java Flow time 4.38s
+[38%] > Analysis > Metrics
+[38%]   Analysis > Metrics: calculated 19 metric values for /com.parasoft:demo/.../Simple.java
+[38%]   Analysis: found 40 violations 
+[38%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../AlwaysCloseGSS.java
+[38%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../AlwaysCloseImages.java
+[38%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../AlwaysCloseLogging.java
+[38%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[38%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[38%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../AlwaysCloseSockets.java
+[38%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[39%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[39%]   Analysis > Metrics: calculated 22 metric values for /com.parasoft:demo/.../DivisionByZero.java
+[39%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../FilesInjection.java
+[39%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[39%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[39%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../InefficientMapRemoval.java
+[39%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../InefficientMapUsage.java
+[40%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../SQLInjection.java
+[40%]   Analysis > Metrics: calculated 22 metric values for /com.parasoft:demo/.../SystemInjection.java
+[40%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../UnreachableCode.java
+[40%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[41%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../UseBeforeInitialization.java
+[41%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../WebApplication.java
+[41%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../XMLInjection.java
+[41%]   Analysis > Metrics: calculated 16 metric values for /com.parasoft:demo/.../DatabaseObject.java
+[41%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../ExtendedNullPointer.java
+[41%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../MessageFormatter.java
+[41%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../MyDictionary.java
+[42%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../NullPointer.java
+[42%]   Analysis > Metrics: calculated 28 metric values for /com.parasoft:demo/.../ChoosingConstructor.java
+[42%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../CustomMoney.java
+[42%]   Analysis > Metrics: calculated 25 metric values for /com.parasoft:demo/.../IMoney.java
+[42%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../IntegerComparator.java
+[42%]   Analysis > Metrics: calculated 43 metric values for /com.parasoft:demo/.../Money.java
+[42%]   Analysis > Metrics: calculated 52 metric values for /com.parasoft:demo/.../MoneyBag.java
+[43%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../NaiveStringBuilder.java
+[43%]   Analysis > Metrics: calculated 16 metric values for /com.parasoft:demo/.../SimpleObjectHandler.java
+[43%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../MetricsExample.java
+[43%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../CharacterReader.java
+[43%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../FileExample.java
+[43%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../Interpreter.java
+[43%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[43%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../PathUtil.java
+[43%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../AbstractTransaction.java
+[43%]   Analysis > Metrics: calculated 31 metric values for /com.parasoft:demo/.../Account.java
+[43%]   Analysis > Metrics: calculated 28 metric values for /com.parasoft:demo/.../Bank.java
+[44%]   Analysis > Metrics: calculated 10 metric values for /com.parasoft:demo/.../BankState.java
+[44%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../ConnectionException.java
+[44%]   Analysis > Metrics: calculated 52 metric values for /com.parasoft:demo/.../CreditCard.java
+[44%]   Analysis > Metrics: calculated 31 metric values for /com.parasoft:demo/.../Customer.java
+[44%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../DepositTransaction.java
+[44%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../ICreditAgency.java
+[44%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../ITransaction.java
+[45%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../LogAccountInfo.java
+[45%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../WithdrawalTransaction.java
+[45%]   Analysis > Metrics: calculated 31 metric values for /com.parasoft:demo/.../Queue.java
+[45%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../InputValidation.java
+[46%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../ExampleServlet.java
+[46%]   Analysis > Metrics: calculated 25 metric values for /com.parasoft:demo/.../AbstractStackMachine.java
+[46%]   Analysis > Metrics: calculated 22 metric values for /com.parasoft:demo/.../CommandLineStackMachine.java
+[46%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../CustomListRenderer.java
+[46%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../FifoStackMachine.java
+[46%]   Analysis > Metrics: calculated 13 metric values for /com.parasoft:demo/.../LifoStackMachine.java
+[46%]   Analysis > Metrics: calculated 121 metric values for /com.parasoft:demo/.../RunnableStackMachine.java
+[47%]   Analysis > Metrics: calculated 7 metric values for /com.parasoft:demo/.../StackInterface.java
+[47%]   Analysis > Metrics: calculated 31 metric values for /com.parasoft:demo/.../StackList.java
+[47%]   Analysis > Metrics: calculated 4 metric values for /com.parasoft:demo/.../AllFileSuppress.java
+[47%]   Analysis > Metrics: calculated 1 metric value for /com.parasoft:demo/.../Example.java
+[47%]   Analysis > Metrics: calculated 0 metric values for /com.parasoft:demo/.../MANIFEST.MF
+[47%] < Analysis > Metrics: calculated 1,008 metric values on analyzed 67 of 67 inputs, skipped 0       >>> Metrics time 0.3s
+[47%] > Analysis > Java Static
+[47%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../MessageFormatter.java
+[47%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../RunnableStackMachine.java
+[48%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../Bank.java
+[48%]   Analysis > Java Static: found 2 violations in /com.parasoft:demo/.../Queue.java
+[48%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../CreditCard.java
+[49%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../FileExample.java
+[49%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../MetricsExample.java
+[49%]   Analysis > Java Static: found 10 violations in /com.parasoft:demo/.../Simple.java
+[49%]   Analysis > Java Static: found 3 violations in /com.parasoft:demo/.../InefficientMapUsage.java
+[49%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../FilesInjection.java
+[49%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../Customer.java
+[49%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../NullPointer.java
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../MyDictionary.java
+[50%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../UseBeforeInitialization.java
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../ITransaction.java
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../MultiSourceCharacterReader.java
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../Example.java
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../Money.java
+[50%]   Analysis > Java Static: found 3 violations in /com.parasoft:demo/.../DivisionByZero.java
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../BankState.java
+[51%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../IntegerComparator.java
+[51%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../AlwaysCloseSockets.java
+[51%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AlwaysCloseLogging.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AllFileSuppress.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AlwaysCloseGSS.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../LifoStackMachine.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AlwaysCloseImages.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../IMoney.java
+[52%]   Analysis > Java Static: found 2 violations in /com.parasoft:demo/.../AlwaysCloseRAFs.java
+[52%]   Analysis > Java Static: found 2 violations in /com.parasoft:demo/.../AlwaysCloseNIOChannels.java
+[52%]   Analysis > Java Static: found 2 violations in /com.parasoft:demo/.../InefficientMapRemoval.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../IncorrectIteratorUsage.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AbstractTransaction.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../PathUtil.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../NaiveStringBuilder.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../LogAccountInfo.java
+[52%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AlwaysCloseXMLEncDec.java
+[53%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../ConnectionException.java
+[53%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../SystemInjection.java
+[53%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../ICreditAgency.java
+[53%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../InputValidation.java
+[54%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../AbstractStackMachine.java
+[54%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../ExtendedNullPointer.java
+[54%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../InefficientCollectionRemoval.java
+[54%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../XMLInjection.java
+[54%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../CustomListRenderer.java
+[54%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../FifoStackMachine.java
+[54%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../DereferenceBeforeNullCheck.java
+[55%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../Interpreter.java
+[55%]   Analysis > Java Static: found 2 violations in /com.parasoft:demo/.../ExampleServlet.java
+[55%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../StackInterface.java
+[55%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../WebApplication.java
+[55%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../CommandLineStackMachine.java
+[55%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../SimpleObjectHandler.java
+[55%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../StackList.java
+[56%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../SQLInjection.java
+[56%]   Analysis > Java Static: found 1 violation in /com.parasoft:demo/.../Account.java
+[56%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../MoneyBag.java
+[56%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../DatabaseObject.java
+[57%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../CustomMoney.java
+[57%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../DepositTransaction.java
+[57%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../CharacterReader.java
+[57%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../ChoosingConstructor.java
+[57%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../WithdrawalTransaction.java
+[57%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../UseBeforeInConstructorInitialization.java
+[58%]   Analysis > Java Static: found 0 violations in /com.parasoft:demo/.../UnreachableCode.java
+[58%] < Analysis > Java Static: found 30 violations on analyzed 66 of 66 inputs, skipped 0       >>> Java Static time 2.06s
+[58%] > Analysis > Properties Static
+[58%]   Analysis > Properties Static: found 0 violations in /com.parasoft:demo/.../MANIFEST.MF
+[61%] < Analysis > Properties Static: found 0 violations on analyzed 1 of 67 inputs, skipped 66       >>> Properties Static time 0s
+[61%] > Analysis > XML Static
+[65%] < Analysis > XML Static: found 0 violations on analyzed 0 of 67 inputs, skipped 67       >>> XML Static time 0s
+[65%] < Analysis: found 40 violations                                             >>> Analysis time 7.3s
+[65%] < Results > Metrics processor: processed 74 accepted violations 
+[65%] < Results > Unified Rules Processor: processed 74 accepted violations 
+[65%] < Results > Scope Processor: removed 0 of 74 violations 
+[65%] < Results > Duplicates Processor: removed 0 of 34 violations  
+[68%] < Results > Tokens Mismatch Filter Processor: processed 74 accepted violations 
+[68%] < Results > Coverage Processor: processed 0 of 0 coverage infos 
+[75%] < Results > Metadata Processor: DTP metadata available for 0 of 74 applicable findings  
+[75%] < Results > Author Processor: reassigned 0 of 74 accepted violations 
+[75%] < Results > Suppression Processor: suppressed 0 of 74 accepted violations 
+[75%] < Results > Rule Limit Processor: removed 0 of 74 violations  
+[75%] < Results > Goals Processor: processed 74 accepted violations 
+[79%] < Results > Violations Scope Decorator: processed 74 accepted violations 
+[89%] < Results: processed 74 accepted violations                                 >>> Results time 1.94s
+[97%] < Reporting: reported 74 accepted violations                                >>> Reporting time 0.29s
+[97%]                                                                             >>> Total time 10.45s
+[97%] > Finalizing reporters.
+Files in scope: 67
+Rules violated: 17/189
+Metrics enabled: 4
+Static analysis violations: 74
+Suppressed violations: 0
+Unit Tests failures: 0
+Executed test cases: 0
+Coverage: 0/0 lines (0% covered)
+Coverage collection is disabled in the current test configuration.
+Running time in seconds : 14
+[97%]   Finalizing reporters.: 10% 
+The following setup problems have been encountered during analysis:
+  Source Control configuration issues:
+    - Reporting source control references to DTP is disabled, use report.scontrol settings to enable.
+Generated XML report: C:\_workspace\github\demo\build\jtest\report.xml
+Publishing to DTP https://falon.parasoft.com.pl:8443 for jtest project ...
+Report published successfully to DTP: File has been uploaded successfully.
+[97%]   Finalizing reporters.: 15% 
+Preparing report data...
+Generated HTML report: C:\_workspace\github\demo\build\jtest\report.html
+[98%]   Finalizing reporters.: 20% 
+Publishing to DTP https://falon.parasoft.com.pl:8443 ...
+Total source files published to DTP: 67 of 67 (43 KB) in 2.88s
+Generated XML report: C:\_workspace\github\demo\build\jtest\metrics.xml
+Publishing to DTP https://falon.parasoft.com.pl:8443 for jtest project ...
+Report published successfully to DTP: File has been uploaded successfully.
+[98%]   Finalizing reporters.: 23% 
+[98%]   Finalizing reporters.: 30% 
+[100%] < Finalizing reporters.: 100% 
+Creating technical support archive on application exit
+Technical support archive created: c:\_parasoft\TS\jtest\TechnicalSupport_50.zip

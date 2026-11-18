@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.servlets.ExampleServletTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-04-10T07:18:48" hostname="STINGER" time="0.234">
+<testsuite name="examples.servlets.ExampleServletTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-18T09:26:22" hostname="FALON" time="0.216">
   <properties/>
   <testcase name="testTryThis1" classname="examples.servlets.ExampleServletTest" time="0.024"/>
-  <testcase name="testTryThis2" classname="examples.servlets.ExampleServletTest" time="0.176"/>
-  <testcase name="testTryThis3" classname="examples.servlets.ExampleServletTest" time="0.03"/>
-  <testcase name="testTryThis4" classname="examples.servlets.ExampleServletTest" time="0.003"/>
+  <testcase name="testTryThis2" classname="examples.servlets.ExampleServletTest" time="0.162"/>
+  <testcase name="testTryThis3" classname="examples.servlets.ExampleServletTest" time="0.027"/>
+  <testcase name="testTryThis4" classname="examples.servlets.ExampleServletTest" time="0.002"/>
   <system-out><![CDATA[null
 
 0

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.junit.NaiveStringBuilderParameterizedTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2026-04-10T07:18:46" hostname="STINGER" time="0.015">
+<testsuite name="examples.junit.NaiveStringBuilderParameterizedTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2026-11-18T09:26:20" hostname="FALON" time="0.01">
   <properties/>
-  <testcase name="testAppend( , 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890) [0]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.003"/>
+  <testcase name="testAppend( , 01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890) [0]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.002"/>
   <testcase name="testAppend(, hello world) [1]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.0"/>
   <testcase name="testAppend(hello world,  ) [2]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.0"/>
-  <testcase name="testAppend(01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890, null) [3]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.01">
+  <testcase name="testAppend(01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890, null) [3]" classname="examples.junit.NaiveStringBuilderParameterizedTest" time="0.006">
     <failure message="java.lang.IllegalArgumentException" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException
 	at examples.junit.NaiveStringBuilder.append(NaiveStringBuilder.java:21)
 	at examples.junit.NaiveStringBuilderParameterizedTest.testAppend(NaiveStringBuilderParameterizedTest.java:33)

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="examples.mock.FileExampleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-04-10T07:18:46" hostname="STINGER" time="1.363">
+<testsuite name="examples.mock.FileExampleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-18T09:26:20" hostname="FALON" time="1.003">
   <properties/>
-  <testcase name="testAnalyze" classname="examples.mock.FileExampleTest" time="1.23"/>
-  <testcase name="testIsOversize" classname="examples.mock.FileExampleTest" time="0.133"/>
+  <testcase name="testAnalyze" classname="examples.mock.FileExampleTest" time="0.887"/>
+  <testcase name="testIsOversize" classname="examples.mock.FileExampleTest" time="0.116"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\sgrabinski\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.19\byte-buddy-agent-1.12.19.jar)
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\sgrabinski\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.12.19\450917cf3b358b691a824acf4c67aa89c826f67e\byte-buddy-agent-1.12.19.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release

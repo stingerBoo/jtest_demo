@@ -1,4 +1,0 @@
-[ 5/19/26, 7:25 AM - Initialized console 'Jtest']
-DTP Services: Loading available services from https://10.9.45.48:8443/grs/api/v1.9/dtpServices
-DTP Services: Cannot load available services v1.9 from https://10.9.45.48:8443
-DTP Services: Unable to connect to DTP. Review the settings and the server connection.

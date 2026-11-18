@@ -1,0 +1,20 @@
+# Folders compilation and cache (Maven / Gradle)
+target/
+build/
+.gradle/
+
+# Raports and work files
+reports/
+.jtest/
+_ts/
+
+# local IDE (Eclipse / VS Code)
+.settings/
+.classpath
+.project
+
+# Temporary files, logs and system data
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

@@ -47,6 +47,7 @@ jobs:
        docker run
        --rm 
        -v "${{ github.workspace }}:/home/parasoft/example"
+       -v "${{ github.workspace }}/jtestcli.properties:/opt/parasoft/jtest/jtestcli.properties"
        --name c_jtest2025.2 jtest2025.2
        jtestcli -data demo.data.json -config "builtin://Recommended Rules"
       shell: cmd

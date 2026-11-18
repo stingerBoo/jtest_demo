@@ -33,14 +33,7 @@ jobs:
        ref: 'branch1'
        fetch-depth: 0
        set-safe-directory: true
-
-    # Use git command and add safe.directory which potentially solves 
-    # the issue with Test Configuration > Scope > "Test only files modified between the current working branch and 'main'"
-    # - name: Git commands and safe.directory
-      # shell: cmd
-      # run: git fetch --all |
-           # git rev-parse --verify --quiet branch1 |
-           # git config --global --add safe.directory "C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo"
+    
     - name: Git commands and safe.directory
       shell: cmd
       run: git fetch --all |
@@ -56,11 +49,7 @@ jobs:
     - name: Upload results (SARIF)
       if: always()
       uses: github/codeql-action/upload-sarif@v4
-      with:
-        #sarif_file: reports/report.sarif # reports is a default location for reports directory
-        #sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif
+      with:        
         sarif_file: "${{ github.workspace }}/reports/report.sarif"
         category: parasoft-jtest-SoftCode4
-        #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
-        #matrix: null
         wait-for-processing: true

@@ -49,7 +49,7 @@ jobs:
        -v "${{ github.workspace }}:/home/parasoft/example"
        -v "${{ github.workspace }}/jtestcli.properties:/opt/parasoft/jtest/jtestcli.properties"
        --name c_jtest2026.2 parasoft/jtest:2026.2
-       jtestcli -data demo.data.json -config "builtin://Recommended Rules"
+       jtestcli -data "/home/parasoft/example/demo.data.json" -config "builtin://Recommended Rules"
       shell: cmd
 
       # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.

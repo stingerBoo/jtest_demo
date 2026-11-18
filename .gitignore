@@ -7,6 +7,7 @@ build/
 reports/
 .jtest/
 _ts/
+_TS/
 
 # local IDE (Eclipse / VS Code)
 .settings/

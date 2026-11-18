@@ -32,29 +32,27 @@ jobs:
       with:  
        ref: 'branch1'
        fetch-depth: 0
-       set-safe-directory: 'C:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo'
+       set-safe-directory: true
 
     # Use git command and add safe.directory which potentially solves 
     # the issue with Test Configuration > Scope > "Test only files modified between the current working branch and 'main'"
+    # - name: Git commands and safe.directory
+      # shell: cmd
+      # run: git fetch --all |
+           # git rev-parse --verify --quiet branch1 |
+           # git config --global --add safe.directory "C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo"
     - name: Git commands and safe.directory
       shell: cmd
       run: git fetch --all |
            git rev-parse --verify --quiet branch1 |
-           git config --global --add safe.directory "C:\actions-runner2331_jtest2025.2.2\_work\jtest_demo\jtest_demo"
+           git config --global --add safe.directory "${{ github.workspace }}"
       
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd
-      run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.2.2/integration/gradle/init.gradle "-Djtest.config=jtest.dtp://testCustomRule"
+      run: .\gradlew clean build jtest -I ${JTEST_HOME}/integration/gradle/init.gradle "-Djtest.config=jtest.dtp://testCustomRule"
       #run: .\gradlew clean build jtest -I c:/Parasoft/jtest/2025.1.1/integration/gradle/init.gradle "-Djtest.config=user://RR_modify1"
 
-    # Runs code analysis with Jtest.
-    #- name: Run Jtest
-    #  id: jtest
-    #  uses: parasoft/run-jtest-action@2.0.2
-    #  with:
-    #    #Uses the jtest.data.json generated with the Gradle command in the previous step
-    #    input: build/jtest/jtest.data.json
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
       if: always()
@@ -62,7 +60,7 @@ jobs:
       with:
         #sarif_file: reports/report.sarif # reports is a default location for reports directory
         #sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/reports/report.sarif
-        sarif_file: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo/build/jtest/report.sarif
+        sarif_file: "${{ github.workspace }}/reports/report.sarif"
         category: parasoft-jtest-SoftCode4
         #checkout_path: c:/actions-runner2331_jtest2025.2.2/_work/jtest_demo/jtest_demo        
         #matrix: null

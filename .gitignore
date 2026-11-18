@@ -4,7 +4,7 @@ build/
 .gradle/
 
 # Raports and work files
-reports/
+# reports/
 .jtest/
 _ts/
 _TS/

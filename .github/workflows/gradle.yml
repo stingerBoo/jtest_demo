@@ -30,7 +30,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v6
       with:  
-       ref: 'branch1'
+       ref: 'main'
        fetch-depth: 0
        set-safe-directory: true
     

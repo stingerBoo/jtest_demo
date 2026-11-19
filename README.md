@@ -29,8 +29,9 @@ The workflow requires the DTP_HOST secret to resolve the Parasoft DTP hostname i
 3. Set **Name** to DTP_HOST.
 4. Set **Secret** to your full DTP hostname (e.g., fullHost.com.name).
 5. Click **Add secret**.
+<img width="1231" height="316" alt="image" src="https://github.com/user-attachments/assets/ad66f0a7-715d-4ec0-ac4b-db3aa9c1a89d" />
 
-**[PLACEHOLDER: Insert screenshot of GitHub Actions Secrets configuration showing DTP_HOST here]** 
+
 
 #### 🖥️ Runner Prerequisites
 

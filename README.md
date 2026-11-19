@@ -14,7 +14,8 @@ The custom test configuration **`Recommended Rules scope diff branches`** filter
 With this setup, Jtest compares the current branch (`branchDiffScopeFilter`) against `remotes/origin/main` and analyzes only the changed files.
 
 <!-- 👇 PASTE YOUR SCREENSHOT BELOW (in GitHub's editor, place the cursor here and press Ctrl+V) 👇 -->
-![Jtest Scope Time Filters](PASTE_SCREENSHOT_HERE)
+<img width="975" height="269" alt="image" src="https://github.com/user-attachments/assets/134d3df7-7b66-4ecf-a851-ae7a5527a151" />
+
 
 ---
 

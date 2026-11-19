@@ -47,7 +47,7 @@ jobs:
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd
-      run: .\gradlew clean build jtest -I "%JTEST%/integration/gradle/init.gradle" "-Djtest.config=user://Recommended Rules scope diff branches" "-Djtest.report=reports" "-Djtest.settings=localSettings"
+      run: .\gradlew clean build jtest -I "%JTEST%/integration/gradle/init.gradle" "-Djtest.config=user://Recommended Rules scope diff branches" "-Djtest.settings=localSettings" "-Djtest.report=reports" 
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)

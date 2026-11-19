@@ -50,7 +50,7 @@ jobs:
     # see the settings involved in this configuration
     - name: Create input for Jtest
       shell: cmd
-      run: .\gradlew clean build jtest -I "%JTEST_HOME%/integration/gradle/init.gradle" "-Djtest.config=user://Recommended Rules scope diff branches" "-Djtest.settings=${{ github.workspace }}/jtestsettings.properties" "-Djtest.report=reports" 
+      run: .\gradlew clean build jtest -I "%JTEST_HOME%/integration/gradle/init.gradle" "-Djtest.config=${{ github.workspace }}Recommended Rules scope diff branches.properties" "-Djtest.settings=${{ github.workspace }}/jtestsettings.properties" "-Djtest.report=reports" 
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)

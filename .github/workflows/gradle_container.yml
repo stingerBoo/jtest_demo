@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel.
 jobs:
   build:
-    name: Analyze project with Jtest
+    name: Analyze project with Jtest container
     
     permissions:
       # required for all workflows
@@ -35,8 +35,8 @@ jobs:
        ref: container
        fetch-depth: 0 
 
-    # this is a usage of continer on localmachine where it's on windows with docker desktop
-    # the image was created on windows with: docker build -t yourNameOfImage .  
+    # this is a usage of continer on localmachine where it's on windows with docker.
+    # the image is created on fly here.  
     # DTP_HOST setup:
     # 1. GitHub -> Settings -> Secrets and variables -> Actions -> press New repository secret.
     # 2. In field Name write: DTP_HOST

@@ -42,7 +42,8 @@ jobs:
     
     - name: Modified files Simple.java
       run: |
-          git blame src/main/java/examples/eval/Simple.java    
+          git blame src/main/java/examples/eval/Simple.java
+      shell: cmd          
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd

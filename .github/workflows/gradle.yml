@@ -39,11 +39,14 @@ jobs:
       run: git fetch --all |
            git rev-parse --verify --quiet branch1 |
            git config --global --add safe.directory "${{ github.workspace }}"
-      
+    
+    - name: Modified files Simple.java
+      run: |
+          git blame src/main/java/examples/eval/Simple.java    
     # Generates the jtest.data.json input file.
     - name: Create input for Jtest
       shell: cmd
-      run: .\gradlew clean build jtest -I "%JTEST%/integration/gradle/init.gradle" "-Djtest.config=user://Recommended Rules scope diff branches" "-Djtest.report=reports"
+      run: .\gradlew clean build jtest -I "%JTEST%/integration/gradle/init.gradle" "-Djtest.config=user://Recommended Rules scope diff branches" "-Djtest.report=reports" "-Djtest.settings=localSettings"
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)

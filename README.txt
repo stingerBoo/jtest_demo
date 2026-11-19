@@ -1,6 +1,7 @@
 # Incremental Static Code Analysis (Parasoft Jtest Branch Diff)
 
-This repository demonstrates how **Parasoft Jtest** performs static code analysis **exclusively on files modified between selected Git branches**. Instead of scanning the entire codebase, Jtest restricts the analysis scope to the diff between the active working branch (`branchDiffScopeFilter`) and a target reference branch (`remotes/origin/main`).
+This repository demonstrates how **Parasoft Jtest** performs static code analysis **exclusively on files modified between selected Git branches**. 
+Instead of scanning the entire codebase, Jtest restricts the analysis scope to the diff between the active working branch (`branchDiffScopeFilter`) and a target reference branch (`remotes/origin/main`).
 
 ---
 

@@ -43,7 +43,7 @@ jobs:
       run: >
        docker run
        --rm
-       --add-host="{DTP_HOST}:host-gateway"       
+       --add-host="%DTP_HOST%:host-gateway"       
        -v "${{ github.workspace }}:/home/parasoft/example"
        -v "${{ github.workspace }}/jtestcli.properties:/opt/parasoft/jtest/jtestcli.properties"
        --name c_jtest2026.2 parasoft/jtest:2026.2

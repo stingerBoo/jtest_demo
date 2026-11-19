@@ -48,6 +48,7 @@ jobs:
     # Generates the jtest.data.json input file.
     # jtestsettings.properties is in this branch
     # see the settings involved in this configuration
+    # Custom Test configuration is in this branch: "Recommended Rules scope diff branches.properties"
     - name: Create input for Jtest
       shell: cmd
       run: .\gradlew clean build jtest -I "%JTEST_HOME%/integration/gradle/init.gradle" "-Djtest.config=${{ github.workspace }}/Recommended Rules scope diff branches.properties" "-Djtest.settings=${{ github.workspace }}/jtestsettings.properties" "-Djtest.report=reports" 

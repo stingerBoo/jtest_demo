@@ -7,7 +7,7 @@ Instead of scanning the entire codebase, Jtest restricts the analysis scope to t
 
 ## 🎯 Branch Diff Scope Configuration
 
-The custom test configuration **`Recommended Rules scope diff branches`** filters files under the **Scope -> Time filters** tab using the following settings:
+The custom test configuration **`Recommended Rules scope diff branches.properteis`**(under this branch) filters files under the **Scope -> Time filters** tab using the following settings:
 - **Filter Mode**: `Check files modified between the current working branch and...`
 - **Reference Target**: `custom reference branch/revision` set to **`remotes/origin/main`**
 

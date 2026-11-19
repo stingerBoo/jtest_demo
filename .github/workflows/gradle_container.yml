@@ -36,7 +36,11 @@ jobs:
        fetch-depth: 0 
 
     # this is a usage of continer on localmachine where it's on windows with docker desktop
-    # the image was created on windows with: docker build -t yourNameOfImage .    
+    # the image was created on windows with: docker build -t yourNameOfImage .  
+    # DTP_HOST setup:
+    # 1. GitHub -> Settings -> Secrets and variables -> Actions -> press New repository secret.
+    # 2. In field Name write: DTP_HOST
+    # 3. In field Secret write: fullHost.com.name    
     - name: Run Container
       env:
         DTP_HOST: ${{ secrets.DTP_HOST }}    
